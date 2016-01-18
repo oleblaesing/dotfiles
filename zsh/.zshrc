@@ -82,3 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias vm="cd ~/Homestead && vagrant ssh"
+alias portal="cd ~/Code/portal"
+alias fooood="cd ~/Code/fooood"
