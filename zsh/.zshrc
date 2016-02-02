@@ -83,4 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+occurs() {
+	grep -inIEr --color=ALWAYS $1 $2
+}
+
 alias portal="envoy run"
