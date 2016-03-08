@@ -87,4 +87,3 @@ occurs() {
 	grep -inIEr --color=ALWAYS $1 $2
 }
 
-alias portal="envoy run"
