@@ -89,3 +89,5 @@ occurs() {
 	grep -inIEr --color=ALWAYS $1 $2
 }
 
+export PATH="/usr/local/sbin:$PATH"
+
