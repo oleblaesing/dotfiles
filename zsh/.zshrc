@@ -83,6 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias python="python3"
+
 export PATH="~/.composer/vendor/bin:$PATH"
 
 occurs() {
