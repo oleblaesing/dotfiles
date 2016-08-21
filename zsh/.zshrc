@@ -85,11 +85,9 @@ source $ZSH/oh-my-zsh.sh
 
 alias python="python3"
 
-export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
 occurs() {
-	grep -inIEr --color=ALWAYS $1 $2
+  grep -inIEr --color=ALWAYS $1 $2
 }
-
-export PATH="/usr/local/sbin:$PATH"
 
