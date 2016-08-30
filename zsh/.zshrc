@@ -83,9 +83,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias python="python3"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:~/Code/containers:$PATH"
+alias python="python3"
+alias app="react"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
@@ -101,3 +102,9 @@ ezip() {
   echo $pass
 }
 
+react() {
+  case $1 in
+    'start') docker run -ti -p 3000:3000 -v $(pwd):/app -w /app --entrypoint npm node:latest start ;;
+    'build') docker run -v $(pwd):/app -w /app --entrypoint npm node:latest run build ;;
+  esac
+}
