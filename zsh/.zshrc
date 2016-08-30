@@ -91,3 +91,5 @@ occurs() {
   grep -inIEr --color=ALWAYS $1 $2
 }
 
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk"
+
