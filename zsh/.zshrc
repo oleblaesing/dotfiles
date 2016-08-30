@@ -96,6 +96,8 @@ password() {
 }
 
 ezip() {
-  zip -e $1.zip $1
+  pass=$(password)
+  zip -P $pass $1.zip $2
+  echo $pass
 }
 
