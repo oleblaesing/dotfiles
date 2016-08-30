@@ -85,11 +85,17 @@ source $ZSH/oh-my-zsh.sh
 
 alias python="python3"
 
-export PATH="/usr/local/sbin:~/.composer/vendor/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:~/Code/containers:$PATH"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
 }
 
-alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk"
+password() {
+  openssl rand -base64 32
+}
+
+ezip() {
+  zip -e $1.zip $1
+}
 
