@@ -104,6 +104,7 @@ ezip() {
 
 react() {
   case $1 in
+    'test')  docker run -ti -v $(pwd):/app -w /app --entrypoint npm node:latest test ;;
     'start') docker run -ti -p 3000:3000 -v $(pwd):/app -w /app --entrypoint npm node:latest start ;;
     'build') docker run -v $(pwd):/app -w /app --entrypoint npm node:latest run build ;;
   esac
