@@ -87,6 +87,7 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PA
 
 alias python="python3"
 alias app="react"
+alias gti="git"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
