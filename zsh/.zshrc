@@ -85,9 +85,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
-alias python="python3"
-alias app="react"
 alias gti="git"
+alias u="update"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
@@ -103,10 +102,10 @@ ezip() {
   echo $pass
 }
 
-react() {
-  case $1 in
-    'test')  docker run -ti -v $(pwd):/app -w /app --entrypoint npm node:latest test ;;
-    'start') docker run -ti -p 3000:3000 -v $(pwd):/app -w /app --entrypoint npm node:latest start ;;
-    'build') docker run -v $(pwd):/app -w /app --entrypoint npm node:latest run build ;;
-  esac
+update() {
+  sudo softwareupdate -iva
+  brew update && brew upgrade
+  upgrade_oh_my_zsh
+  composer self-update && composer global update
+  npm install -g npm && npm update -g
 }
