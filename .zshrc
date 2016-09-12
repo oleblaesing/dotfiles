@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
-alias gti="git"
+alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
@@ -94,6 +94,8 @@ alias gpush="git push origin"
 
 alias c="cd ~/Code"
 alias d="cd ~/Downloads"
+alias h="history"
+alias hg="history | grep"
 alias u="update"
 
 occurs() {
