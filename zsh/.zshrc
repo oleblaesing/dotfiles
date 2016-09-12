@@ -90,8 +90,9 @@ alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias gpull="git pull"
-alias gpush="git push"
+alias gpush="git push origin"
 
+alias c="cd ~/Code"
 alias d="cd ~/Downloads"
 alias u="update"
 
@@ -110,7 +111,6 @@ ezip() {
 }
 
 update() {
-  sudo softwareupdate -iva
   brew update && brew upgrade
   upgrade_oh_my_zsh
   composer self-update && composer global update
