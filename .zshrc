@@ -88,13 +88,17 @@ alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
+alias gck="git checkout"
 alias gpull="git pull"
 alias gpush="git push origin"
 
 alias c="cd ~/Code"
 alias d="cd ~/Downloads"
+alias df="cd ~/Code/dotfiles"
 alias h="history"
 alias hg="history | grep"
+alias pb="cd ~/Code/portal-backend"
+alias pf="cd ~/Code/portal-frontend"
 alias u="update"
 
 occurs() {
