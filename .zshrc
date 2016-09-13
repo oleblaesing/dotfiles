@@ -93,6 +93,8 @@ alias gpush="git push origin"
 
 alias c="cd ~/Code"
 alias d="cd ~/Downloads"
+alias ec="ecstring"
+alias dc="dcstring"
 alias h="history"
 alias hg="history | grep"
 alias u="update"
@@ -103,6 +105,16 @@ occurs() {
 
 password() {
   openssl rand -base64 32
+}
+
+ecstring() {
+  pass=$(password)
+  echo $1 | openssl enc -base64 -aes-256-cbc -k $pass
+  echo $pass
+}
+
+dcstring() {
+  echo $1 | openssl enc -d -base64 -aes-256-cbc
 }
 
 ezip() {
