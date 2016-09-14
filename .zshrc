@@ -91,6 +91,7 @@ alias hg="history | grep"
 alias u="update"
 
 alias g="git"
+alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
