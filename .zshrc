@@ -84,22 +84,20 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
+alias c="cd ~/Code"
+alias d="cd ~/Downloads"
+alias h="history"
+alias hg="history | grep"
+alias u="update"
+
 alias g="git"
 alias gs="git status"
 alias gd="git diff"
 alias gc="git commit"
 alias gck="git checkout"
+alias gl="git log"
 alias gpull="git pull"
 alias gpush="git push origin"
-
-alias c="cd ~/Code"
-alias d="cd ~/Downloads"
-alias df="cd ~/Code/dotfiles"
-alias h="history"
-alias hg="history | grep"
-alias pb="cd ~/Code/portal-backend"
-alias pf="cd ~/Code/portal-frontend"
-alias u="update"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
@@ -107,12 +105,6 @@ occurs() {
 
 password() {
   openssl rand -base64 32
-}
-
-ezip() {
-  pass=$(password)
-  zip -P $pass $1.zip $2
-  echo $pass
 }
 
 update() {
