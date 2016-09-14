@@ -97,6 +97,8 @@ alias gd="git diff"
 alias gc="git commit"
 alias gck="git checkout"
 alias gl="git log"
+alias gm="git merge"
+alias gr="git reset"
 alias gpull="git pull"
 alias gpush="git push origin"
 
