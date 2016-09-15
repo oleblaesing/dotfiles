@@ -1,17 +1,10 @@
-set number
-set nowrap
-set showmatch
-set visualbell
-set hlsearch
-set smartcase
-set ignorecase
-set incsearch
+colorscheme one
+syntax enable
+
 set autoindent
+set cursorline
 set expandtab
-set shiftwidth=2
-set smartindent
-set smarttab
+set nowrap
+set number
 set softtabstop=2
-set ruler
-set undolevels=1000
-set backspace=indent,eol,start
+set visualbell
