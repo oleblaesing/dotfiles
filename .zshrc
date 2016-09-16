@@ -126,5 +126,4 @@ update() {
   upgrade_oh_my_zsh
   composer self-update && composer global update
   npm install -g npm && npm update -g
-  apm upgrade
 }
