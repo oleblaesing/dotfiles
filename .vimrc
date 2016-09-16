@@ -1,8 +1,15 @@
-colorscheme one
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
+filetype plugin indent on
 
-filetype on
-filetype plugin on
-filetype indent on
+autocmd vimenter * NERDTree
+
+colorscheme one
 
 set autoindent
 set autoread
