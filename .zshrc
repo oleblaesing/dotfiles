@@ -85,10 +85,14 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
 
 alias c="cd ~/Code"
-alias d="cd ~/Downloads"
 alias h="history"
 alias hg="history | grep"
 alias u="update"
+alias v="vim"
+
+alias d="docker"
+alias db="docker build"
+alias dr="docker run"
 
 alias g="git"
 alias ga="git add"
@@ -101,6 +105,13 @@ alias gm="git merge"
 alias gr="git reset"
 alias gpull="git pull"
 alias gpush="git push origin"
+
+alias n="npm"
+alias ni="npm install"
+alias ns="npm start"
+alias nr="npm run"
+alias nu="npm update"
+alias nun="npm uninstall"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
