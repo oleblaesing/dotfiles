@@ -28,7 +28,6 @@ set scrolloff=3
 set shiftwidth=2
 set smartindent
 set softtabstop=2
-set textwidth=80
 set visualbell
 
 syntax on
