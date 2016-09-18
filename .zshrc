@@ -87,6 +87,7 @@ export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PA
 alias c="cd ~/Code"
 alias h="history"
 alias hg="history | grep"
+alias pw="password"
 alias u="update"
 alias v="vim"
 
