@@ -93,6 +93,7 @@ alias v="vim"
 
 alias d="docker"
 alias db="docker build"
+alias dc="docker-compose"
 alias dr="docker run"
 
 alias g="git"
