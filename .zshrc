@@ -108,6 +108,11 @@ alias gr="git reset"
 alias gpull="git pull"
 alias gpush="git push origin"
 
+alias hv="cd ~/Homestead && vagrant && cd -"
+alias hvu="cd ~/Homestead && vagrant up && cd -"
+alias hvs="cd ~/Homestead && vagrant ssh && cd -"
+alias hvd="cd ~/Homestead && vagrant down && cd -"
+
 alias n="npm"
 alias ni="npm install"
 alias ns="npm start"
