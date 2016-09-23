@@ -91,6 +91,11 @@ alias pw="password"
 alias u="update"
 alias v="vim"
 
+alias b="brew"
+alias bi="brew install"
+alias br="brew remove"
+alias bu="brew update && brew upgrade"
+
 alias d="docker"
 alias db="docker build"
 alias dc="docker-compose"
