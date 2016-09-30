@@ -141,7 +141,7 @@ password() {
 }
 
 update() {
-  sudo softwareupdate -irv
+  sudo softwareupdate -ir
   brew update && brew upgrade
   upgrade_oh_my_zsh
   npm install -g npm && npm update -g
