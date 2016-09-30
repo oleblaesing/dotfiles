@@ -115,7 +115,8 @@ alias gck="git checkout"
 alias gcp="git cherry-pick"
 alias gl="git log  --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'"
 alias gm="git merge --no-ff"
-alias gr="git reset"
+alias gr="git rebase"
+alias grst="git reset"
 alias gpull="git pull"
 alias gpush="git push origin"
 
@@ -140,6 +141,7 @@ password() {
 }
 
 update() {
+  sudo softwareupdate -irv
   brew update && brew upgrade
   upgrade_oh_my_zsh
   npm install -g npm && npm update -g
