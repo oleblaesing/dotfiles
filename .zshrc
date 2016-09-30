@@ -101,6 +101,7 @@ alias db="docker build"
 alias dc="docker-compose"
 alias dcb="docker-compose build"
 alias dcu="docker-compose up"
+alias dcbu="docker-compose build && docker-compose up"
 alias dr="docker run"
 
 alias g="git"
