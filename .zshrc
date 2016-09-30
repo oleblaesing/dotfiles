@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="mycloud"
+ZSH_THEME="macos"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx git)
+plugins=(osx brew git docker node npm)
 
 # User configuration
 
@@ -82,27 +82,35 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:~/.composer/vendor/bin:$PATH"
-
 alias c="cd ~/Code"
 alias h="history"
 alias hg="history | grep"
-alias pw="password"
+alias o="occurs"
+alias pw="openssl rand -base64 32"
+alias s="sudo"
 alias u="update"
 alias v="vim"
 
 alias b="brew"
+alias bc="brew cleanup"
+alias bd="brew doctor"
 alias bi="brew install"
+alias bp="brew prune"
 alias br="brew remove"
-alias bu="brew update && brew upgrade"
 
 alias d="docker"
 alias db="docker build"
 alias dc="docker-compose"
 alias dcb="docker-compose build"
 alias dcu="docker-compose up"
-alias dcbu="docker-compose build && docker-compose up"
+alias dcl="docker rm `docker ps --no-trunc -aq`"
+alias di="docker images"
+alias dk="docker kill"
+alias dps="docker ps -a"
 alias dr="docker run"
+alias drm="docker rm"
+alias drmi="docker rmi"
+alias ds="docker stop"
 
 alias g="git"
 alias ga="git add"
@@ -113,17 +121,12 @@ alias gd="git diff"
 alias gc="git commit"
 alias gck="git checkout"
 alias gcp="git cherry-pick"
-alias gl="git log  --graph --abbrev-commit --decorate --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)'"
+alias gl="git log  --graph --abbrev-commit --decorate --all"
 alias gm="git merge --no-ff"
 alias gr="git rebase"
 alias grst="git reset"
 alias gpull="git pull"
 alias gpush="git push origin"
-
-alias hv="cd ~/Homestead && vagrant && cd -"
-alias hvu="cd ~/Homestead && vagrant up && cd -"
-alias hvs="cd ~/Homestead && vagrant ssh && cd -"
-alias hvh="cd ~/Homestead && vagrant halt && cd -"
 
 alias n="npm"
 alias ni="npm install"
@@ -132,12 +135,10 @@ alias nr="npm run"
 alias nu="npm update"
 alias nun="npm uninstall"
 
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
-}
-
-password() {
-  openssl rand -base64 32
 }
 
 update() {
