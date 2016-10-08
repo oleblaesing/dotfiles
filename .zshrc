@@ -137,6 +137,7 @@ alias n="npm"
 alias ni="npm install"
 alias ns="npm start"
 alias nr="npm run"
+alias nt="npm test"
 alias nu="npm update"
 alias nun="npm uninstall"
 
