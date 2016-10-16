@@ -116,6 +116,7 @@ alias ds="docker stop"
 
 alias g="git"
 alias ga="git add"
+alias gb="git branch"
 alias gc="git commit"
 alias gck="git checkout"
 alias gcp="git cherry-pick"
