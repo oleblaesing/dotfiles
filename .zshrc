@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias c="cd ~/Code"
+alias cra="create-react-app"
 alias h="history"
 alias hg="history | grep"
 alias o="occurs"
