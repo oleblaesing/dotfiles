@@ -7,7 +7,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 
-colorscheme one
+colorscheme materialtheme
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
