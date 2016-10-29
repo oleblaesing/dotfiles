@@ -136,15 +136,15 @@ alias gs="git status --short --branch"
 alias gst="git stash"
 alias gstp="git stash pop"
 
-alias y="yarn"
-alias ya="yarn add"
-alias yg="yarn global"
-alias yi="yarn install"
-alias yr="yarn run"
-alias yrm="yarn remove"
-alias yt="yarn test"
+alias n="npm"
+alias ni="npm install"
+alias nr="npm run"
+alias ns="npm start"
+alias nt="npm test"
+alias nu="npm update"
+alias nun="npm uninstall"
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/node/7.0.0/bin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
