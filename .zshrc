@@ -144,7 +144,7 @@ alias nt="npm test"
 alias nu="npm update"
 alias nun="npm uninstall"
 
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/Cellar/node/7.0.0/bin:$PATH"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
