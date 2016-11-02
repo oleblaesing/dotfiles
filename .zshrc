@@ -144,6 +144,7 @@ alias nt="npm test"
 alias nu="npm update"
 alias nun="npm uninstall"
 
+export EDITOR=/usr/local/bin/vim
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 occurs() {
