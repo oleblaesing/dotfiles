@@ -144,6 +144,12 @@ alias nt="npm test"
 alias nu="npm update"
 alias nun="npm uninstall"
 
+alias y="yarn"
+alias ya="yarn add"
+alias yi="yarn init"
+alias yu="yarn upgrade"
+alias yr="yarn remove"
+
 export EDITOR=/usr/local/bin/vim
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
