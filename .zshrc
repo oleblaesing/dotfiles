@@ -148,7 +148,9 @@ alias y="yarn"
 alias ya="yarn add"
 alias yi="yarn init"
 alias yu="yarn upgrade"
-alias yr="yarn remove"
+alias yr="yarn run"
+alias yrm="yarn remove"
+alias yt="yarn test"
 
 export EDITOR=/usr/local/bin/vim
 export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
