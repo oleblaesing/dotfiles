@@ -152,8 +152,9 @@ alias yr="yarn run"
 alias yrm="yarn remove"
 alias yt="yarn test"
 
-export EDITOR=/usr/local/bin/vim
-export PATH="$HOME/bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export EDITOR="/usr/bin/vi -e"
+export PATH="/usr/local/bin:$PATH"
+export VISUAL="/usr/local/bin/vim"
 
 occurs() {
   grep -inIEr --color=ALWAYS $1 $2
