@@ -122,8 +122,6 @@ alias gf="git fetch --all --prune"
 alias gi="git init"
 alias gl="git log --graph --abbrev-commit --decorate --all"
 alias gm="git merge --no-ff"
-alias gpull="git pull"
-alias gpush="git push"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
