@@ -124,6 +124,7 @@ alias gl="git log --graph --abbrev-commit --decorate --all"
 alias gm="git merge --no-ff"
 alias gr="git rebase"
 alias gs="git status --short --branch"
+alias gsync="git-sync"
 
 alias n="npm"
 alias ni="npm install"
@@ -151,4 +152,11 @@ update() {
   brew update && brew upgrade
   upgrade_oh_my_zsh
   npm install -g npm && npm update -g
+}
+
+git-sync() {
+  git fetch --all --prune
+  git pull upstream $1
+  git push origin $1
+  git status --short --branch
 }
