@@ -141,7 +141,7 @@ alias yrm="yarn remove"
 alias yt="yarn test"
 
 export EDITOR="/usr/bin/vi -e"
-export PATH="/usr/local/bin:$PATH"
+export PATH="/Users/oleblaesing/.local/bin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/vim"
 
 occurs() {
