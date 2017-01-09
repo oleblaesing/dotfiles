@@ -135,9 +135,11 @@ alias nt="npm test"
 
 alias y="yarn"
 alias ya="yarn add"
+alias yb="yarn run build"
 alias yu="yarn upgrade"
 alias yr="yarn run"
 alias yrm="yarn remove"
+alias ys="yarn run start"
 alias yt="yarn test"
 
 export EDITOR="/usr/bin/vi -e"
