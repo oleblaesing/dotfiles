@@ -97,6 +97,12 @@ alias bi="brew install"
 alias br="brew remove"
 alias bu="brew update"
 
+alias e="elm"
+alias em="elm-make"
+alias ep="elm-package"
+alias epi="elm-package install"
+alias er="elm-reactor"
+
 alias d="docker"
 alias db="docker build"
 alias dc="docker-compose"
