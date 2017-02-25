@@ -82,8 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias c="cd ~/Code"
-alias cra="create-react-app"
 alias h="history"
 alias hg="history | grep"
 alias o="occurs"
@@ -96,12 +94,6 @@ alias b="brew"
 alias bi="brew install"
 alias br="brew remove"
 alias bu="brew update"
-
-alias e="elm"
-alias em="elm-make"
-alias ep="elm-package"
-alias epi="elm-package install"
-alias er="elm-reactor"
 
 alias d="docker"
 alias db="docker build"
@@ -132,13 +124,6 @@ alias gr="git rebase"
 alias gs="git status --short --branch"
 alias gsync="git-sync"
 
-alias n="npm"
-alias ni="npm install"
-alias nr="npm run"
-alias nrm="npm uninstall"
-alias ns="npm start"
-alias nt="npm test"
-
 alias y="yarn"
 alias ya="yarn add"
 alias yb="yarn run build"
@@ -149,7 +134,7 @@ alias ys="yarn run start"
 alias yt="yarn test"
 
 export EDITOR="/usr/bin/vi -e"
-export PATH="/Users/oleblaesing/.local/bin:/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/vim"
 
 occurs() {
