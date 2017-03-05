@@ -97,12 +97,12 @@ alias bu="brew update"
 
 alias d="docker"
 alias db="docker build"
-alias dc="docker-compose"
-alias dcb="docker-compose build"
-alias dce="docker-compose exec"
-alias dcd="docker-compose down"
-alias dcs="docker-compose stop"
-alias dcu="docker-compose up"
+alias dc="docker-deploy"
+alias dcb="docker-deploy build"
+alias dce="docker-deploy exec"
+alias dcd="docker-deploy down"
+alias dcs="docker-deploy stop"
+alias dcu="docker-deploy up"
 alias di="docker images"
 alias dk="docker kill"
 alias dps="docker ps -a"
@@ -146,6 +146,12 @@ update() {
   brew update && brew upgrade
   upgrade_oh_my_zsh
   npm install -g npm && npm update -g
+}
+
+docker-deploy() {
+  cd ./docker
+  APP_ENV=local ./deploy.sh "$@"
+  cd ..
 }
 
 git-sync() {
