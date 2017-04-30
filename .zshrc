@@ -82,7 +82,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias h="history"
 alias hg="history | grep"
 alias o="occurs"
 alias pw="openssl rand -base64 32"
@@ -124,6 +123,12 @@ alias gm="git merge --no-ff"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 alias gsync="git-sync"
+
+alias h="heroku"
+alias hc="heroku config:set"
+alias hd="git push heroku master"
+alias hl="heroku logs"
+alias ho="heroku open"
 
 alias y="yarn"
 alias ya="yarn add"
