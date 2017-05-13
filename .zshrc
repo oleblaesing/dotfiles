@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias hg="history | grep"
-alias o="occurs"
+alias o="grep -inIEr --color=ALWAYS"
 alias pw="openssl rand -base64 32"
 alias s="sudo"
 alias u="update"
@@ -142,10 +142,6 @@ alias yt="yarn test"
 export EDITOR="/usr/bin/vi -e"
 export PATH="/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/vim"
-
-occurs() {
-  grep -inIEr --color=ALWAYS $1 $2
-}
 
 update() {
   brew update && brew upgrade
