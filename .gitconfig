@@ -1,5 +1,7 @@
 [user]
-	name = oleblaesing
-	email = ole.blaesing@web.de
+  name = oleblaesing
+  email = ole.blaesing@web.de
 [core]
-	editor = vim
+  editor = vim
+[commit]
+  template = ~/Code/dotfiles/commit.txt

@@ -1,0 +1,3 @@
+[Ticket] Summarize your commit
+
+Describe why and how you solved it
