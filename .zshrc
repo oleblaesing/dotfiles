@@ -121,6 +121,8 @@ alias gi="git init"
 alias gl="git log --graph --abbrev-commit --decorate --all"
 alias gm="git merge"
 alias gr="git rebase"
+alias gra="git rebase --abort"
+alias grc="git rebase --continue"
 alias gs="git status --short --branch"
 alias gsync="git-sync"
 
