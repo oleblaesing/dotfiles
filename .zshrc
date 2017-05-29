@@ -124,7 +124,6 @@ alias gr="git rebase"
 alias gra="git rebase --abort"
 alias grc="git rebase --continue"
 alias gs="git status --short --branch"
-alias gsync="git-sync"
 
 alias h="heroku"
 alias hc="heroku config:set"
@@ -155,11 +154,4 @@ docker-deploy() {
   cd ./docker
   APP_ENV=local ./deploy.sh "$@"
   cd ..
-}
-
-git-sync() {
-  git fetch --all --prune
-  git pull upstream $1
-  git push origin $1
-  git status --short --branch
 }
