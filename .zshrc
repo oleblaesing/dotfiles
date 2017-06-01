@@ -123,6 +123,7 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gra="git rebase --abort"
 alias grc="git rebase --continue"
+alias gcrp="git-commit-rebase-push"
 alias gs="git status --short --branch"
 
 alias h="heroku"
@@ -154,4 +155,13 @@ docker-deploy() {
   cd ./docker
   APP_ENV=local ./deploy.sh "$@"
   cd ..
+}
+
+git-commit-rebase-push() {
+  git add .
+  git commit -m "Auto commit! Should be squashed"
+  git fetch --all
+  git rebase $1
+  git rebase -i $1
+  git push -f
 }
