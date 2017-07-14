@@ -140,6 +140,7 @@ alias nrm="npm remove"
 alias ns="npm run start"
 alias nt="npm test"
 alias nu="npm upgrade"
+alias nx="npx"
 
 export EDITOR="/usr/bin/vi -e"
 export PATH="/usr/local/bin:$PATH"
