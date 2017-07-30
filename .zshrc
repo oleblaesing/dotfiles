@@ -84,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias hg="history | grep"
 alias o="grep -inIEr --color=ALWAYS"
-alias pw="openssl rand -base64 32"
+alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
 alias u="update"
 alias v="vim"
