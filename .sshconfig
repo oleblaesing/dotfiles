@@ -1,0 +1,12 @@
+Host *
+  UseKeychain yes
+
+Host bitbucket-personal
+  HostName bitbucket.org
+  User git
+  IdentityFile ~/.ssh/ole.blaesing@web.de
+
+Host bitbucket-work
+  HostName bitbucket.org
+  User git
+  IdentityFile ~/.ssh/o.blaesing@energieausweis48.de
