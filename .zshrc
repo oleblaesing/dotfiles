@@ -143,7 +143,7 @@ alias nu="npm upgrade"
 alias nx="npx"
 
 export EDITOR="/usr/bin/vi -e"
-export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/vim"
 
 update() {
