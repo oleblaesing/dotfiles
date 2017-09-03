@@ -140,6 +140,7 @@ alias nrm="npm remove"
 alias ns="npm run start"
 alias nt="npm test"
 alias nu="npm upgrade"
+alias nw="npm run watch"
 alias nx="npx"
 
 export EDITOR="/usr/bin/vi -e"
