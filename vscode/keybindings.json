@@ -1,0 +1,11 @@
+[
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpenNavigateNext",
+    "when": "inQuickOpen"
+  }
+]

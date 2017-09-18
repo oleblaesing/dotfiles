@@ -1,0 +1,19 @@
+// Place your settings in this file to overwrite the default settings
+{
+  "editor.fontSize": 21,
+  "editor.fontFamily": "'Roboto Mono', monospace",
+  "editor.cursorStyle": "line",
+  "editor.wordWrap": "off",
+  "git.path": "/usr/local/bin/git",
+  "terminal.external.osxExec": "Terminal.app",
+  "terminal.integrated.fontFamily": "Roboto Mono",
+  "terminal.integrated.fontSize": 21,
+  "terminal.integrated.cursorBlinking": true,
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "workbench.colorTheme": "Material",
+  "workbench.iconTheme": "vscode-icons",
+  "vsicons.projectDetection.autoReload": true,
+  "extensions.ignoreRecommendations": true,
+  "editor.minimap.enabled": false
+}
