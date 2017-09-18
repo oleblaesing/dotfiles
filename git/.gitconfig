@@ -4,4 +4,4 @@
 [core]
   editor = vim
 [commit]
-  template = ~/Code/dotfiles/commit.txt
+  template = ~/Code/dotfiles/git/commit.txt
