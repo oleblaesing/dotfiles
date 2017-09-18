@@ -14,5 +14,6 @@
   "telemetry.enableTelemetry": false,
   "vsicons.projectDetection.autoReload": true,
   "workbench.colorTheme": "Material",
+  "workbench.editor.showTabs": false,
   "workbench.iconTheme": "vscode-icons"
 }
