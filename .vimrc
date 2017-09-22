@@ -3,12 +3,14 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 
 colorscheme materialtheme
 
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
@@ -26,6 +28,7 @@ set fileencoding=utf-8
 set fileformat=unix
 set hidden
 set lazyredraw
+set mouse=a
 set nowrap
 set number
 set scrolloff=3
