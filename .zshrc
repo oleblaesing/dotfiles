@@ -49,7 +49,7 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(osx brew git docker node)
+plugins=(osx brew git docker node yarn)
 
 # User configuration
 
@@ -119,6 +119,7 @@ alias gr="git rebase"
 alias gcrp="git-commit-rebase-push"
 alias gs="git status --short --branch"
 
+alias y="yarn"
 alias ya="yarn add"
 alias yb"yarn run build"
 alias yt="yarn test"
