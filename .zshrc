@@ -121,10 +121,10 @@ alias gs="git status --short --branch"
 
 alias y="yarn"
 alias ya="yarn add"
-alias yb"yarn run build"
+alias yb="yarn run build"
 alias yt="yarn test"
 alias yrm="yarn remove"
-alias yu"yarn upgrade"
+alias yu="yarn upgrade"
 alias yw="yarn run watch"
 
 export EDITOR="/usr/bin/vi -e"
