@@ -82,8 +82,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias ddu="decrypt-decompress-unpack"
 alias hg="history | grep"
 alias o="grep -inIEr --color=ALWAYS"
+alias pce="pack-compress-encrypt"
 alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
 alias u="update"
@@ -137,11 +139,6 @@ export EDITOR="/usr/bin/vi -e"
 export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/vim"
 
-update() {
-  brew update && brew upgrade
-  upgrade_oh_my_zsh
-}
-
 docker-deploy() {
   cd ./docker
   APP_ENV=local ./deploy.sh "$@"
@@ -155,4 +152,21 @@ git-commit-rebase-push() {
   git rebase $1
   git rebase -i $1
   git push -f
+}
+
+pack-compress-encrypt() {
+  echo "Password: "
+  read -s pass
+  tar -c $1 | gzip | openssl enc -aes-256-cbc -k $pass -out $1.tar.gz.enc
+}
+
+decrypt-decompress-unpack() {
+  echo "Password: "
+  read -s pass
+  openssl enc -in $1 -aes-256-cbc -d -k $pass | gzip -d | tar -x
+}
+
+update() {
+  brew update && brew upgrade
+  upgrade_oh_my_zsh
 }
