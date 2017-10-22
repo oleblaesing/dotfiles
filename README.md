@@ -8,6 +8,7 @@ Personal dotfiles and configuration scripts
 # First of all copy the passwords db and ssh keys from external drive to local drive
 cp /Volumes/Data/passwords.kdbx ~/
 cp /Volumes/Data/.ssh ~/
+cp /Volumes/Data/gpg.asc ~/
 
 # Now install the basic macOS development tools
 xcode-select --install
