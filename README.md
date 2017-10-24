@@ -18,7 +18,7 @@ xcode-select --install
 brew analytics off && brew update && brew upgrade
 brew install openssl
 brew install openssh --with-brewed-openssl --with-keychain-support
-brew install curl zsh vim git node yarn ghc
+brew install curl zsh fzf vim git node yarn ghc
 
 # Install oh-my-zsh for zsh enhancement and use zsh as the default shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

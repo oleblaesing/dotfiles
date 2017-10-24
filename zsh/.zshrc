@@ -90,6 +90,7 @@ alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
 alias u="update"
 alias v="vim"
+alias fv="vim-fzf"
 
 alias b="brew"
 alias bi="brew install"
@@ -170,3 +171,9 @@ update() {
   brew update && brew upgrade
   upgrade_oh_my_zsh
 }
+
+vim-fzf() {
+  vim $(fzf)
+}
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
