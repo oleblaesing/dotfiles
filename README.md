@@ -27,7 +27,7 @@ chsh -s /usr/local/bin/zsh
 # Now clone this repository and use the files
 mkdir Code
 cd Code
-git clone git@github.com:oleblaesing/dotfiles.git
+git clone https://github.com/oleblaesing/dotfiles.git
 ln -sf /Users/oleblaesing/Code/dotfiles/ssh/config ~/.ssh/config
 ln -sf /Users/oleblaesing/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/.zshrc ~/.zshrc
