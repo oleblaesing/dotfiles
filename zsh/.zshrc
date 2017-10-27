@@ -173,3 +173,4 @@ vim-fzf() {
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 ssh-add -A 2>/dev/null;
+tmux
