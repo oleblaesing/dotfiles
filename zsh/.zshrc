@@ -88,7 +88,7 @@ alias o="grep -inIEr --color=ALWAYS"
 alias pce="pack-compress-encrypt"
 alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
-alias u="update"
+alias u="~/Code/dotfiles/update.sh"
 alias v="vim"
 alias fv="vim-fzf"
 
@@ -167,13 +167,9 @@ decrypt-decompress-unpack() {
   openssl enc -in $1 -aes-256-cbc -d -k $pass | gzip -d | tar -x
 }
 
-update() {
-  brew update && brew upgrade
-  upgrade_oh_my_zsh
-}
-
 vim-fzf() {
   vim $(fzf)
 }
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+ssh-add -A 2>/dev/null;
