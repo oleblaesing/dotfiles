@@ -90,7 +90,6 @@ alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="vim"
-alias fv="vim-fzf"
 
 alias b="brew"
 alias bi="brew install"
@@ -166,11 +165,3 @@ decrypt-decompress-unpack() {
   read -s pass
   openssl enc -in $1 -aes-256-cbc -d -k $pass | gzip -d | tar -x
 }
-
-vim-fzf() {
-  vim $(fzf)
-}
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-ssh-add -A 2>/dev/null;
-tmux

@@ -18,7 +18,7 @@ xcode-select --install
 brew analytics off && brew update && brew upgrade
 brew install openssl
 brew install openssh --with-brewed-openssl --with-keychain-support
-brew install zsh tmux fzf vim git curl node yarn ghc
+brew install zsh curl git vim node yarn ghc
 
 # Install oh-my-zsh for zsh enhancement and use zsh as the default shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -29,12 +29,12 @@ mkdir Code
 cd Code
 git clone https://github.com/oleblaesing/dotfiles.git
 ln -sf /Users/oleblaesing/Code/dotfiles/ssh/config ~/.ssh/config
-ln -sf /Users/oleblaesing/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/themes ~/.oh-my-zsh/custom
-ln -sf /Users/oleblaesing/Code/dotiles/vim/.vimrc ~/.vimrc
-ln -sf /Users/oleblaesing/Code/dotiles/vim/colors ~/.vim
+ln -sf /Users/oleblaesing/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -sf /Users/oleblaesing/Code/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf /Users/oleblaesing/Code/dotfiles/vim/.vimrc ~/.vimrc
+ln -sf /Users/oleblaesing/Code/dotfiles/vim/colors ~/.vim
 
 # Install the vim plugins
 vim +PluginInstall +qall
