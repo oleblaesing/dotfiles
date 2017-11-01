@@ -1,4 +1,3 @@
-set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -7,8 +6,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
-
-colorscheme materialtheme
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 1

@@ -2,6 +2,6 @@
   name = oleblaesing
   email = ole.blaesing@web.de
 [core]
-  editor = vim
+  editor = nvim
 [commit]
   template = ~/Code/dotfiles/git/commit.txt

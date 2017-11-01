@@ -233,7 +233,7 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>806 227 445 77 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>282 405 796 473 0 0 1440 900 </string>
+	<string>282 366 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1050 727 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
@@ -569,7 +569,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux attach</string>
+			<string>tmux -2 attach</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -955,6 +955,10 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>5A7D6696-8A8A-455C-BCAD-26FA6F26F5CA</string>
+	<key>NoSyncNeverAskAboutSettingAlternateMouseScroll</key>
+	<true/>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>530890839.03172499</real>
 	<key>OpenArrangementAtStartup</key>
@@ -1011,7 +1015,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-10-28T13:11:49Z</date>
+	<date>2017-11-01T13:44:27Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>

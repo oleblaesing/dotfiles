@@ -89,7 +89,7 @@ alias pce="pack-compress-encrypt"
 alias pw="openssl rand -base64 32 | tr -d '\n' | pbcopy && pbpaste"
 alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
-alias v="vim"
+alias v="nvim"
 
 alias b="brew"
 alias bi="brew install"
@@ -137,7 +137,7 @@ alias yw="yarn run watch"
 
 export EDITOR="/usr/bin/vi -e"
 export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:$PATH"
-export VISUAL="/usr/local/bin/vim"
+export VISUAL="/usr/local/bin/nvim"
 
 docker-deploy() {
   cd ./docker
