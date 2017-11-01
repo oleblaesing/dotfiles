@@ -4,8 +4,16 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'joshdick/onedark.vim'
 call vundle#end()
 filetype plugin indent on
+
+if (has("autocmd") && !has("gui_running"))
+  let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+  autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white })
+end
+
+colorscheme onedark
 
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 1

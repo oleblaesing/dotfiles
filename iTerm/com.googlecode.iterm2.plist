@@ -569,7 +569,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>tmux -2 attach</string>
+			<string>tmux attach</string>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
