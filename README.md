@@ -37,7 +37,8 @@ ln -sf /Users/oleblaesing/Code/dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf /Users/oleblaesing/Code/dotfiles/nvim ~/.config/nvim
 
 # Install the vim plugins
-vim +PluginInstall +qall
+source ~/.zshrc
+v +PlugInstall
 
 # Install iTerm, Docker, Sequel Pro
 # Select iTerm config file and start iTerm
