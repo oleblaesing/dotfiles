@@ -165,3 +165,5 @@ decrypt-decompress-unpack() {
   read -s pass
   openssl enc -in $1 -aes-256-cbc -d -k $pass | gzip -d | tar -x
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

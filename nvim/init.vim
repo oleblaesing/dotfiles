@@ -1,8 +1,8 @@
 filetype off
 call plug#begin('~/.vim/plugged')
-Plug 'VundleVim/Vundle.vim'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/syntastic'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 Plug 'joshdick/onedark.vim'
 call plug#end()
 
@@ -13,12 +13,13 @@ end
 
 colorscheme onedark
 
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['eslint']
+
+nnoremap <silent> <C-p> :Files<CR>
 
 set autoindent
 set autoread
