@@ -26,12 +26,6 @@ alias dce="docker-compose exec"
 alias dcd="docker-compose down"
 alias dcs="docker-compose stop"
 alias dcu="docker-compose up"
-alias ddc="docker-deploy"
-alias ddcb="docker-deploy build"
-alias ddce="docker-deploy exec"
-alias ddcd="docker-deploy down"
-alias ddcs="docker-deploy stop"
-alias ddcu="docker-deploy up"
 alias di="docker images"
 alias dps="docker ps -a"
 alias dr="docker run"
@@ -62,12 +56,6 @@ alias yw="yarn run watch"
 export EDITOR="/usr/bin/vi -e"
 export PATH="$HOME/.composer/vendor/bin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/nvim"
-
-docker-deploy() {
-  cd ./docker
-  APP_ENV=local ./deploy.sh "$@"
-  cd ..
-}
 
 git-commit-rebase-push() {
   git add .
