@@ -2,7 +2,7 @@
 
 Personal dotfiles and configuration scripts
 
-## Installation - macOS
+## Installation
 
 ```sh
 # First of all copy the passwords db and ssh keys from external drive to local drive

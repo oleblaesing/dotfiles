@@ -3,11 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="macos"
 DISABLE_AUTO_UPDATE="true"
 
-if [[ $(uname -a) == Darwin* ]]; then
-  plugins=(osx brew git docker node yarn)
-else
-  plugins=(ubuntu aptitude git docker node yarn)
-fi
+plugins=(brew git docker node yarn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -20,15 +16,9 @@ alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
 
-if [[ $(uname -a) == Darwin* ]]; then
-  alias b="brew"
-  alias bi="brew install"
-  alias brm="brew remove"
-else
-  alias a="sudo apt-get"
-  alias ai="sudo apt-get install"
-  alias arm="sudo apt-get remove"
-fi
+alias b="brew"
+alias bi="brew install"
+alias brm="brew remove"
 
 alias d="docker"
 alias dc="docker-compose"
