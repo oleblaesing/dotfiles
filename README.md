@@ -19,7 +19,7 @@ brew install openssl
 brew install dnsmasq --with-dnssec
 brew install dnscrypt-proxy
 brew install openssh --with-brewed-openssl --with-keychain-support
-brew install zsh tmux curl git neovim node yarn ghc privoxy
+brew install zsh tmux curl git neovim node yarn ghc
 
 # Install oh-my-zsh for zsh enhancement and use zsh as the default shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -38,15 +38,11 @@ ln -sf /Users/oleblaesing/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf /Users/oleblaesing/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -sf /Users/oleblaesing/Code/dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf /Users/oleblaesing/Code/dotfiles/nvim ~/.config/nvim
-ln -sf /Users/oleblaesing/Code/dotfiles/privoxy/user.action /usr/local/etc/privoxy/user.action
 
 # Start services
 sudo brew services start dnsmasq
 sudo networksetup -setdnsservers "Wi-Fi" 127.0.0.1
 sudo brew services start dnscrypt-proxy
-brew services start privoxy
-sudo networksetup -setwebproxy "Wi-Fi" 127.0.0.1 8118
-sudo networksetup -setsecurewebproxy "Wi-Fi" 127.0.0.1 8118
 
 # Install the vim plugins
 source ~/.zshrc
