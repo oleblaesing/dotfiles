@@ -16,8 +16,6 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off && brew update && brew upgrade
 brew install openssl
-brew install dnsmasq --with-dnssec
-brew install dnscrypt-proxy
 brew install openssh --with-brewed-openssl --with-keychain-support
 brew install zsh tmux curl git neovim node yarn ghc
 
@@ -29,8 +27,6 @@ chsh -s /usr/local/bin/zsh
 mkdir Code
 cd Code
 git clone https://github.com/oleblaesing/dotfiles.git
-ln -sf /Users/oleblaeisng/Code/dotfiles/dnsmasq/dnsmasq.conf /usr/local/etc/dnsmasq.conf
-ln -sf /Users/oleblaesing/Code/dotfiles/dnscrypt-proxy/dnscrypt-proxy.conf /usr/local/etc/dnscrypt-proxy.conf
 ln -sf /Users/oleblaesing/Code/dotfiles/ssh/config ~/.ssh/config
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/themes ~/.oh-my-zsh/custom
@@ -40,9 +36,7 @@ ln -sf /Users/oleblaesing/Code/dotfiles/git/.gitconfig ~/.gitconfig
 ln -sf /Users/oleblaesing/Code/dotfiles/nvim ~/.config/nvim
 
 # Start services
-sudo brew services start dnsmasq
-sudo networksetup -setdnsservers "Wi-Fi" 127.0.0.1
-sudo brew services start dnscrypt-proxy
+sudo networksetup -setdnsservers "Wi-Fi" 8.8.8.8 8.8.4.4
 
 # Install the vim plugins
 source ~/.zshrc
