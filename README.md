@@ -9,6 +9,8 @@ Personal dotfiles and configuration scripts
 cp /Volumes/Data/Keys ~/
 ln -sf /Users/oleblaesing/Keys/ssh/* /Users/oleblaesing/.ssh/
 
+cp /Users/oleblaesing/Code/dotfiles/etc/hosts /etc/hosts
+
 # Now install the basic macOS development tools
 xcode-select --install
 
