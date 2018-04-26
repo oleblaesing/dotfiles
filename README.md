@@ -59,7 +59,7 @@ cd Code
 git clone https://github.com/oleblaesing/dotfiles.git
 ln -sf /Users/oleblaesing/Code/dotfiles/ssh/config ~/.ssh/config
 ln -sf /Users/oleblaesing/Code/dotfiles/zsh/.zshrc ~/.zshrc
-ln -sf /Users/oleblaesing/Code/dotfiles/zsh/themes ~/.oh-my-zsh/custom
+ln -sf /Users/oleblaesing/Code/dotfiles/zsh/themes ~/.oh-my-zsh/themes
 ln -sf /Users/oleblaesing/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf /Users/oleblaesing/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -sf /Users/oleblaesing/Code/dotfiles/git/.gitconfig ~/.gitconfig
