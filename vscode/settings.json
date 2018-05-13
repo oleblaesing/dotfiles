@@ -17,5 +17,7 @@
   },
   "telemetry.enableTelemetry": false,
   "telemetry.enableCrashReporter": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "eq-material-theme-icons"
 }
