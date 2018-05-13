@@ -6,9 +6,11 @@ Personal dotfiles and configuration scripts
 
 OS and default application settings
 
-Secure DNS requests
+Secure network
 
 ```sh
+sudo dscl . delete /Users/$USER jpegphoto
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 sudo networksetup -setdnsservers "Wi-Fi" 1.1.1.1
 curl "https://raw.githubusercontent.com/oleblaesing/dotfiles/master/etc/hosts" | sudo tee -a /etc/hosts
 ```
