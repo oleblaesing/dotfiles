@@ -21,8 +21,8 @@ brew analytics off
 brew update && brew upgrade
 brew install openssl
 brew install openssh --with-brewed-openssl
-brew install curl zsh tmux neovim git gpg
-brew cask install iterm2 keepassxc firefox thunderbird nordvpn spotify whatsapp
+brew install curl zsh tmux neovim git
+brew cask install gpg-suite iterm2 keepassxc firefox thunderbird nordvpn spotify whatsapp
 brew cask install docker google-chrome torbrowser virtualbox transmission wireshark
 
 chsh -s /usr/local/bin/zsh
