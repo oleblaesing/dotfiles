@@ -1,6 +1,8 @@
 # Dotfiles
 
-Personal dotfiles and configuration scripts
+Personal dotfiles, scripts and guides
+
+![Wallpaper](https://raw.githubusercontent.com/oleblaesing/dotfiles/master/wallpaper.png "Wallpaper")
 
 ## Installation
 
@@ -17,6 +19,8 @@ brew analytics off && brew update && brew upgrade
 brew install openssl
 brew install openssh --with-brewed-openssl
 brew install curl zsh tmux git neovim gpg
+brew cask install keepassxc firefox nordvpn iterm2 spotify whatsapp
+brew cask install google-chrome docker torbrowser virtualbox transmission wireshark
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /usr/local/bin/zsh
@@ -38,22 +42,11 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 nvim +PlugInstall
 ```
 
-- Firefox
-  - Preferences
-  - Customize
-  - `about:config`
-  - HTTPS Everywhere
-  - uBlock Origin
-  - uMatrix
-  - User-Agent-Switcher
-- KeePassX
-- OpenVPN
-- iTerm2
-- WhatsApp Desktop
-- Spotify
-- Google Chrome
-- Docker
-- TorBrowser
-- VirtualBox
-- Wireshark
-- Transmission
+## Firefox
+- Preferences
+- Customize
+- `about:config`
+- HTTPS Everywhere
+- uBlock Origin
+- uMatrix
+- User-Agent-Switcher
