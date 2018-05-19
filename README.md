@@ -6,11 +6,13 @@ Personal dotfiles, scripts and guides
 
 ## Installation
 
+After going through system and Finder settings
+
 ```sh
 sudo dscl . delete /Users/$USER jpegphoto
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 sudo networksetup -setdnsservers "Wi-Fi" 1.1.1.1
-curl "https://raw.githubusercontent.com/oleblaesing/dotfiles/master/etc/hosts" | sudo tee -a /etc/hosts
+curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
 
 xcode-select --install
 
