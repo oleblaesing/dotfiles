@@ -4,15 +4,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'joshdick/onedark.vim'
 call plug#end()
-
-if (has("autocmd") && !has("gui_running"))
-  let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-  autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white })
-end
-
-colorscheme onedark
 
 nnoremap <silent> <C-p> :Files<CR>
 
