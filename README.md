@@ -2,7 +2,7 @@
 
 Personal dotfiles, scripts and guides
 
-![Wallpaper](https://raw.githubusercontent.com/oleblaesing/dotfiles/master/wallpaper.png "Wallpaper")
+![Screenshot](https://raw.githubusercontent.com/oleblaesing/dotfiles/master/screenshot.png "Screenshot")
 
 ## Installation
 

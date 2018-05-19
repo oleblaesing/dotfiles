@@ -8,9 +8,7 @@ plugins=(git docker)
 source $ZSH/oh-my-zsh.sh
 
 alias o="grep -inIEr --color=ALWAYS"
-alias gpw="get-password"
 alias s="sudo"
-alias spw="set-password"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
 
@@ -42,15 +40,6 @@ alias gs="git status --short --branch"
 export EDITOR="/usr/bin/vi -e"
 export PATH="/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/nvim"
-
-get-password() {
-  gpg -do - ~/Keys/passwords.gpg | grep -i $1
-}
-
-set-password() {
-  mv -f ~/Keys/passwords.gpg ~/Keys/passwords.gpg.bak
-  printf "$(gpg -do - ~/Keys/passwords.gpg.bak)\n$1" | gpg -co ~/Keys/passwords.gpg
-}
 
 git-commit-rebase-push() {
   git add .
