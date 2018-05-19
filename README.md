@@ -24,18 +24,19 @@ brew install curl zsh tmux git neovim gpg
 brew cask install keepassxc firefox nordvpn iterm2 spotify whatsapp
 brew cask install google-chrome docker torbrowser virtualbox transmission wireshark
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s /usr/local/bin/zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-mkdir Code
-./Code
+mkdir ~/Code
+~/Code
 git clone https://github.com/oleblaesing/dotfiles.git
 
-ln -s /Users/$USER/Code/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf /Users/$USER/Code/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s /Users/$USER/Code/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
 ln -s /Users/$USER/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -s /Users/$USER/Code/dotfiles/curl/.curlrc ~/.curlrc
 ln -s /Users/$USER/Code/dotfiles/git/.gitconfig ~/.gitconfig
+mkdir -p ~/.config/nvim
 ln -s /Users/$USER/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 
 source ~/.zshrc
