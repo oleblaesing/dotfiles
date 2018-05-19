@@ -17,12 +17,13 @@ curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo t
 xcode-select --install
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew analytics off && brew update && brew upgrade
+brew analytics off
+brew update && brew upgrade
 brew install openssl
 brew install openssh --with-brewed-openssl
-brew install curl zsh tmux git neovim gpg
-brew cask install keepassxc firefox nordvpn iterm2 spotify whatsapp
-brew cask install google-chrome docker torbrowser virtualbox transmission wireshark
+brew install curl zsh tmux neovim git gpg
+brew cask install iterm2 keepassxc firefox thunderbird nordvpn spotify whatsapp
+brew cask install docker google-chrome torbrowser virtualbox transmission wireshark
 
 chsh -s /usr/local/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
