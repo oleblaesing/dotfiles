@@ -31,14 +31,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 mkdir ~/Code
 ~/Code
 git clone https://github.com/oleblaesing/dotfiles.git
+git clone https://github.com/oleblaesing/flamingo-galaxy.git
 
-ln -sf /Users/$USER/Code/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s /Users/$USER/Code/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
-ln -s /Users/$USER/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -s /Users/$USER/Code/dotfiles/curl/.curlrc ~/.curlrc
-ln -s /Users/$USER/Code/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf ~/Code/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/Code/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
+ln -s ~/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/Code/dotfiles/curl/.curlrc ~/.curlrc
+ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/nvim
-ln -s /Users/$USER/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -s ~/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/Code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+mkdir -p ~/.vscode/extensions
+ln -s ~/Code/flamingo-galaxy ~/.vscode/extensions/flamingo-galaxy
 
 source ~/.zshrc
 
@@ -58,3 +62,6 @@ nvim +PlugInstall
 ## Thunderbird
 - Preferences
 - Enigmail
+
+## Visual Studio Code
+- Color Scheme: Flamingo Galaxy
