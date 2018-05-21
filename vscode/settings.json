@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "'Roboto Mono', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 16,
+  "editor.fontSize": 18,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "telemetry.enableCrashReporter": false,
