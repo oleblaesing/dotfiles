@@ -3,8 +3,11 @@
   "editor.fontSize": 18,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
+  "explorer.autoReveal": false,
+  "explorer.openEditors.visible": 0,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "workbench.colorTheme": "Flamingo Galaxy",
+  "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none"
 }
