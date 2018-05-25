@@ -41,6 +41,7 @@ ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/nvim
 ln -s ~/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/Code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Code/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 mkdir -p ~/.vscode/extensions
 ln -s ~/Code/flamingo-galaxy ~/.vscode/extensions/flamingo-galaxy
 
@@ -62,6 +63,3 @@ nvim +PlugInstall
 ## Thunderbird
 - Preferences
 - Enigmail
-
-## Visual Studio Code
-- Color Scheme: Flamingo Galaxy
