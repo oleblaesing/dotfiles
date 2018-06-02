@@ -1,7 +1,6 @@
 filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'editorconfig/editorconfig-vim'
-Plug 'w0rp/ale'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 call plug#end()
