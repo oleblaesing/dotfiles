@@ -23,7 +23,8 @@ brew install openssl
 brew install openssh --with-brewed-openssl
 brew install curl zsh tmux neovim git gpg
 brew cask install iterm2 keepassxc firefox thunderbird nordvpn spotify whatsapp
-brew cask install docker google-chrome torbrowser virtualbox transmission wireshark
+brew cask install docker google-chrome torbrowser virtualbox transmission
+brew cask install libreoffice wireshark
 
 chsh -s /usr/local/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
