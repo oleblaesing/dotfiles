@@ -17,6 +17,10 @@ alias b="brew"
 alias bi="brew install"
 alias brm="brew remove"
 
+alias bc="brew cask"
+alias bci="brew cask install"
+alias bcrm="brew cask remove"
+
 alias d="docker"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
