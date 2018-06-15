@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "'Roboto Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "'Droid Sans Mono', monospace",
   "editor.fontSize": 18,
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
