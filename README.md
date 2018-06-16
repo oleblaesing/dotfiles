@@ -43,8 +43,6 @@ mkdir -p ~/.config/nvim
 ln -s ~/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -sf ~/Code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -sf ~/Code/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-mkdir -p ~/.vscode/extensions
-ln -s ~/Code/flamingo-galaxy ~/.vscode/extensions/flamingo-galaxy
 
 source ~/.zshrc
 
@@ -64,3 +62,7 @@ nvim +PlugInstall
 ## Thunderbird
 - Preferences
 - Enigmail
+
+## VSCode
+- Flamingo Galaxy
+- EditorConfig
