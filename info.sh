@@ -6,8 +6,8 @@ MAG='\033[0;35m'
 CYN='\033[0;36m'
 NOC='\033[0m'
 
-printf "${RED}● ${RED}os: ${NOC}macOS\n"
-printf "${GRN}● ${RED}terminal: ${NOC}iTerm\n"
+printf "${RED}● ${RED}os: ${NOC}Manjaro\n"
+printf "${GRN}● ${RED}terminal: ${NOC}xfce4-terminal\n"
 printf "${YLW}● ${RED}multiplex: ${NOC}tmux\n"
 printf "${BLU}● ${RED}shell: ${NOC}zsh\n"
 printf "${MAG}● ${RED}editor: ${NOC}neovim\n"

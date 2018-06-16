@@ -14,13 +14,9 @@ alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
 
-alias b="brew"
-alias bi="brew install"
-alias brm="brew remove"
-
-alias bc="brew cask"
-alias bci="brew cask install"
-alias bcrm="brew cask remove"
+alias p="pacman"
+alias pi="pacman -S"
+alias brm="pacman -R"
 
 alias d="docker"
 alias dc="docker-compose"
@@ -44,8 +40,7 @@ alias gr="git rebase"
 alias gs="git status --short --branch"
 
 export EDITOR="/usr/bin/vi -e"
-export PATH="/usr/local/bin:$PATH"
-export VISUAL="/usr/local/bin/nvim"
+export VISUAL="/usr/bin/nvim"
 
 git-commit-rebase-push() {
   git add .
