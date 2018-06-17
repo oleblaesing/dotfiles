@@ -14,10 +14,6 @@ alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
 
-alias p="pacman"
-alias pi="pacman -S"
-alias brm="pacman -R"
-
 alias d="docker"
 alias dc="docker-compose"
 alias dce="docker-compose exec"
@@ -38,6 +34,10 @@ alias gl="git log"
 alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
+
+alias p="sudo pacman"
+alias pi="sudo pacman -S"
+alias brm="sudo pacman -R"
 
 export EDITOR="/usr/bin/vi -e"
 export VISUAL="/usr/bin/nvim"
