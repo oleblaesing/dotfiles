@@ -13,7 +13,11 @@ sudo vi /etc/resolv.conf
 curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
 
 sudo pacman -Syu
-sudo pacman -Sy zsh tmux neovim git keepassxc firefox thunderbird openvpn docker virtualbox
+sudo pacman -S base-devel yaourt zsh tmux neovim git keepassxc openvpn
+sudo pacman -S firefox thunderbird transmission-gtk docker virtualbox wireshark-qt
+yaourt spotify google-chrome
+
+# Install tor-browser
 
 chsh -s /usr/bin/zsh
 zsh
