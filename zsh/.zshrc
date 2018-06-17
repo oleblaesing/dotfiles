@@ -7,6 +7,7 @@ plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
 
+alias b="~/Code/dotfiles/backup.sh"
 alias gip="curl ipinfo.io/ip"
 alias i="~/Code/dotfiles/info.sh"
 alias o="grep -inIEr --color=ALWAYS"
