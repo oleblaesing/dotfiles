@@ -1,6 +1,7 @@
 {
   "editor.fontFamily": "'Droid Sans Mono', monospace",
   "editor.fontSize": 18,
+  "editor.fontWeight": "bold",
   "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "explorer.autoReveal": false,

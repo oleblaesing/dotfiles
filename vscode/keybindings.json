@@ -1,18 +1,18 @@
 [
   {
-    "key": "cmd+1",
+    "key": "ctrl+1",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+b",
+    "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+t",
+    "key": "ctrl+t",
     "command": "workbench.action.quickOpen"
   },
   {
-    "key": "cmd+p",
+    "key": "ctrl+p",
     "command": "-workbench.action.quickOpen"
   }
 ]
