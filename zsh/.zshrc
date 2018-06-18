@@ -41,6 +41,7 @@ alias pi="sudo pacman -S"
 alias brm="sudo pacman -R"
 
 export EDITOR="/usr/bin/vi -e"
+export PATH="$HOME/.npm-global/bin:$PATH"
 export VISUAL="/usr/bin/nvim"
 
 git-commit-rebase-push() {
