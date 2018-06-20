@@ -38,7 +38,7 @@ alias gs="git status --short --branch"
 
 alias p="sudo pacman"
 alias pi="sudo pacman -S"
-alias brm="sudo pacman -R"
+alias prm="sudo pacman -R"
 
 export EDITOR="/usr/bin/vi -e"
 export PATH="$HOME/.npm-global/bin:$PATH"
