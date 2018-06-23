@@ -8,12 +8,20 @@ plugins=(git docker)
 source $ZSH/oh-my-zsh.sh
 
 alias b="~/Code/dotfiles/backup.sh"
-alias gip="curl ipinfo.io/ip"
-alias i="~/Code/dotfiles/info.sh"
+alias info="~/Code/dotfiles/info.sh"
+alias ip="curl ipinfo.io/ip"
 alias o="grep -inIEr --color=ALWAYS"
 alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
+
+alias b="brew"
+alias bi="brew install"
+alias brm="brew remove"
+
+alias bc="brew"
+alias bci="brew install"
+alias bcrm="brew remove"
 
 alias d="docker"
 alias dc="docker-compose"
@@ -36,13 +44,9 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
-alias p="sudo pacman"
-alias pi="sudo pacman -S"
-alias prm="sudo pacman -R"
-
 export EDITOR="/usr/bin/vi -e"
-export PATH="$HOME/.npm-global/bin:$PATH"
-export VISUAL="/usr/bin/nvim"
+export PATH="/usr/local/bin:$PATH"
+export VISUAL="/usr/local/bin/nvim"
 
 git-commit-rebase-push() {
   git add .
