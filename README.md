@@ -7,7 +7,9 @@ Personal dotfiles, scripts and guides
 ## Installation
 
 System settings
+
 Finder settings
+
 Apply backup files
 
 ```sh
@@ -27,7 +29,7 @@ brew install curl zsh tmux neovim git gpg npm
 brew cask install iterm2 keepassxc firefox thunderbird nordvpn spotify
 brew cask install docker google-chrome torbrowser virtualbox
 brew cask install libreoffice wireshark
-npm i --global vsce
+npm i -g vsce
 
 chsh -s /usr/local/bin/zsh
 zsh
@@ -35,7 +37,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ln -s ~/Keys/ssh ~/.ssh
 ssh-add ~/.ssh/ole.blaesing@web.de
-vsce publish
+vsce login oleblaesing
 
 mkdir ~/Code
 ~/Code
