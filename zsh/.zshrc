@@ -44,6 +44,12 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
+alias y="yarn"
+alias ya="yarn add"
+alias yb="yarn run build"
+alias ys="yarn run start"
+alias yt="yarn test"
+
 export EDITOR="/usr/bin/vi -e"
 export PATH="/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/nvim"
