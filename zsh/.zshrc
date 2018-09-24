@@ -8,7 +8,6 @@ plugins=(git docker)
 source $ZSH/oh-my-zsh.sh
 
 alias bu="~/Code/dotfiles/backup.sh"
-alias info="~/Code/dotfiles/info.sh"
 alias ip="curl ipinfo.io/ip"
 alias o="grep -inIEr --color=ALWAYS"
 alias s="sudo"
