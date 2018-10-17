@@ -57,7 +57,7 @@ alias yt="yarn test"
 
 export EDITOR="/usr/bin/vi -e"
 export LANGUAGE="en_US.UTF-8"
-export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/nvim"
 
 git-commit-rebase-push() {
