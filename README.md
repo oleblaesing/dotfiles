@@ -6,11 +6,7 @@ Personal dotfiles, scripts and guides
 
 ## Installation
 
-System settings
-
-Finder settings
-
-Apply backup files
+Go through system settings, Finder settings and restore backup files
 
 ```sh
 sudo dscl . delete /Users/$USER jpegphoto
