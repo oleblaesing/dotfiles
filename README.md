@@ -19,11 +19,9 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew analytics off
 brew update && brew upgrade
-brew install openssl openssh curl zsh tmux neovim git gpg npm yarn
+brew install openssl openssh curl zsh tmux neovim git gpg
 brew cask install iterm2 keepassxc firefox thunderbird nordvpn spotify
-brew cask install docker google-chrome torbrowser virtualbox
-brew cask install libreoffice wireshark
-npm i -g vsce
+brew cask install docker google-chrome torbrowser libreoffice
 
 chsh -s /usr/local/bin/zsh
 zsh
