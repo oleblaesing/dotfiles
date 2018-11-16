@@ -3,5 +3,3 @@
   email = ole.blaesing@web.de
 [core]
   editor = nvim
-[commit]
-  template = ~/Code/dotfiles/git/commit.txt
