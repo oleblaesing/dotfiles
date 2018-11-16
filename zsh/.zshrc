@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="macos"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git docker)
+plugins=(brew git docker)
 
 source $ZSH/oh-my-zsh.sh
 
