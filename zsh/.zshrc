@@ -7,9 +7,8 @@ plugins=(brew git docker)
 
 source $ZSH/oh-my-zsh.sh
 
-alias bu="~/Code/dotfiles/backup.sh"
+alias backup="~/Code/dotfiles/backup.sh"
 alias ip="curl ipinfo.io/ip"
-alias o="grep -inIEr --color=ALWAYS"
 alias s="sudo"
 alias u="~/Code/dotfiles/update.sh"
 alias v="nvim"
@@ -41,7 +40,6 @@ alias ga="git add"
 alias gb="git branch"
 alias gc="git commit"
 alias gck="git checkout"
-alias gcrp="git-commit-rebase-push"
 alias gd="git diff"
 alias gf="git fetch --all --prune"
 alias gl="git log"
@@ -59,13 +57,5 @@ export EDITOR="/usr/bin/vi -e"
 export LANGUAGE="en_US.UTF-8"
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export VISUAL="/usr/local/bin/nvim"
-
-git-commit-rebase-push() {
-  git add .
-  git commit -m "Auto commit! Should be squashed"
-  git fetch --all
-  git rebase -i $1
-  git push -f
-}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
