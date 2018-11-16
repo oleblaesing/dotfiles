@@ -29,22 +29,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 ln -s ~/Keys/ssh ~/.ssh
 ssh-add ~/.ssh/ole.blaesing@web.de
-vsce login oleblaesing
 
-mkdir ~/Code
-~/Code
+mkdir ~/Repositories
+~/Repositories
 git clone https://github.com/oleblaesing/dotfiles.git
 git clone https://github.com/oleblaesing/flamingo-galaxy.git
 
-ln -sf ~/Code/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/Code/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
-ln -s ~/Code/dotfiles/tmux/.tmux.conf ~/.tmux.conf
-ln -s ~/Code/dotfiles/curl/.curlrc ~/.curlrc
-ln -s ~/Code/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf ~/Repositories/dotfiles/zsh/.zshrc ~/.zshrc
+ln -s ~/Repositories/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
+ln -s ~/Repositories/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -s ~/Repositories/dotfiles/curl/.curlrc ~/.curlrc
+ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/nvim
-ln -s ~/Code/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-ln -sf ~/Code/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-ln -sf ~/Code/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -sf ~/Repositories/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf ~/Repositories/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Repositories/User/keybindings.json
 
 source ~/.zshrc
 
