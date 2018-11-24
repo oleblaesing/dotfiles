@@ -1,5 +1,13 @@
 [
   {
+    "key": "cmd+t",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "cmd+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
     "key": "cmd+1",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -8,11 +16,7 @@
     "command": "-workbench.action.toggleSidebarVisibility"
   },
   {
-    "key": "cmd+t",
-    "command": "workbench.action.quickOpen"
-  },
-  {
-    "key": "cmd+p",
-    "command": "-workbench.action.quickOpen"
+    "key": "cmd+m",
+    "command": "workbench.action.terminal.toggleTerminal"
   }
 ]
