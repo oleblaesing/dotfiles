@@ -1,4 +1,6 @@
 {
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.find.seedSearchStringFromSelection": false,
   "editor.fontFamily": "'Droid Sans Mono', monospace",
   "editor.fontSize": 18,
   "editor.fontWeight": "bold",
@@ -6,9 +8,16 @@
   "editor.tabSize": 2,
   "explorer.autoReveal": false,
   "explorer.openEditors.visible": 0,
+  "extensions.ignoreRecommendations": true,
+  "files.enableTrash": false,
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
+  "terminal.explorerKind": "external",
+  "terminal.external.osxExec": "iTerm.app",
   "workbench.colorTheme": "Flamingo Galaxy",
   "workbench.editor.showTabs": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.feedback.visible": false,
+  "workbench.tips.enabled": false
 }
