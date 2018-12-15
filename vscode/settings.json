@@ -1,7 +1,7 @@
 {
   "editor.copyWithSyntaxHighlighting": false,
   "editor.find.seedSearchStringFromSelection": false,
-  "editor.fontFamily": "'Droid Sans Mono', monospace",
+  "editor.fontFamily": "'DejaVu Sans Mono', monospace",
   "editor.fontSize": 18,
   "editor.fontWeight": "bold",
   "editor.minimap.enabled": false,
@@ -24,5 +24,6 @@
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "window.zoomLevel": 1
 }

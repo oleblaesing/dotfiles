@@ -3,23 +3,15 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="macos"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(brew git docker)
+plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
 
-alias backup="~/Code/dotfiles/backup.sh"
+alias backup="~/Repositories/dotfiles/backup.sh"
 alias ip="curl ipinfo.io/ip"
 alias s="sudo"
-alias u="~/Code/dotfiles/update.sh"
+alias u="~/Repositories/dotfiles/update.sh"
 alias v="nvim"
-
-alias b="brew"
-alias bi="brew install"
-alias brm="brew remove"
-
-alias bc="brew cask"
-alias bci="brew cask install"
-alias bcrm="brew cask remove"
 
 alias d="docker"
 alias de="docker exec"
