@@ -3,14 +3,14 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="macos"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(git docker)
+plugins=(dnf git docker)
 
 source $ZSH/oh-my-zsh.sh
 
 alias backup="~/Repositories/dotfiles/backup.sh"
 alias ip="curl ipinfo.io/ip"
 alias s="sudo"
-alias u="~/Repositories/dotfiles/update.sh"
+alias u="sudo dnf update && dnf clean all"
 alias v="nvim"
 
 alias d="docker"
@@ -38,12 +38,6 @@ alias gl="git log"
 alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
-
-alias y="yarn"
-alias ya="yarn add"
-alias yb="yarn run build"
-alias ys="yarn run start"
-alias yt="yarn test"
 
 export EDITOR="/usr/bin/vi -e"
 export LANGUAGE="en_US.UTF-8"

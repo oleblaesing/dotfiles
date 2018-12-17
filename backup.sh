@@ -1,6 +1,5 @@
 zip -r backup.zip ~/Documents ~/Keys
 gpg -c backup.zip
 rm backup.zip
-cp backup.zip.gpg /Volumes/UNTITLED/
-rm backup.zip.gpg
-diskutil unmountDisk /Volumes/UNTITLED/
+mv backup.zip.gpg /run/media/solitude/UNTITLED/
+umount /run/media/solitude/UNTITLED/
