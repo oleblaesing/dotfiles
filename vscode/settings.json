@@ -14,16 +14,17 @@
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.confirmOnExit": true,
+  "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 18,
   "terminal.integrated.fontWeight": "bold",
   "terminal.integrated.rightClickBehavior": "default",
+  "window.zoomLevel": 1,
   "workbench.colorTheme": "Flamingo Galaxy",
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
   "workbench.statusBar.feedback.visible": false,
-  "workbench.tips.enabled": false,
-  "window.zoomLevel": 1
+  "workbench.tips.enabled": false
 }
