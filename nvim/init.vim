@@ -10,7 +10,6 @@ nnoremap <silent> <C-p> :Files<CR>
 set autoindent
 set autoread
 set backspace=indent,eol,start
-set colorcolumn=80
 set encoding=utf-8
 set expandtab
 set fileencoding=utf-8
