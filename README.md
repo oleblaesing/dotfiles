@@ -12,7 +12,7 @@ Go through system settings and restore backup files
 sudo dnf update
 sudo dnf install curl zsh neovim git gpg
 sudo dnf install keepassxc firefox thunderbird spotify
-sudo dnf install docker chromium google-chrome libreoffice
+sudo dnf install docker libreoffice
 
 chsh -s /usr/local/bin/zsh
 zsh
