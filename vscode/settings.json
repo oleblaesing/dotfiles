@@ -11,6 +11,7 @@
   "extensions.ignoreRecommendations": true,
   "files.enableTrash": false,
   "javascript.implicitProjectConfig.experimentalDecorators": true,
+  "latex-workshop.view.pdf.viewer": "tab",
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "terminal.integrated.confirmOnExit": true,
