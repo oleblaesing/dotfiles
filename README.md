@@ -6,13 +6,11 @@ Personal dotfiles, scripts and guides
 
 ## Installation
 
-Go through system settings and restore backup files
+Go through system settings, remove packages and restore backup files
 
 ```sh
-sudo dnf update
-sudo dnf install curl zsh neovim git gpg
-sudo dnf install keepassxc firefox thunderbird spotify
-sudo dnf install docker libreoffice
+sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
+sudo apt install curl zsh neovim git gpg keepassxc firefox thunderbird spotify docker libreoffice vlc ssh wget
 
 chsh -s /usr/local/bin/zsh
 zsh
@@ -37,4 +35,11 @@ source ~/.zshrc
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
+
+mkdir .themes
+cd .themes
+wget https://www.gnome-look.org/p/1099856/startdownload?file_id=1559925485&file_name=Ant-Dracula.tar&file_type=application/x-xz&file_size=367844
+tar -xf Ant-Dracula.tar
+gsettings set org.gnome.desktop.interface gtk-theme Ant-Dracula
+gsettings set org.gnome.desktop.wm.preferences theme Ant-Dracula
 ```
