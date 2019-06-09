@@ -3,14 +3,14 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="macos"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(dnf git docker)
+plugins=(git docker)
 
 source $ZSH/oh-my-zsh.sh
 
 alias backup="~/Repositories/dotfiles/backup.sh"
 alias ip="curl ipinfo.io/ip"
 alias s="sudo"
-alias u="sudo dnf update && dnf clean all"
+alias u="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias v="nvim"
 
 alias d="docker"
