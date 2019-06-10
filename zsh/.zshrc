@@ -13,6 +13,12 @@ alias s="sudo"
 alias u="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias v="nvim"
 
+alias c="cargo"
+alias cb="cargo build"
+alias cbr="cargo build --release"
+alias cc="cargo check"
+alias cr="cargo run"
+
 alias d="docker"
 alias de="docker exec"
 alias dc="docker-compose"
