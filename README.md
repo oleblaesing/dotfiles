@@ -10,7 +10,7 @@ Go through system settings, remove packages and restore backup files
 
 ```sh
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
-sudo apt install curl zsh neovim git gpg keepassxc firefox thunderbird spotify docker libreoffice vlc ssh wget
+sudo apt install curl zsh neovim git gpg keepassxc firefox thunderbird spotify docker libreoffice vlc ssh wget htop
 
 chsh -s /usr/local/bin/zsh
 zsh
