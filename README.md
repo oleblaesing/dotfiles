@@ -8,7 +8,7 @@ Personal dotfiles, scripts and guides
 # Go through system settings and remove packages
 
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
-sudo apt install curl zsh neovim git gpg keepassxc firefox thunderbird spotify docker libreoffice vlc ssh wget htop nodejs ghc zip
+sudo apt install curl zsh neovim git gpg keepassxc firefox thunderbird spotify docker libreoffice vlc ssh wget htop nodejs ghc zip devilspie2
 curl https://sh.rustup.rs -sSf | sh
 
 mkdir .themes
@@ -36,6 +36,12 @@ ln -s ~/Repositories/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 mkdir -p ~/.config/nvim
 ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
+mkdir -p ~/.config/devilspie2
+mkdir -p ~/.config/systemd/user
+ln -s ~/Repositories/dotfiles/devilspie2/devilspie2.lua ~/.config/devilspie2/devilspie2.lua
+ln -s ~/Repositories/dotfiles/devilspie2/devilspie2.service ~/.config/systemd/user/devilspie2.service
+systemctl --user enable devilspie2.service
+systemctl --user start devilspie2.service
 
 chsh -s /usr/local/bin/zsh
 zsh
