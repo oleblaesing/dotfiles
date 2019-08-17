@@ -27,5 +27,3 @@ set smartindent
 set softtabstop=2
 
 syntax on
-
-autocmd vimenter * NERDTree
