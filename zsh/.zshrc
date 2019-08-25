@@ -17,6 +17,7 @@ alias c="cargo"
 alias cb="cargo build"
 alias cbr="cargo build --release"
 alias cc="cargo check"
+alias cdo="cargo doc --open"
 alias cr="cargo run"
 
 alias d="docker"
