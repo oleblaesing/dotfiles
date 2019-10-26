@@ -48,7 +48,7 @@ alias gs="git status --short --branch"
 
 export EDITOR="/usr/bin/vi -e"
 export LANGUAGE="en_US.UTF-8"
-export PATH="$HOME/.cargo/bin:/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/.elm/bin:$HOME/.cargo/bin:$PATH"
 export VISUAL="/usr/bin/nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
