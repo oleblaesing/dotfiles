@@ -1,10 +1,5 @@
 [user]
   name = oleblaesing
-  email = ole.blaesing@web.de
-  signingkey = 0818C2EE4C5F0F41
+  email = oleblaesing@fastmail.com
 [core]
   editor = nvim
-[gpg]
-  program = gpg2
-[interactive]
-  singleKey = true
