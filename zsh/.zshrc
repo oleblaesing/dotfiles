@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="macos"
+ZSH_THEME="my"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(git docker zsh-syntax-highlighting)

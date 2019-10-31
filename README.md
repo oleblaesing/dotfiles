@@ -20,7 +20,7 @@ cd ~/Repositories
 git clone git@github.com:oleblaesing/dotfiles.git
 
 ln -sf ~/Repositories/dotfiles/zsh/.zshrc ~/.zshrc
-ln -s ~/Repositories/dotfiles/zsh/themes/macos.zsh-theme ~/.oh-my-zsh/themes/macos.zsh-theme
+ln -s ~/Repositories/dotfiles/zsh/themes/my.zsh-theme ~/.oh-my-zsh/themes/my.zsh-theme
 mkdir -p ~/.config/nvim
 ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
