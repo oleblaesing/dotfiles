@@ -13,7 +13,7 @@ sudo apt install curl zsh neovim git keepassxc firefox docker libreoffice vlc ss
 # Restore backup files
 
 ln -sf ~/Keys/ssh ~/.ssh
-ssh-add ~/.ssh/ole.blaesing@web.de
+ssh-add ~/.ssh/oleblaesing@fastmail.com
 
 mkdir ~/Repositories
 cd ~/Repositories
