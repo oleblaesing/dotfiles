@@ -33,7 +33,4 @@ source ~/.zshrc
 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
-
-cd ~/.themes
-git clone git@github.com:oleblaesing/Ant-Dracula.git
 ```
