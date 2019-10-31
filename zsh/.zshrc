@@ -8,7 +8,6 @@ plugins=(git docker zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 alias backup="~/Repositories/dotfiles/backup.sh"
-alias puip="curl ipinfo.io/ip"
 alias s="sudo"
 alias u="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias v="nvim"
