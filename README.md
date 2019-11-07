@@ -5,7 +5,7 @@ Personal dotfiles, scripts and guides
 ## Installation
 
 ```sh
-# Go through system settings and remove packages
+# Go through system settings
 
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
 sudo apt install curl zsh neovim git keepassxc firefox docker libreoffice vlc ssh wget htop zip ghc nodejs
@@ -33,7 +33,7 @@ cd gnome-terminal-colors-dracula
 ./install.sh
 cd -
 
-ln -sf ~/Repositories/dotfiles/zsh/.zshrc ~/.zshrc
+ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 chsh -s /usr/local/bin/zsh
 zsh
@@ -41,10 +41,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
 
-ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
 mkdir -p ~/.config/nvim
-ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
+ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
 ```
