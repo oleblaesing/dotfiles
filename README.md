@@ -35,16 +35,16 @@ cd -
 
 ln -sf ~/Repositories/dotfiles/zsh/.zshrc ~/.zshrc
 ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
-mkdir -p ~/.config/nvim
-ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
-ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
-
 chsh -s /usr/local/bin/zsh
 zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 source ~/.zshrc
 
+ln -s ~/Repositories/dotfiles/git/.gitconfig ~/.gitconfig
+
+mkdir -p ~/.config/nvim
+ln -s ~/Repositories/dotfiles/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
 ```
