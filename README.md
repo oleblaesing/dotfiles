@@ -8,7 +8,7 @@ Personal dotfiles, scripts and guides
 # Go through system settings and remove packages
 
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
-sudo apt install curl zsh neovim git keepassxc firefox docker libreoffice vlc ssh wget htop zip ghc
+sudo apt install curl zsh neovim git keepassxc firefox docker libreoffice vlc ssh wget htop zip ghc nodejs
 
 # Restore backup files
 
