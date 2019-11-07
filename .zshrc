@@ -7,9 +7,7 @@ plugins=(git docker zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias backup="~/Repositories/dotfiles/backup.sh"
 alias s="sudo"
-alias u="sudo apt update && sudo apt upgrade && sudo apt autoremove"
 alias v="nvim"
 
 alias c="cargo"
@@ -44,6 +42,20 @@ alias gl="git log"
 alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
+
+function backup() {
+  zip -r backup.zip ~/Documents ~/Keys
+  gpg -c backup.zip
+  rm backup.zip
+  mv backup.zip.gpg /media/solitude/UNTITLED/
+  umount /media/solitude/UNTITLED/
+}
+
+function update() {
+  sudo apt update
+  sudo apt upgrade
+  sudo apt autoremove
+}
 
 export EDITOR="/usr/bin/vi -e"
 export GEM_HOME="$HOME/gems"
