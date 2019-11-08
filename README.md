@@ -9,6 +9,7 @@ Personal dotfiles, scripts and guides
 
 sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
 sudo apt install curl zsh neovim git keepassxc firefox docker libreoffice vlc ssh wget htop zip nodejs haskell-platform
+curl https://sh.rustup.rs -sSf | sh
 
 # Restore backup files
 
