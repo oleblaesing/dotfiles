@@ -13,6 +13,7 @@ nnoremap <silent> <C-t> :Files<CR>
 set autoindent
 set autoread
 set backspace=indent,eol,start
+set clipboard=unnamedplus
 set encoding=utf-8
 set expandtab
 set fileencoding=utf-8
