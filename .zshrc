@@ -41,14 +41,8 @@ function backup() {
   zip -r backup.zip ~/Documents ~/Keys
   gpg -c backup.zip
   rm backup.zip
-  mv backup.zip.gpg /media/solitude/UNTITLED/
-  umount /media/solitude/UNTITLED/
-}
-
-function update() {
-  sudo apt update
-  sudo apt upgrade
-  sudo apt autoremove
+  mv backup.zip.gpg /run/media/solitude/UNTITLED/
+  umount /run/media/solitude/UNTITLED/
 }
 
 export EDITOR="/usr/bin/vi -e"

@@ -7,20 +7,19 @@ Personal dotfiles, scripts and guides
 ```sh
 # Go through system settings
 
-sudo apt update && sudo apt upgrade && sudo apt dist-upgrade && sudo apt autoremove
-sudo apt install zsh \
+sudo dnf upgrade
+sudo dnf install zsh \
   zip \
   htop \
   curl \
   wget \
-  ssh \
+  openssh \
   git \
   neovim \
   keepassxc \
   firefox \
   docker \
   libreoffice \
-  vlc \
   nodejs \
   haskell-platform
 
@@ -51,7 +50,7 @@ cd -
 
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
-chsh -s /usr/local/bin/zsh
+chsh -s /usr/local/zsh
 zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
