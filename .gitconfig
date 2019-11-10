@@ -3,3 +3,5 @@
   email = oleblaesing@fastmail.com
 [core]
   editor = nvim
+[interactive]
+  singleKey = true
