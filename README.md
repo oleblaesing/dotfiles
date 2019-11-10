@@ -18,7 +18,6 @@ sudo dnf install zsh \
   neovim \
   keepassxc \
   firefox \
-  docker \
   libreoffice \
   nodejs \
   haskell-platform
