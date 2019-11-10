@@ -44,8 +44,6 @@ ln -s ~/Repositories/Ant-Dracula ~/.themes/Ant-Dracula
 gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
 
-# Select grey color as wallpaper
-
 cd gnome-terminal-colors-dracula
 ./install.sh
 cd -
