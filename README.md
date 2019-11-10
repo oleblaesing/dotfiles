@@ -48,13 +48,11 @@ cd gnome-terminal-colors-dracula
 ./install.sh
 cd -
 
-ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
-ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
-chsh -s /usr/local/zsh
-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-source ~/.zshrc
+ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
+chsh -s /usr/local/zsh
 
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
