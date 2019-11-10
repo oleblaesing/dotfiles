@@ -7,6 +7,7 @@ Personal dotfiles, scripts and guides
 ```sh
 # Go through system settings
 
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf upgrade
 sudo dnf install zsh \
   zip \
@@ -19,6 +20,7 @@ sudo dnf install zsh \
   keepassxc \
   firefox \
   libreoffice \
+  vlc \
   nodejs \
   haskell-platform
 
