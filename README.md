@@ -27,6 +27,9 @@ curl https://sh.rustup.rs -sSf | sh
 # Restore backup files
 
 ln -s ~/Keys/ssh ~/.ssh
+chmod -R 700 ~/.ssh
+chmod 644 ~/.ssh/*.pub
+chmod 600 ~/.ssh/*(?!.pub)
 ssh-add ~/.ssh/oleblaesing@fastmail.com
 
 mkdir ~/Repositories
