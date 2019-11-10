@@ -20,6 +20,7 @@ sudo dnf install zsh \
   neovim \
   keepassxc \
   firefox \
+  openvpn \
   transmission \
   libreoffice \
   vlc \
