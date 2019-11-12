@@ -7,7 +7,7 @@ Personal dotfiles, scripts and guides
 ```sh
 # Go through system settings
 
-sudo dnf remove gnome-boxes gnome-maps gnome-weather rhythmbox
+sudo dnf remove cheese gnome-boxes gnome-contacts gnome-maps gnome-photos gnome-weather rhythmbox totem
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf upgrade
 sudo dnf install zsh \
