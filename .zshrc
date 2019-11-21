@@ -45,6 +45,22 @@ function backup() {
   umount /run/media/solitude/UNTITLED/
 }
 
+unalias l
+
+function l() {
+  if [[ -z $1 ]]; then
+    echo "-z"
+    ls -al
+  else
+    if [[ -d $1 ]]; then
+      echo "-d"
+      ls -al $1
+    else
+      less $1
+    fi
+  fi
+}
+
 export EDITOR="/usr/bin/vi -e"
 export LANGUAGE="en_US.UTF-8"
 export PATH="$HOME/.cargo/bin:$PATH"
