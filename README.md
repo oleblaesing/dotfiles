@@ -44,7 +44,6 @@ ssh-add ~/.ssh/oleblaesing@fastmail.com
 mkdir ~/Repositories
 cd ~/Repositories
 git clone https://github.com/EliverLara/Ant-Dracula.git
-git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
 git clone git@github.com:oleblaesing/dotfiles.git
 git clone https://github.com/dracula/zsh.git zsh-theme-dracula
 
@@ -52,10 +51,6 @@ mkdir -p ~/.themes
 ln -s ~/Repositories/Ant-Dracula ~/.themes/Ant-Dracula
 gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
-
-cd gnome-terminal-colors-dracula
-./install.sh
-cd -
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
