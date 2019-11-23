@@ -1,14 +1,8 @@
 filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'scrooloose/nerdtree'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
-
-map <C-q> :NERDTreeToggle<CR>
-nnoremap <silent> <C-t> :Files<CR>
 
 set autoindent
 set autoread
