@@ -29,6 +29,10 @@ sudo dnf install zsh \
 
 curl https://sh.rustup.rs -sSf | sh
 
+wget https://github.com/VSCodium/vscodium/releases/download/1.40.1/codium-1.40.1-1573814927.el7.x86_64.rpm
+sudo dnf install codium-1.40.1-1573814927.el7.x86_64.rpm
+rm codium-1.40.1-1573814927.el7.x86_64.rpm
+
 # Restore backup files
 
 ln -s ~/Keys/ssh ~/.ssh
@@ -65,4 +69,7 @@ mkdir -p ~/.config/nvim
 ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
+
+ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
+ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ```
