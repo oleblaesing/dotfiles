@@ -7,6 +7,7 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
+alias pbcopy="xclip -sel clip"
 alias s="sudo"
 alias v="nvim"
 
