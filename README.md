@@ -44,7 +44,7 @@ ssh-add ~/.ssh/oleblaesing@fastmail.com
 mkdir ~/Repositories
 cd ~/Repositories
 git clone https://github.com/EliverLara/Ant-Dracula.git
-git clone git@github.com:oleblaesing/dotfiles.git
+git clone git@gitlab.com:oleblaesing/dotfiles.git
 git clone https://github.com/dracula/zsh.git zsh-theme-dracula
 
 mkdir -p ~/.themes
