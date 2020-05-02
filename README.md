@@ -38,7 +38,6 @@ sudo dnf install \
   zsh
 
 # Restore backup files
-
 ln -s ~/Keys/ssh ~/.ssh
 chmod -R 700 ~/.ssh
 chmod 644 ~/.ssh/*.pub
@@ -47,16 +46,16 @@ ssh-add ~/.ssh/oleblaesing@fastmail.com
 
 mkdir ~/Repositories
 cd ~/Repositories
-git clone https://github.com/EliverLara/Ant-Dracula.git
 git clone git@gitlab.com:oleblaesing/dotfiles.git
-git clone https://github.com/dracula/zsh.git zsh-theme-dracula
 
 mkdir -p ~/.themes
+git clone https://github.com/EliverLara/Ant-Dracula.git
 ln -s ~/Repositories/Ant-Dracula ~/.themes/Ant-Dracula
 gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/dracula/zsh.git zsh-theme-dracula
 ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
