@@ -28,6 +28,7 @@ sudo dnf install \
   neovim \
   nodejs \
   openssh \
+  podman \
   transmission \
   vlc \
   wget \
