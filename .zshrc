@@ -19,6 +19,7 @@ alias dc="docker-compose"
 alias dcs="docker-compose stop"
 alias dcu="docker-compose up"
 alias di="docker images"
+alias dps="docker ps"
 alias dr="docker run"
 alias ds="docker stop"
 
