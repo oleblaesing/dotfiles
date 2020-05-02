@@ -15,28 +15,27 @@ sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/maste
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg" |sudo tee -a /etc/yum.repos.d/vscodium.repo
 
 sudo dnf upgrade
-sudo dnf install zsh \
-  zip \
-  htop \
+sudo dnf install \
+  codium \
   curl \
-  wget \
-  openssh \
-  git \
-  neovim \
-  keepassxc \
+  ffmpeg \
   firefox \
-  openvpn \
-  transmission \
+  git \
+  htop \
+  ImageMagick \
+  keepassxc \
   libreoffice \
-  vlc \
+  neovim \
   nodejs \
-  haskell-platform
-
-curl https://sh.rustup.rs -sSf | sh
-
-wget https://github.com/VSCodium/vscodium/releases/download/1.40.1/codium-1.40.1-1573814927.el7.x86_64.rpm
-sudo dnf install codium-1.40.1-1573814927.el7.x86_64.rpm
-rm codium-1.40.1-1573814927.el7.x86_64.rpm
+  openssh \
+  transmission \
+  vlc \
+  wget \
+  xclip \
+  xdg-open \
+  youtube-dl \
+  zip \
+  zsh
 
 # Restore backup files
 
