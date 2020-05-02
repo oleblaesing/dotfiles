@@ -7,8 +7,9 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias open="xdg-open"
-alias pbcopy="xclip -sel clip"
+alias c="xclip -sel clip"
+alias o="xdg-open"
+alias p="xclip -o -sel clip"
 alias s="sudo"
 alias v="nvim"
 
