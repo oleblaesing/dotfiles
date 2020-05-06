@@ -32,6 +32,7 @@ sudo dnf install \
   openvpn \
   podman \
   transmission \
+  VirtualBox \
   vlc \
   wget \
   xclip \
