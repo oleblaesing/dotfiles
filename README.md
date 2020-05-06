@@ -18,6 +18,7 @@ sudo dnf upgrade
 sudo dnf install \
   codium \
   curl \
+  electrum \
   ffmpeg \
   firefox \
   git \
