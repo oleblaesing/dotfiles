@@ -29,6 +29,7 @@ sudo dnf install \
   neovim \
   nodejs \
   openssh \
+  openvpn \
   podman \
   transmission \
   vlc \
