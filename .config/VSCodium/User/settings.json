@@ -16,7 +16,7 @@
     "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontWeight": "bold",
     "terminal.integrated.showExitAlert": false,
-    "window.zoomLevel": 2,
+    "window.zoomLevel": 1,
     "workbench.editor.showTabs": false,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
