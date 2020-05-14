@@ -45,11 +45,9 @@ unalias l
 
 function l() {
   if [[ -z $1 ]]; then
-    echo "-z"
     ls -al
   else
     if [[ -d $1 ]]; then
-      echo "-d"
       ls -al $1
     else
       less $1
