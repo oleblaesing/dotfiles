@@ -23,6 +23,7 @@ sudo dnf install \
   firefox \
   git \
   htop \
+  id3v2 \
   ImageMagick \
   keepassxc \
   libreoffice \
