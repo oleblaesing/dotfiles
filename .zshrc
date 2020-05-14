@@ -33,7 +33,7 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
-function backup() {
+function b() {
   zip -r backup.zip ~/Documents ~/Keys
   gpg -c backup.zip
   rm backup.zip
