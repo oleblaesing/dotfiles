@@ -14,6 +14,7 @@ alias s="sudo"
 alias v="nvim"
 
 alias d="podman"
+alias db="podman build"
 alias de="podman exec"
 alias di="podman images"
 alias dps="podman ps"
