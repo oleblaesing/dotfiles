@@ -32,6 +32,7 @@ sudo dnf install \
   ImageMagick \
   keepassxc \
   libreoffice \
+  lutris \
   neovim \
   nodejs \
   openssh \
