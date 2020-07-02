@@ -11,8 +11,13 @@ sudo dnf remove cheese gnome-boxes gnome-contacts gnome-maps gnome-photos gnome-
 
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
+sudo rpm --import https://keybase.io/toddwarner/key.asc
+sudo dnf install -y https://github.com/taw00/riot-rpm/raw/master/toddpkgs-riot-repo.fedora.rpm
+
 sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/repos/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg" |sudo tee -a /etc/yum.repos.d/vscodium.repo
+
+sudo dnf install -y distribution-gpg-keys
 
 sudo dnf upgrade
 sudo dnf install \
@@ -32,6 +37,7 @@ sudo dnf install \
   openssh \
   openvpn \
   podman \
+  riot \
   transmission \
   VirtualBox \
   vlc \
