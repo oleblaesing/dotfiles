@@ -40,7 +40,6 @@ sudo dnf install \
   podman \
   riot \
   transmission \
-  VirtualBox \
   vlc \
   wget \
   xclip \
