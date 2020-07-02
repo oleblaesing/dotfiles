@@ -62,7 +62,7 @@ function y() {
   url="$4"
 
   source="$HOME/Music/$artist - $title"
-  target="/run/user/1000/gvfs/mtp:host=Xiaomi_Mi_A1_264996fc9805/Internal shared storage/Downloads/"
+  target="/run/user/1000/gvfs/mtp:host=Xiaomi_Mi_A1_264996fc9805/Internal shared storage/Download/"
 
   youtube-dl -x --audio-format mp3 --audio-quality 0 -o "$source.%(ext)s" "$url"
   id3v2 -a "$artist" -t "$title" -A "$album" "$source.mp3"
