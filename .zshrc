@@ -38,6 +38,13 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
+alias n="npm"
+alias ni="npm i"
+alias nr="npm run"
+alias nb="npm build"
+alias ns="npm start"
+alias nt="npm test"
+
 function b() {
   zip -r backup.zip ~/Documents ~/Keys
   gpg -c backup.zip
