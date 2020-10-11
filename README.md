@@ -47,6 +47,8 @@ sudo dnf install \
   zip \
   zsh
 
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 # Restore backup files
 ln -s ~/Keys/ssh ~/.ssh
 chmod -R 700 ~/.ssh

@@ -7,11 +7,16 @@ plugins=(git zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias c="xclip -sel clip"
+alias co="xclip -sel clip"
 alias o="xdg-open"
-alias p="xclip -o -sel clip"
+alias pa="xclip -o -sel clip"
 alias s="sudo"
 alias v="nvim"
+
+alias c="cargo"
+alias ci="cargo install"
+alias cb="cargo build"
+alias cr="cargo run"
 
 alias d="podman"
 alias db="podman build"
@@ -75,6 +80,7 @@ function y() {
 }
 
 export EDITOR="/usr/bin/vi -e"
+export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL="/usr/bin/nvim"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
