@@ -40,10 +40,9 @@ alias gs="git status --short --branch"
 
 alias n="npm"
 alias ni="npm i"
-alias nr="npm run"
-alias nb="npm build"
-alias ns="npm start"
-alias nt="npm test"
+alias nb="npm run build"
+alias nl="npm run lint"
+alias nt="npm run test"
 
 function b() {
   zip -r backup.zip ~/Documents ~/Keys
