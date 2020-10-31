@@ -20,6 +20,7 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vsco
 
 sudo dnf upgrade --refresh
 sudo dnf install \
+  chromium-browser-privacy
   codium \
   curl \
   electrum \
@@ -82,4 +83,17 @@ nvim +PlugInstall
 
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
+
+git clone git@github.com:oleblaesing/shortkeys.git
+cd shortkeys
+npm i
+npm run build chrome
+cd -
+
+ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/16x16/apps/discord.png ~/.local/share/icons/hicolor/16x16/apps/discord.png
+ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/32x32/apps/discord.png ~/.local/share/icons/hicolor/32x32/apps/discord.png
+ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/48x48/apps/discord.png ~/.local/share/icons/hicolor/48x48/apps/discord.png
+ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/128x128/apps/discord.png ~/.local/share/icons/hicolor/128x128/apps/discord.png
+ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/256x256/apps/discord.png ~/.local/share/icons/hicolor/256x256/apps/discord.png
+ln -s ~/Repositories/dotfiles/.local/share/applications/Discord.desktop ~/.local/share/applications/Discord.desktop
 ```

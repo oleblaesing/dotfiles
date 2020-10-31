@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Discord
+GenericName=Discord
+Icon=discord.png
+Comment=Discord is the easiest way to talk over voice, video, and text. Talk, chat, hang out, and stay close with your friends and communities.
+Terminal=false
+Exec=chromium-browser-privacy --app="https://discord.com/app" --user-data-dir=/home/solitude/.config/chromium-browser-privacy-discord --profile-directory=Discord --class=chromium-browser-privacy-discord
+StartupNotify=true
+StartupWMClass=chromium-browser-privacy-discord
