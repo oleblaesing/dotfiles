@@ -57,6 +57,8 @@ chmod 644 ~/.ssh/*.pub
 chmod 600 ~/.ssh/*(?!.pub)
 ssh-add ~/.ssh/oleblaesing@fastmail.com
 
+ln -s ~/Documents/electrum.wallet ~/.electrum/wallets/default_wallet
+
 mkdir ~/Repositories
 cd ~/Repositories
 git clone git@gitlab.com:oleblaesing/dotfiles.git
