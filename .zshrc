@@ -11,6 +11,7 @@ alias co="xclip -sel clip"
 alias o="xdg-open"
 alias pa="xclip -o -sel clip"
 alias s="sudo"
+alias t="transmission-cli"
 alias v="nvim"
 
 alias c="cargo"

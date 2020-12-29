@@ -39,7 +39,7 @@ sudo dnf install \
   openssh \
   openvpn \
   podman \
-  transmission \
+  transmission-cli \
   vlc \
   wget \
   xclip \
