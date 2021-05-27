@@ -67,25 +67,6 @@ function l() {
   fi
 }
 
-function y() {
-  artist="$1"
-  title="$2"
-  album="$3"
-  url="$4"
-
-  source="$HOME/Music/$artist - $title"
-  target="/run/user/1000/gvfs/mtp:host=Xiaomi_Mi_A1_264996fc9805/Interner gemeinsamer Speicher/Music/"
-
-  youtube-dl -x --audio-format mp3 --audio-quality 0 -o "$source.%(ext)s" "$url"
-  id3v2 -a "$artist" -t "$title" -A "$album" "$source.mp3"
-
-  if [[ -d "$target" ]]; then
-    cp "$source.mp3" "$target"
-  else
-    echo "Target device storage not available"
-  fi
-}
-
 export EDITOR="/usr/bin/vi -e"
 export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL="/usr/bin/nvim"
