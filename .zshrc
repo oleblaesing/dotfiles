@@ -27,6 +27,10 @@ alias dps="podman ps"
 alias dr="podman run"
 alias ds="podman stop"
 
+alias dc="podman-compose"
+alias dcd="podman-compose down"
+alias dcu="podman-compose up"
+
 alias g="git"
 alias ga="git add"
 alias gb="git branch"
