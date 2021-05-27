@@ -48,6 +48,7 @@ alias ni="npm i"
 alias nb="npm run build"
 alias nl="npm run lint"
 alias nt="npm run test"
+alias ntu="npm run test -- -u"
 
 function b() {
   zip -r backup.zip ~/Documents ~/Keys
