@@ -2,7 +2,6 @@
     "editor.copyWithSyntaxHighlighting": false,
     "editor.find.seedSearchStringFromSelection": false,
     "editor.fontSize": 16,
-    "editor.fontWeight": "bold",
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "explorer.autoReveal": false,
@@ -14,11 +13,10 @@
     "terminal.integrated.cursorStyle": "line",
     "terminal.integrated.drawBoldTextInBrightColors": false,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontWeight": "bold",
     "terminal.integrated.showExitAlert": false,
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "workbench.editor.showTabs": false,
     "workbench.startupEditor": "none",
     "workbench.tips.enabled": false,
     "workbench.colorTheme": "Dracula"
-}
+  }
