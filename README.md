@@ -11,44 +11,31 @@ sudo dnf remove cheese gnome-boxes gnome-contacts gnome-maps gnome-photos gnome-
 
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-sudo dnf install -y dnf-plugins-core distribution-gpg-keys
-
-sudo dnf copr enable taw/element
-
 sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://paulcarroty.gitlab.com/vscodium-deb-rpm-repo/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg" |sudo tee -a /etc/yum.repos.d/vscodium.repo
 
 sudo dnf upgrade --refresh
 sudo dnf install \
-  chromium-browser-privacy
   codium \
   curl \
   electrum \
-  element \
-  ffmpeg \
   firefox \
+  gimp \
   git \
   htop \
-  id3v2 \
-  ImageMagick \
   keepassxc \
   libreoffice \
   lutris \
   neovim \
   nodejs \
   openssh \
-  openvpn \
   podman \
-  transmission-cli \
   vlc \
   wget \
   xclip \
   xdg-open \
-  youtube-dl \
   zip \
   zsh
-
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Restore backup files
 ln -s ~/Keys/ssh ~/.ssh
@@ -85,17 +72,4 @@ nvim +PlugInstall
 
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
-
-git clone git@github.com:oleblaesing/shortkeys.git
-cd shortkeys
-npm i
-npm run build chrome
-cd -
-
-ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/16x16/apps/discord.png ~/.local/share/icons/hicolor/16x16/apps/discord.png
-ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/32x32/apps/discord.png ~/.local/share/icons/hicolor/32x32/apps/discord.png
-ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/48x48/apps/discord.png ~/.local/share/icons/hicolor/48x48/apps/discord.png
-ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/128x128/apps/discord.png ~/.local/share/icons/hicolor/128x128/apps/discord.png
-ln -s ~/Repositories/dotfiles/.local/share/icons/hicolor/256x256/apps/discord.png ~/.local/share/icons/hicolor/256x256/apps/discord.png
-ln -s ~/Repositories/dotfiles/.local/share/applications/Discord.desktop ~/.local/share/applications/Discord.desktop
 ```
