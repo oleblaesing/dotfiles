@@ -1,7 +1,10 @@
 [user]
-  name = oleblaesing
-  email = oleblaesing@fastmail.com
+  name = Ole Bläsing
+  email = ob@ob.codes
+  signingkey = D871F9A4C194630C
 [core]
   editor = nvim
 [interactive]
   singleKey = true
+[commit]
+  gpgsign = true
