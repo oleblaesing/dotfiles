@@ -15,14 +15,5 @@
   {
     "key": "ctrl+b",
     "command": "-workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "ctrl+m",
-    "command": "workbench.action.terminal.toggleTerminal"
-  },
-  {
-    "key": "ctrl+t",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus"
   }
 ]
