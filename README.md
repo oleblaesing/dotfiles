@@ -57,8 +57,6 @@ gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/dracula/zsh.git zsh-theme-dracula
-ln -s ~/Repositories/zsh-theme-dracula/dracula.zsh-theme ~/.oh-my-zsh/themes/dracula.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 chsh -s /usr/local/zsh
@@ -72,4 +70,6 @@ nvim +PlugInstall
 
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
+
+# Install themes from https://draculatheme.com/
 ```
