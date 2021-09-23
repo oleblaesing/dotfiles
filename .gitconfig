@@ -1,7 +1,7 @@
 [user]
   name = Ole Bläsing
   email = ob@ob.codes
-  signingkey = D871F9A4C194630C
+  signingkey = 8EE97A62441F9BBC
 [core]
   editor = nvim
 [interactive]
