@@ -18,11 +18,11 @@ sudo dnf upgrade --refresh
 sudo dnf install \
   codium \
   curl \
+  discord \
   electrum \
   firefox \
   gimp \
   git \
-  htop \
   keepassxc \
   libreoffice \
   lutris \
@@ -30,6 +30,7 @@ sudo dnf install \
   nodejs \
   openssh \
   podman \
+  VirtualBox \
   vlc \
   wget \
   xclip \
@@ -37,12 +38,14 @@ sudo dnf install \
   zip \
   zsh
 
+# Install Spotify
+
 # Restore backup files
 ln -s ~/Keys/ssh ~/.ssh
 chmod -R 700 ~/.ssh
-chmod 644 ~/.ssh/*.pub
-chmod 600 ~/.ssh/*(?!.pub)
-ssh-add ~/.ssh/oleblaesing@fastmail.com
+chmod 644 ~/.ssh/*
+chmod 600 ~/.ssh/id_rsa
+ssh-add ~/.ssh/id_rsa
 
 ln -s ~/Documents/electrum.wallet ~/.electrum/wallets/default_wallet
 
@@ -50,15 +53,9 @@ mkdir ~/Repositories
 cd ~/Repositories
 git clone git@gitlab.com:oleblaesing/dotfiles.git
 
-mkdir -p ~/.themes
-git clone https://github.com/EliverLara/Ant-Dracula.git
-ln -s ~/Repositories/Ant-Dracula ~/.themes/Ant-Dracula
-gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
-gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
+ln -s ~/Repositories/dotfiles/.zshrc ~/.zshrc
 chsh -s /usr/local/zsh
 
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
