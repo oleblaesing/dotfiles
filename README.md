@@ -48,6 +48,7 @@ chmod 600 ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 
 ln -s ~/Documents/electrum.wallet ~/.electrum/wallets/default_wallet
+ln -s ~/Documents/monero.wallet ~/Monero/wallets/$USER
 
 mkdir ~/Repositories
 cd ~/Repositories
