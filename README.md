@@ -16,11 +16,14 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vsco
 
 sudo dnf upgrade --refresh
 sudo dnf install \
+  bat \
   codium \
   curl \
   discord \
   electrum \
+  exa \
   firefox \
+  fzf \
   gimp \
   git \
   keepassxc \
@@ -30,6 +33,8 @@ sudo dnf install \
   nodejs \
   openssh \
   podman \
+  procs \
+  ripgrep \
   VirtualBox \
   vlc \
   wget \

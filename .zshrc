@@ -101,8 +101,11 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 alias co="xclip -sel clip"
+alias f="find . | fzf --query"
+alias grep="rg"
 alias o="xdg-open"
 alias pa="xclip -o -sel clip"
+alias ps="procs"
 alias s="sudo"
 alias t="transmission-cli"
 alias v="nvim"
@@ -155,12 +158,12 @@ unalias l
 
 function l() {
   if [[ -z $1 ]]; then
-    ls -al
+    exa -al
   else
     if [[ -d $1 ]]; then
-      ls -al $1
+      exa -al $1
     else
-      less $1
+      bat $1
     fi
   fi
 }
