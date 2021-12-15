@@ -21,5 +21,8 @@
   "workbench.colorTheme": "Dracula",
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "[rust]": {
+    "editor.defaultFormatter": "matklad.rust-analyzer"
+  }
 }
