@@ -11,6 +11,7 @@
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": true,
   "files.enableTrash": false,
+  "js/ts.implicitProjectConfig.strictNullChecks": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.drawBoldTextInBrightColors": false,
