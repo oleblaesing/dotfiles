@@ -11,15 +11,12 @@ sudo dnf remove cheese gnome-boxes gnome-contacts gnome-maps gnome-photos gnome-
 
 sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 
-sudo rpm --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
-printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=gitlab.com_paulcarroty_vscodium_repo\nbaseurl=https://paulcarroty.gitlab.com/vscodium-deb-rpm-repo/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg" |sudo tee -a /etc/yum.repos.d/vscodium.repo
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 sudo dnf upgrade --refresh
 sudo dnf install \
   bat \
-  codium \
   curl \
-  discord \
   electrum \
   exa \
   firefox \
@@ -28,7 +25,6 @@ sudo dnf install \
   git \
   keepassxc \
   libreoffice \
-  lutris \
   neovim \
   nodejs \
   openssh \
@@ -43,7 +39,9 @@ sudo dnf install \
   zip \
   zsh
 
-# Install Spotify
+flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.spotify.Client
+flatpak install flathub com.vscodium.codium
 
 # Restore backup files
 ln -s ~/Keys/ssh ~/.ssh
@@ -53,7 +51,6 @@ chmod 600 ~/.ssh/id_rsa
 ssh-add ~/.ssh/id_rsa
 
 ln -s ~/Documents/electrum.wallet ~/.electrum/wallets/default_wallet
-ln -s ~/Documents/monero.wallet ~/Monero/wallets/$USER
 
 mkdir ~/Repositories
 cd ~/Repositories
@@ -71,8 +68,8 @@ ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 nvim +PlugInstall
 
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
+ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/settings.json
+ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.var/app/com.vscodium.codium/config/VSCodium/User/keybindings.json
 
 # Install themes from https://draculatheme.com/
 ```
