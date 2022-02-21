@@ -1,7 +1,6 @@
 filetype off
 call plug#begin('~/.vim/plugged')
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 set autoindent
