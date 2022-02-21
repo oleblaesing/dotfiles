@@ -25,6 +25,7 @@ sudo dnf install \
   exa \
   firefox \
   fzf \
+  discord \
   gimp \
   git \
   keepassxc \
@@ -43,7 +44,6 @@ sudo dnf install \
   zip \
   zsh
 
-flatpak install flathub com.discordapp.Discord
 flatpak install flathub com.spotify.Client
 
 # Restore backup files
