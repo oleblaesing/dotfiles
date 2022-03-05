@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 alias co="xclip -sel clip"
 alias f="find . | fzf --query"
 alias grep="rg"
+alias k="killall"
 alias o="xdg-open"
 alias pa="xclip -o -sel clip"
 alias ps="procs"
