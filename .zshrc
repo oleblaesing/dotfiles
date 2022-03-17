@@ -109,7 +109,6 @@ alias pa="xclip -o -sel clip"
 alias ps="procs"
 alias s="sudo"
 alias t="transmission-cli"
-alias u="sudo dnf upgrade && flatpak update"
 alias v="nvim"
 
 alias c="cargo"
@@ -168,6 +167,12 @@ function l() {
       bat $1
     fi
   fi
+}
+
+function u() {
+  sudo fwupdmgr update
+  sudo dnf upgrade
+  flatpak update
 }
 
 export EDITOR="/usr/bin/vi -e"
