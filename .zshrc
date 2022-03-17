@@ -170,9 +170,10 @@ function l() {
 }
 
 function u() {
-  sudo fwupdmgr update
   sudo dnf upgrade
   flatpak update
+  omz update
+  sudo fwupdmgr update
 }
 
 export EDITOR="/usr/bin/vi -e"
