@@ -15,7 +15,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 sudo dnf upgrade --refresh
 sudo dnf install \
-  bat \
   curl \
   exa \
   fzf \

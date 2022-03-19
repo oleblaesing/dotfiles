@@ -148,7 +148,7 @@ function l() {
     if [[ -d $1 ]]; then
       exa -al $1
     else
-      bat $1
+      less $1
     fi
   fi
 }
