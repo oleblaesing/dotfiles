@@ -96,11 +96,12 @@ ZSH_HIGHLIGHT_STYLES[cursor]='standout'
 
 export FZF_DEFAULT_OPTS='--color=fg:#f8f8f2,bg:#282a36,hl:#bd93f9 --color=fg+:#f8f8f2,bg+:#44475a,hl+:#bd93f9 --color=info:#ffb86c,prompt:#50fa7b,pointer:#ff79c6 --color=marker:#ff79c6,spinner:#ffb86c,header:#6272a4'
 
-plugins=(git zsh-syntax-highlighting)
+plugins=(zsh-syntax-highlighting fzf ripgrep git npm rust)
 
 source $ZSH/oh-my-zsh.sh
 
 alias co="xclip -sel clip"
+alias code="flatpak run --branch=stable --arch=x86_64 --command=/app/bin/codium --file-forwarding com.vscodium.codium --no-sandbox --unity-launch"
 alias grep="rg"
 alias o="xdg-open"
 alias ps="procs"
@@ -160,8 +161,8 @@ function u() {
   sudo fwupdmgr update
 }
 
-export EDITOR="/usr/bin/vi -e"
+export EDITOR="vi -e"
 export PATH="$HOME/.cargo/bin:$PATH"
-export VISUAL="/usr/bin/nvim"
+export VISUAL="code --wait"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
