@@ -101,32 +101,16 @@ plugins=(git zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 alias co="xclip -sel clip"
-alias f="find . | fzf --query"
 alias grep="rg"
-alias k="killall"
 alias o="xdg-open"
-alias pa="xclip -o -sel clip"
 alias ps="procs"
 alias s="sudo"
-alias t="transmission-cli"
 alias v="nvim"
 
 alias c="cargo"
 alias ci="cargo install"
 alias cb="cargo build"
 alias cr="cargo run"
-
-alias d="podman"
-alias db="podman build"
-alias de="podman exec"
-alias di="podman images"
-alias dps="podman ps"
-alias dr="podman run"
-alias ds="podman stop"
-
-alias dc="podman-compose"
-alias dcd="podman-compose down"
-alias dcu="podman-compose up"
 
 alias g="git"
 alias ga="git add"
@@ -145,7 +129,7 @@ alias ni="npm i"
 alias nb="npm run build"
 alias nl="npm run lint"
 alias nt="npm run test"
-alias ntu="npm run test -- -u"
+alias nw="npm run dev"
 
 function b() {
   zip -r backup.zip ~/Documents ~/Keys
