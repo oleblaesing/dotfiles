@@ -14,8 +14,15 @@
   "js/ts.implicitProjectConfig.strictNullChecks": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.profiles.linux": {
+    "zsh": {
+      "path": "/usr/bin/flatpak-spawn",
+      "args": ["--host", "--env=TERM=xterm-256color", "zsh"]
+    }
+  },
   "terminal.integrated.showExitAlert": false,
   "window.zoomLevel": 2,
   "workbench.colorTheme": "Dracula",
