@@ -101,7 +101,6 @@ plugins=(zsh-syntax-highlighting fzf ripgrep git npm rust)
 source $ZSH/oh-my-zsh.sh
 
 alias co="xclip -sel clip"
-alias code="flatpak run --branch=stable --arch=x86_64 --command=/app/bin/codium --file-forwarding com.vscodium.codium --no-sandbox --unity-launch"
 alias grep="rg"
 alias o="xdg-open"
 alias ps="procs"
@@ -163,6 +162,6 @@ function u() {
 
 export EDITOR="vi -e"
 export PATH="$HOME/.cargo/bin:$PATH"
-export VISUAL="code --wait"
+export VISUAL="codium --wait"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
