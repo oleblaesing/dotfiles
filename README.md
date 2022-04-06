@@ -36,7 +36,7 @@ sudo dnf install \
   zip \
   zsh
 
-flatpak install discord # Add `--no-sandbox` to .desktop file in `/var/lib/flatpak/app/com.discordapp.Discord/current/active/export/share/applications/com.discordapp.Discord.desktop`
+flatpak install discord
 flatpak install electrum
 flatpak install keepassxc
 flatpak install libreoffice
