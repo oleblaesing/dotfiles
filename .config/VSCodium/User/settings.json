@@ -18,7 +18,7 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.showExitAlert": false,
   "window.zoomLevel": 2,
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Default High Contrast",
   "workbench.editor.showTabs": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
