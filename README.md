@@ -69,6 +69,4 @@ nvim +PlugInstall
 
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
-
-# Install themes from https://draculatheme.com/
 ```

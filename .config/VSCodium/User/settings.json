@@ -20,7 +20,6 @@
   "window.zoomLevel": 2,
   "workbench.colorTheme": "Default High Contrast",
   "workbench.editor.showTabs": false,
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false
 }
