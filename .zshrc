@@ -1,6 +1,6 @@
 export ZSH=$HOME/.oh-my-zsh
 
-ZSH_THEME="eastwood"
+ZSH_THEME="ob"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(zsh-syntax-highlighting fzf git npm rust)
