@@ -42,7 +42,6 @@ flatpak install keepassxc
 flatpak install libreoffice
 flatpak install librewolf
 flatpak install spotify
-flatpak install vlc
 
 # Restore backup files
 ln -s ~/Keys/ssh ~/.ssh
