@@ -20,15 +20,12 @@ sudo dnf upgrade --refresh
 sudo dnf install \
   codium \
   curl \
-  exa \
   fzf \
   git \
   neovim \
   nodejs \
   openssh \
   podman \
-  procs \
-  ripgrep \
   VirtualBox \
   wget \
   xclip \

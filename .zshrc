@@ -48,10 +48,10 @@ unalias l
 
 function l() {
   if [[ -z $1 ]]; then
-    exa -al
+    ls -al
   else
     if [[ -d $1 ]]; then
-      exa -al $1
+      ls -al $1
     else
       less $1
     fi
