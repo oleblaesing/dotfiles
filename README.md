@@ -42,7 +42,11 @@ flatpak install libreoffice
 flatpak install librewolf
 flatpak install spotify
 
-# Restore backup files
+cp /run/media/$USER/UNTITLED/backup.zip.gpg ~/
+gpg -d ~/backup.zip.gpg
+unzip backup.zip
+rm backup.zip
+
 ln -s ~/Keys/.gnupg ~/.gnupg
 
 ln -s ~/Keys/ssh ~/.ssh
