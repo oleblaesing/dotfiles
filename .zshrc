@@ -4,8 +4,8 @@ ZSH_THEME="ob"
 DISABLE_AUTO_UPDATE="true"
 
 plugins=(zsh-syntax-highlighting fzf git npm rust)
-
 source $ZSH/oh-my-zsh.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 alias co="xclip -sel clip"
 alias o="xdg-open"
@@ -69,5 +69,3 @@ function u() {
 export EDITOR="vi -e"
 export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL="codium --wait"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
