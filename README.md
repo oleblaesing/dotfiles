@@ -56,11 +56,7 @@ gpg --edit-key ob@ob.codes
 # gpg> trust
 # Your decision? 5 (Ultimate trust)
 
-ln -s ~/Keys/ssh ~/.ssh
-chmod -R 700 ~/.ssh
-chmod 644 ~/.ssh/*
-chmod 600 ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa
+ln -s ~/Repositories/dotfiles/.gnupg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 
 mkdir ~/Repositories
 cd ~/Repositories
@@ -71,8 +67,6 @@ ln -s ~/Repositories/dotfiles/.oh-my-zsh/themes/ob.zsh-theme ~/.oh-my-zsh/themes
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ln -s ~/Repositories/dotfiles/.zshrc ~/.zshrc
 chsh -s /usr/local/zsh
-
-ln -s ~/Repositories/dotfiles/.ssh/config ~/.ssh/config
 
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
