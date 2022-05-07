@@ -17,8 +17,8 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.showExitAlert": false,
-  "window.zoomLevel": 2,
-  "workbench.colorTheme": "Default High Contrast",
+  "window.zoomLevel": 3,
+  "workbench.colorTheme": "Adwaita Dark & default syntax highlighting & colorful status bar",
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false
