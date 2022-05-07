@@ -48,6 +48,13 @@ unzip backup.zip
 rm backup.zip
 
 ln -s ~/Keys/.gnupg ~/.gnupg
+gpg --import ~/Keys/gpg.sec.asc
+gpg --import ~/Keys/gpg.pub.asc
+gpg --import ~/Keys/gpg.sec.sub.asc
+gpg --import-ownertrust ~/Keys/ownertrust.txt
+gpg --edit-key ob@ob.codes
+# gpg> trust
+# Your decision? 5 (Ultimate trust)
 
 ln -s ~/Keys/ssh ~/.ssh
 chmod -R 700 ~/.ssh
