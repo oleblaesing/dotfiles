@@ -37,7 +37,7 @@ alias nt="npm run test"
 alias nw="npm run dev"
 
 function b() {
-  zip -r backup.zip ~/Documents ~/Keys
+  zip -r backup.zip ~/.gnupg ~/Documents ~/Keys
   gpg -c backup.zip
   rm backup.zip
   mv backup.zip.gpg /run/media/$USER/UNTITLED/

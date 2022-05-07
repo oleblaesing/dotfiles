@@ -43,6 +43,8 @@ flatpak install librewolf
 flatpak install spotify
 
 # Restore backup files
+ln -s ~/Keys/.gnupg ~/.gnupg
+
 ln -s ~/Keys/ssh ~/.ssh
 chmod -R 700 ~/.ssh
 chmod 644 ~/.ssh/*
