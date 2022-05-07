@@ -18,6 +18,7 @@ sudo dnf upgrade --refresh
 sudo dnf install \
   codium \
   curl \
+  firefox \
   fzf \
   git \
   neovim \
@@ -39,7 +40,6 @@ flatpak install discord
 flatpak install electrum
 flatpak install keepassxc
 flatpak install libreoffice
-flatpak install librewolf
 flatpak install spotify
 
 cp /run/media/$USER/UNTITLED/backup.zip.gpg ~/
