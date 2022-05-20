@@ -76,5 +76,5 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
        export SSH_AUTH_SOCK
        export SSH_AGENT_PID
 else
-    eval $( gpg-agent --daemon --write-env-file ~/.gpg-agent-info )
+    eval $(gpg-agent -q --daemon)
 fi
