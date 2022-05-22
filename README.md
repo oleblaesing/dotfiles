@@ -63,8 +63,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ln -s ~/Repositories/dotfiles/.zshrc ~/.zshrc
 chsh -s /usr/local/zsh
 
-ln -s ~/Repositories/dotfiles/.ssh/config ~/.ssh/config
-
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
 mkdir -p ~/.config/nvim
