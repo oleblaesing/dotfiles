@@ -42,7 +42,7 @@ flatpak install keepassxc
 flatpak install libreoffice
 flatpak install spotify
 
-cp /run/media/$USER/UNTITLED/backup.zip.gpg ~/
+cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
 rm backup.zip
