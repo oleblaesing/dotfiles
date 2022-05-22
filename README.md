@@ -18,29 +18,20 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf update
 sudo dnf install \
   codium \
-  curl \
   discord \
-  firefox \
+  electrum \
   fzf \
-  git \
+  keepassxc \
   neovim \
   nodejs \
-  openssh \
-  podman \
   VirtualBox \
-  wget \
   xclip \
-  xdg-open \
-  zip \
   zsh
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install electrum
-flatpak install keepassxc
-flatpak install libreoffice
 flatpak install spotify
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
