@@ -69,12 +69,3 @@ function u() {
 export EDITOR="vi -e"
 export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL="codium --wait"
-
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-     source "${HOME}/.gpg-agent-info"
-       export GPG_AGENT_INFO
-       export SSH_AUTH_SOCK
-       export SSH_AGENT_PID
-else
-    eval $(gpg-agent -q --daemon)
-fi
