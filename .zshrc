@@ -40,8 +40,8 @@ function b() {
   zip -r backup.zip ~/.gnupg ~/Documents ~/Keys ~/Recipies
   gpg -c backup.zip
   rm backup.zip
-  mv backup.zip.gpg /run/media/$USER/UNTITLED/
-  umount /run/media/$USER/UNTITLED/
+  mv backup.zip.gpg /run/media/$USER/Backup/
+  umount /run/media/$USER/Backup/
 }
 
 unalias l
