@@ -3,7 +3,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
 DISABLE_AUTO_UPDATE="true"
 
-plugins=(zsh-syntax-highlighting git npm rust)
+plugins=(zsh-syntax-highlighting git npm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -11,11 +11,6 @@ alias co="xclip -sel clip"
 alias o="xdg-open"
 alias s="sudo"
 alias v="nvim"
-
-alias c="cargo"
-alias ci="cargo install"
-alias cb="cargo build"
-alias cr="cargo run"
 
 alias g="git"
 alias ga="git add"
@@ -62,10 +57,8 @@ function u() {
   sudo dnf upgrade
   flatpak update
   omz update
-  rustup update
   sudo fwupdmgr update
 }
 
 export EDITOR="vi -e"
-export PATH="$HOME/.cargo/bin:$PATH"
 export VISUAL="codium --wait"
