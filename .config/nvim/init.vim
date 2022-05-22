@@ -1,6 +1,4 @@
 filetype off
-call plug#begin('~/.vim/plugged')
-call plug#end()
 
 set autoindent
 set autoread
