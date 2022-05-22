@@ -20,6 +20,7 @@ sudo dnf install \
   codium \
   discord \
   electrum \
+  ffmpeg \
   keepassxc \
   neovim \
   nodejs \
