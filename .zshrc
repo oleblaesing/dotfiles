@@ -60,5 +60,5 @@ function u() {
   sudo fwupdmgr update
 }
 
-export EDITOR="vi -e"
+export EDITOR="nvim -e"
 export VISUAL="codium --wait"
