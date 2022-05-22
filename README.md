@@ -63,7 +63,6 @@ cd ~/Repositories
 git clone git@gitlab.com:oleblaesing/dotfiles.git
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-ln -s ~/Repositories/dotfiles/.oh-my-zsh/themes/ob.zsh-theme ~/.oh-my-zsh/themes/ob.zsh-theme
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ln -s ~/Repositories/dotfiles/.zshrc ~/.zshrc
 chsh -s /usr/local/zsh
