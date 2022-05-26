@@ -32,7 +32,7 @@ alias nt="npm run test"
 alias nw="npm run dev"
 
 function b() {
-  zip -r backup.zip ~/Documents ~/Keys ~/Recipies
+  zip -r backup.zip ~/Documents ~/Keys
   gpg -c backup.zip
   rm backup.zip
   mv backup.zip.gpg /run/media/$USER/Backup/
