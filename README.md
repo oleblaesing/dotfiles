@@ -22,6 +22,7 @@ sudo dnf install \
   electrum \
   ffmpeg \
   keepassxc \
+  kubernetes \
   neovim \
   nodejs \
   VirtualBox \

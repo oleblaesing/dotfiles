@@ -24,6 +24,8 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
+alias k="kubectl"
+
 alias n="npm"
 alias ni="npm i"
 alias nb="npm run build"
