@@ -24,10 +24,12 @@ sudo dnf install \
   keepassxc \
   kubernetes \
   neovim \
-  nodejs \
   VirtualBox \
   xclip \
   zsh
+
+curl https://get.volta.sh | bash
+volta install node@18
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
