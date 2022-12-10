@@ -17,6 +17,7 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 
 sudo dnf update
 sudo dnf install \
+  cargo \
   codium \
   discord \
   electrum \
@@ -24,6 +25,8 @@ sudo dnf install \
   keepassxc \
   kubernetes \
   neovim \
+  rust \
+  rustfmt \
   VirtualBox \
   xclip \
   zsh

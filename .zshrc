@@ -12,6 +12,11 @@ alias o="xdg-open"
 alias s="sudo"
 alias v="nvim"
 
+alias c="cargo"
+alias ci="cargo install"
+alias cb="cargo build"
+alias cr="cargo run"
+
 alias g="git"
 alias ga="git add"
 alias gb="git branch"
@@ -63,6 +68,6 @@ function u() {
 }
 
 export EDITOR="nvim -e"
-export PATH="$VOLTA_HOME/bin:$PATH"
+export PATH="$VOLTA_HOME/bin:$HOME/.cargo/bin:$PATH"
 export VISUAL="codium --wait"
 export VOLTA_HOME="$HOME/.volta"
