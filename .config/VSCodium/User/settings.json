@@ -20,5 +20,8 @@
   "window.zoomLevel": 3,
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  }
 }
