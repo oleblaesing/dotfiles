@@ -19,10 +19,7 @@ sudo dnf update
 sudo dnf install \
   cargo \
   codium \
-  discord \
-  electrum \
   ffmpeg \
-  keepassxc \
   kubernetes \
   neovim \
   rust \
@@ -36,6 +33,9 @@ volta install node@18
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
+flatpak install discord
+flatpak install electrum
+flatpak install keepassxc
 flatpak install spotify
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
