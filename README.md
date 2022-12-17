@@ -20,6 +20,7 @@ sudo dnf install \
   cargo \
   codium \
   ffmpeg \
+  git-lfs \
   kubernetes \
   neovim \
   rust \
