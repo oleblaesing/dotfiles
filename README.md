@@ -17,20 +17,19 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 
 sudo dnf update
 sudo dnf install \
-  cargo \
   codium \
   ffmpeg \
   git-lfs \
   kubernetes \
   neovim \
-  rust \
-  rustfmt \
   VirtualBox \
   xclip \
   zsh
 
 curl https://get.volta.sh | bash
 volta install node@18
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
