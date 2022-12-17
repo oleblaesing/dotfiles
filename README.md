@@ -48,7 +48,7 @@ gpg --import ~/Keys/gpg.sec.asc
 gpg --import ~/Keys/gpg.pub.asc
 gpg --import ~/Keys/gpg.sec.sub.asc
 gpg --import-ownertrust ~/Keys/ownertrust.txt
-gpg --edit-key ob@ob.codes
+gpg --edit-key YOUR_EMAIL_MORON
 # gpg> trust
 # Your decision? 5 (Ultimate trust)
 # gpg> save
