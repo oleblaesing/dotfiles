@@ -1,6 +1,6 @@
 [user]
   name = Ole Bläsing
-  email = ob@ob.codes
+  email = oleblaesing@users.noreply.github.com
   signingkey = 8EE97A62441F9BBC
 [core]
   editor = nvim
