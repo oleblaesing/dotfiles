@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Shadow
+Exec=/usr/local/bin/Shadow.AppImage
+Icon=/usr/local/share/app-info/icons/256x256/shadow.png
