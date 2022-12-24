@@ -74,6 +74,14 @@ ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
+codium --install-extension bradlc.vscode-tailwindcss
+codium --install-extension csstools.postcss
+codium --install-extension dbaeumer.vscode-eslint
+codium --install-extension esbenp.prettier-vscode
+codium --install-extension naumovs.color-highlight
+codium --install-extension Prisma.prisma
+codium --install-extension rust-lang.rust-analyzer
+codium --install-extension vadimcn.vscode-lldb
 
 sudo dnf install xcb-util xcb-util-keysyms xcb-util-cursor SDL2 libva libva-utils libvdpau libinput mesa-libgbm libXdamage libXrandr libXcomposite nspr cups-libs libXdmcp libXi libbsd libXcursor libXtst atk alsa-lib nss libXScrnSaver at-spi2-atk gdk-pixbuf2 gtk3 gnome-keyring
 wget wget "https://gitlab.com/aar642/shadow-repackaged/-/jobs/artifacts/main/raw/Shadow-x86_64.AppImage?job=build" -O ShadowRepackaged-x86_64.AppImage
