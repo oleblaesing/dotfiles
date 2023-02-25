@@ -17,6 +17,7 @@
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.showExitAlert": false,
+  "update.showReleaseNotes": false,
   "window.zoomLevel": 3,
   "workbench.editor.showTabs": false,
   "workbench.startupEditor": "none",
