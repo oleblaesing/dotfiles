@@ -112,11 +112,13 @@ require('lazy').setup({
     },
   },
 
-  { -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
+  {
+    'Mofiqul/adwaita.nvim',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
+      vim.g.adwaita_disable_cursorline = true -- to disable cursorline
+      vim.g.adwaita_transparent = true -- makes the background transparent
+      vim.cmd.colorscheme 'adwaita'
     end,
   },
 
@@ -126,7 +128,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'adwaita',
         component_separators = '|',
         section_separators = '',
       },
