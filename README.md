@@ -31,7 +31,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-flatpak install discord
 flatpak install electrum
 flatpak install keepassxc
 flatpak install spotify
