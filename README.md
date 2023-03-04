@@ -18,7 +18,6 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 sudo dnf update
 sudo dnf install \
   codium \
-  ffmpeg \
   neovim \
   VirtualBox \
   xclip \
