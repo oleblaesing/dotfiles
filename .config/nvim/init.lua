@@ -439,6 +439,7 @@ local servers = {
   -- pyright = {},
   rust_analyzer = {},
   tsserver = {},
+  tailwindcss = {},
   prismals = {},
 
   lua_ls = {
