@@ -68,6 +68,6 @@ function u() {
 }
 
 export EDITOR="nvim -e"
+export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$HOME/.cargo/bin:$PATH"
 export VISUAL="codium --wait"
-export VOLTA_HOME="$HOME/.volta"
