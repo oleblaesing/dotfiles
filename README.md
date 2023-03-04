@@ -19,7 +19,6 @@ sudo dnf update
 sudo dnf install \
   codium \
   ffmpeg \
-  kubernetes \
   neovim \
   VirtualBox \
   xclip \
