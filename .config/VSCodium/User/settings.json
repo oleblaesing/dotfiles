@@ -5,6 +5,9 @@
   "editor.fontSize": 16,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
   "editor.tabSize": 2,
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
