@@ -449,6 +449,7 @@ local servers = {
   tsserver = {},
   tailwindcss = {},
   prismals = {},
+  marksman = {},
 
   lua_ls = {
     Lua = {
