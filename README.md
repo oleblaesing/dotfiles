@@ -19,6 +19,7 @@ sudo dnf update
 sudo dnf install \
   codium \
   neovim \
+  ripgrep \
   VirtualBox \
   xclip \
   zsh
