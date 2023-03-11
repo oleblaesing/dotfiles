@@ -1,7 +1,7 @@
 [user]
   name = Ole Bläsing
   email = oleblaesing@users.noreply.github.com
-  signingkey = 8EE97A62441F9BBC
+  signingkey = C12BB5156C5CD833
 [core]
   editor = nvim
 [interactive]
