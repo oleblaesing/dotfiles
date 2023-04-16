@@ -82,6 +82,7 @@ codium --install-extension Prisma.prisma
 codium --install-extension rust-lang.rust-analyzer
 codium --install-extension svelte.svelte-vscode
 codium --install-extension vadimcn.vscode-lldb
+codium --install-extension vscodevim.vim
 # Install Firefox debugger
 
 sudo dnf install xcb-util xcb-util-keysyms xcb-util-cursor SDL2 libva libva-utils libvdpau libinput mesa-libgbm libXdamage libXrandr libXcomposite nspr cups-libs libXdmcp libXi libbsd libXcursor libXtst atk alsa-lib nss libXScrnSaver at-spi2-atk gdk-pixbuf2 gtk3 gnome-keyring
