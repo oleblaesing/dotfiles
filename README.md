@@ -29,7 +29,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 flatpak install electrum
 flatpak install keepassxc
-flatpak install monero
 flatpak install signal
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
