@@ -49,7 +49,7 @@ git clone git@github.com:oleblaesing/dotfiles.git
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ln -s ~/Repositories/dotfiles/.zshrc ~/.zshrc
-chsh -s /usr/local/zsh
+chsh -s $(which zsh)
 
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
