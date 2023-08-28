@@ -12,12 +12,12 @@ sudo dnf install \
 sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
-sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
-printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
+sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
 sudo dnf update
 sudo dnf install \
-  codium \
+  code \
   neovim \
   ripgrep \
   VirtualBox \
@@ -71,19 +71,17 @@ ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/nvim
 ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
-codium --install-extension bradlc.vscode-tailwindcss
-codium --install-extension csstools.postcss
-codium --install-extension dbaeumer.vscode-eslint
-codium --install-extension esbenp.prettier-vscode
-codium --install-extension naumovs.color-highlight
-codium --install-extension Prisma.prisma
-codium --install-extension rust-lang.rust-analyzer
-codium --install-extension svelte.svelte-vscode
-codium --install-extension vadimcn.vscode-lldb
-codium --install-extension vscodevim.vim
-# Install Firefox debugger
+mkdir -p ~/.config/Code
+ln -s ~/Repositories/dotfiles/.config/Code/User/settings.json ~/.config/Code/User/settings.json
+ln -s ~/Repositories/dotfiles/.config/Code/User/keybindings.json ~/.config/Code/User/keybindings.json
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension csstools.postcss
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension esbenp.prettier-vscode
+code --install-extension firefox-devtools.vscode-firefox-debug
+code --install-extension naumovs.color-highlight
+code --install-extension Prisma.prisma
+code --install-extension vscodevim.vim
 
 sudo dnf install xcb-util xcb-util-keysyms xcb-util-cursor SDL2 libva libva-utils libvdpau libinput mesa-libgbm libXdamage libXrandr libXcomposite nspr cups-libs libXdmcp libXi libbsd libXcursor libXtst atk alsa-lib nss libXScrnSaver at-spi2-atk gdk-pixbuf2 gtk3 gnome-keyring
 wget wget "https://gitlab.com/aar642/shadow-repackaged/-/jobs/artifacts/main/raw/Shadow-x86_64.AppImage?job=build" -O ShadowRepackaged-x86_64.AppImage
