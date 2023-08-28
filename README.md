@@ -36,13 +36,11 @@ gpg -d ~/backup.zip.gpg
 unzip backup.zip
 rm backup.zip
 
-ln -sf ~/Keys/.gnupg ~/.gnupg
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
 
-ln -s ~/Keys/ssh ~/.ssh
-chmod -R 700 ~/.ssh
-chmod 644 ~/.ssh/*
-chmod 600 ~/.ssh/id_rsa
-ssh-add ~/.ssh/id_rsa
+ln -sf ~/Keys/.gnupg ~/.gnupg
 
 mkdir ~/Repositories
 cd ~/Repositories
