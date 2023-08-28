@@ -25,8 +25,6 @@ sudo dnf install \
 curl https://get.volta.sh | bash
 volta install node@18
 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 flatpak install electrum

@@ -12,11 +12,6 @@ alias o="xdg-open"
 alias s="sudo"
 alias v="nvim"
 
-alias c="cargo"
-alias ci="cargo install"
-alias cb="cargo build"
-alias cr="cargo run"
-
 alias g="git"
 alias ga="git add"
 alias gb="git branch"
