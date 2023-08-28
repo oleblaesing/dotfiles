@@ -19,9 +19,6 @@ sudo dnf update
 sudo dnf install \
   code \
   neovim \
-  ripgrep \
-  VirtualBox \
-  wget \
   xclip \
   zsh
 
