@@ -19,8 +19,12 @@ sudo dnf update
 sudo dnf install \
   codium \
   neovim \
+  syncthing \
   xclip \
   zsh
+
+systemctl --user enable syncthing.service
+systemctl --user start syncthing.service
 
 curl https://get.volta.sh | bash
 volta install node@18
