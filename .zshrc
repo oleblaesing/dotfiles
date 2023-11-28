@@ -61,6 +61,7 @@ function u() {
 }
 
 export EDITOR="nvim -e"
+export GOPATH="$HOME/Repositories/go"
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$HOME/.cargo/bin:$VOLTA_HOME/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$GOPATH/bin:$VOLTA_HOME/bin:$PATH"
 export VISUAL="code --wait"
