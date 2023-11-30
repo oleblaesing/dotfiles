@@ -37,6 +37,10 @@ flatpak install keepassxc
 flatpak install obsidian
 flatpak install signal
 
+cd Downloads
+wget https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage
+cd ..
+
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
