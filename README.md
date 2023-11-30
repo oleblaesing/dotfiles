@@ -42,6 +42,9 @@ gpg -d ~/backup.zip.gpg
 unzip backup.zip
 rm backup.zip
 
+ln -s $(pwd)/Sync/Obsidian\ Vault ~/Documents/Obsidian\ Vault
+ln -s $(pwd)/Sync/passwords.kdbx ~/Keys/passwords.kdbx
+
 ssh-keygen -t ed25519 -C "your_email@example.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
