@@ -16,7 +16,6 @@
   "files.enableTrash": false,
   "go.formatTool": "gofmt",
   "js/ts.implicitProjectConfig.strictNullChecks": true,
-  "svelte.enable-ts-plugin": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.drawBoldTextInBrightColors": false,
