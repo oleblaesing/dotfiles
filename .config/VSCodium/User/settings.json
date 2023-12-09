@@ -14,6 +14,7 @@
   "explorer.openEditors.visible": 0,
   "extensions.ignoreRecommendations": true,
   "files.enableTrash": false,
+  "go.formatTool": "gofmt",
   "js/ts.implicitProjectConfig.strictNullChecks": true,
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.cursorBlinking": true,
@@ -27,6 +28,9 @@
   "workbench.editor.showTabs": "single",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   }
