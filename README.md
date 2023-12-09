@@ -6,6 +6,8 @@ Personal dotfiles, scripts and guides
 
 ```sh
 # Go through system settings
+# Make Firefox settings
+# Install Firefox extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
 
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
