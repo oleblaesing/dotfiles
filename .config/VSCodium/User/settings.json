@@ -23,6 +23,8 @@
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.showExitAlert": false,
   "update.showReleaseNotes": false,
+  "vim.useSystemClipboard": true,
+  "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": false,
   "window.zoomLevel": 3,
   "workbench.editor.showTabs": "single",
