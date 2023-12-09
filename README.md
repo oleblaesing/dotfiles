@@ -82,5 +82,7 @@ codium --install-extension firefox-devtools.vscode-firefox-debug
 codium --install-extension golang.go
 codium --install-extension naumovs.color-highlight
 codium --install-extension Prisma.prisma
+codium --install-extension rust-lang.rust-analyzer
+codium --install-extension vadimcn.vscode-lldb
 codium --install-extension vscodevim.vim
 ```
