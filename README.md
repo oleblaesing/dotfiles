@@ -79,6 +79,7 @@ codium --install-extension csstools.postcss
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension firefox-devtools.vscode-firefox-debug
+codium --install-extension golang.go
 codium --install-extension naumovs.color-highlight
 codium --install-extension Prisma.prisma
 codium --install-extension vscodevim.vim
