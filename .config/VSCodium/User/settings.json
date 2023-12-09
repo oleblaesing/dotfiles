@@ -11,7 +11,7 @@
   "editor.tabSize": 2,
   "explorer.autoReveal": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
+  "explorer.openEditors.visible": 1,
   "extensions.ignoreRecommendations": true,
   "files.enableTrash": false,
   "go.formatTool": "gofmt",
@@ -26,7 +26,7 @@
   "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": false,
   "window.zoomLevel": 3,
-  "workbench.editor.showTabs": "single",
+  "workbench.editor.showTabs": "none",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "[go]": {
