@@ -43,6 +43,18 @@ cd Downloads
 wget https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage
 cd ..
 
+curl --tlsv1.3 --output whonix-xfce-installer-cli --url https://www.whonix.org/dist-installer-cli
+bash ./whonix-xfce-installer-cli -n
+sudo mkdir -p /var/lib/shim-signed/mok
+sudo openssl req -nodes -new -x509 -newkey rsa:2048 -outform DER -addext "extendedKeyUsage=codeSigning" -keyout /var/lib/shim-signed/mok/MOK.priv -out /var/lib/shim-signed/mok/MOK.der
+sudo mokutil --import /var/lib/shim-signed/mok/MOK.der
+sudo reboot
+
+# Enroll MOK, after reboot:
+
+sudo rcvboxdrv setup
+bash ./whonix-xfce-installer-cli -n
+
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
