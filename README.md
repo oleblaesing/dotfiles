@@ -66,6 +66,7 @@ bash ./whonix-xfce-installer-cli -n
 
 cd Downloads
 wget https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage
+# Open AppImage file
 cd ..
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
