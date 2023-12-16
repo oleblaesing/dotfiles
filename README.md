@@ -16,14 +16,12 @@ sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
 sudo systemctl restart systemd-resolved
 sudo systemctl restart NetworkManager
 
-# Make Firefox settings
-# Install Firefox extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
-# DNS over HTTPS: https://base.dns.mullvad.net/dns-query
-
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
 sudo dnf install \
   https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf config-manager --add-repo https://rpm.librewolf.net/librewolf-repo.repo
 
 sudo rpmkeys --import https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbaseurl=https://download.vscodium.com/rpms/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg\nmetadata_expire=1h" | sudo tee -a /etc/yum.repos.d/vscodium.repo
@@ -33,6 +31,7 @@ sudo dnf install \
   appimagelauncher \
   codium \
   golang \
+  librewolf \
   neovim \
   syncthing \
   xclip \
@@ -111,4 +110,8 @@ codium --install-extension Prisma.prisma
 codium --install-extension rust-lang.rust-analyzer
 codium --install-extension vadimcn.vscode-lldb
 codium --install-extension vscodevim.vim
+
+# Make LibreWolf settings
+# Install LibreWolf extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
+# DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 ```
