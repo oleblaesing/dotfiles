@@ -18,6 +18,7 @@ sudo systemctl restart NetworkManager
 
 # Make Firefox settings
 # Install Firefox extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
+# DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
