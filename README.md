@@ -6,6 +6,16 @@ Personal dotfiles, scripts and guides
 
 ```sh
 # Go through system settings
+
+sudo systemctl enable systemd-resolved
+sudo echo "DNS=194.242.2.4#base.dns.mullvad.net" > /etc/systemd/resolved.conf
+sudo echo "DNSSEC=no" >> /etc/systemd/resolved.conf
+sudo echo "DNSOverTLS=yes" >> /etc/systemd/resolved.conf
+sudo echo "Domains=~." >> /etc/systemd/resolved.conf
+sudo ln -sf /run/systemd/resolve/stub-resolv.conf /etc/resolv.conf
+sudo systemctl restart systemd-resolved
+sudo systemctl restart NetworkManager
+
 # Make Firefox settings
 # Install Firefox extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
 
