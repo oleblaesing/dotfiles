@@ -31,6 +31,7 @@ sudo dnf update
 sudo dnf install \
   appimagelauncher \
   codium \
+  golang \
   neovim \
   syncthing \
   xclip \
