@@ -52,10 +52,6 @@ flatpak install keepassxc
 flatpak install obsidian
 flatpak install signal
 
-cd Downloads
-wget https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage
-cd ..
-
 curl --tlsv1.3 --output whonix-xfce-installer-cli --url https://www.whonix.org/dist-installer-cli
 bash ./whonix-xfce-installer-cli -n
 sudo mkdir -p /var/lib/shim-signed/mok
@@ -67,6 +63,10 @@ sudo reboot
 
 sudo rcvboxdrv setup
 bash ./whonix-xfce-installer-cli -n
+
+cd Downloads
+wget https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage
+cd ..
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
