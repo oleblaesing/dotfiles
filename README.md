@@ -8,7 +8,7 @@ Personal dotfiles, scripts and guides
 # Go through system settings
 
 sudo systemctl enable systemd-resolved
-sudo echo "DNS=194.242.2.4#base.dns.mullvad.net" > /etc/systemd/resolved.conf
+sudo echo "DNS=194.242.2.4#base.dns.mullvad.net" >> /etc/systemd/resolved.conf
 sudo echo "DNSSEC=no" >> /etc/systemd/resolved.conf
 sudo echo "DNSOverTLS=yes" >> /etc/systemd/resolved.conf
 sudo echo "Domains=~." >> /etc/systemd/resolved.conf
