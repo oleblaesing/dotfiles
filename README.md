@@ -101,6 +101,9 @@ ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 mkdir -p ~/.config/VSCodium/User
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
+
+# Download vsix: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
+
 codium --install-extension bradlc.vscode-tailwindcss
 codium --install-extension csstools.postcss
 codium --install-extension dbaeumer.vscode-eslint
