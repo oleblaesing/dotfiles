@@ -28,7 +28,6 @@ printf "[gitlab.com_paulcarroty_vscodium_repo]\nname=download.vscodium.com\nbase
 
 sudo dnf update
 sudo dnf install \
-  appimagelauncher \
   codium \
   golang \
   librewolf \
@@ -51,6 +50,9 @@ flatpak install electrum
 flatpak install keepassxc
 flatpak install obsidian
 flatpak install signal
+
+wget https://github.com/TheAssassin/AppImageLauncher/releases/download/v2.2.0/appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
+sudo dnf install appimagelauncher-2.2.0-travis995.0f91801.x86_64.rpm
 
 curl --tlsv1.3 --output whonix-xfce-installer-cli --url https://www.whonix.org/dist-installer-cli
 bash ./whonix-xfce-installer-cli -n
