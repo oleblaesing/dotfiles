@@ -98,7 +98,7 @@ ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 mkdir -p ~/.config/nvim
 ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 
-mkdir -p ~/.config/VSCodium
+mkdir -p ~/.config/VSCodium/User
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 codium --install-extension bradlc.vscode-tailwindcss
