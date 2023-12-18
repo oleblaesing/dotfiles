@@ -117,6 +117,6 @@ codium --install-extension vadimcn.vscode-lldb
 codium --install-extension vscodevim.vim
 
 # Make LibreWolf settings
-# Install LibreWolf extensions: uBlock Origin, Dark Reader, Firefox Multi-Account Containers, Snowflake
+# Install LibreWolf extensions: uBlock Origin, Dark Reader, Snowflake
 # DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 ```
