@@ -7,8 +7,6 @@ plugins=(zsh-syntax-highlighting git npm)
 
 source $ZSH/oh-my-zsh.sh
 
-alias co="xclip -sel clip"
-alias o="xdg-open"
 alias s="sudo"
 alias v="nvim"
 
@@ -54,10 +52,8 @@ function l() {
 }
 
 function u() {
-  sudo dnf upgrade
-  flatpak update
+  sudo pacman -Syu
   omz update
-  sudo fwupdmgr update
 }
 
 export EDITOR="nvim -e"
