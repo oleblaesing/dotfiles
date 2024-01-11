@@ -20,11 +20,11 @@ Install packages:
 - [ ] `keepassxc`
 - [ ] `less`
 - [ ] `neovim`
-- [ ] `nftables`
 - [ ] `obsidian`
 - [ ] `rustup`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
+- [ ] `ufw`
 - [ ] `unzip`
 - [ ] `wget`
 - [ ] `xclip`
@@ -78,8 +78,9 @@ LC_MEASUREMENT=de_DE.UTF-8
 ```
 
 ```sh
-systemctl enable nftables
 systemctl enable systemd-resolved
+ufw enable
+systemctl enable ufw
 ```
 
 In desktop land:
