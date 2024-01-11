@@ -5,18 +5,14 @@ In install land:
 ```sh
 loadkeys de-latin1
 iwctl --passphrase PASSPHRASE station wlan0 connect SSID
-ping -c3 archlinux.org
 archinstall
 ```
 
 Install packages:
 
-- [ ] `bash`
-- [ ] `curl`
 - [ ] `electrum`
 - [ ] `git`
 - [ ] `go`
-- [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `less`
 - [ ] `neovim`
@@ -37,6 +33,9 @@ In post-install land:
 ```sh
 cd /home/USER
 su USER
+
+mkdir Repositories
+cd Repositories
 
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -79,7 +78,6 @@ LC_MEASUREMENT=de_DE.UTF-8
 
 ```sh
 systemctl enable systemd-resolved
-ufw enable
 systemctl enable ufw
 ```
 
@@ -93,14 +91,12 @@ sudo systemctl restart NetworkManager
 
 1. Go through system settings
 2. Go through LibreWolf settings
-   - Install LibreWolf extensions: Dark Reader, Snowflake
+   - Install LibreWolf extensions: Dark Reader, Multi-Container, Snowflake
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
 mkdir -p ~/.config/nvim
 mkdir -p ~/.config/VSCodium/User
-mkdir -p ~/.oh-my-zsh/custom/plugins
-mkdir ~/Repositories
 
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
@@ -123,6 +119,7 @@ git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 ```
 
 ```sh
+rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
 ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
@@ -136,6 +133,7 @@ ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
+source ~/.zshrc
 ```
 
 ```sh
