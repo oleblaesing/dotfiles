@@ -53,6 +53,7 @@ function l() {
 
 function u() {
   sudo pacman -Syu
+  yay -Syu
   omz update
 }
 
