@@ -55,6 +55,7 @@ function u() {
   sudo pacman -Syu
   yay -Syu
   omz update
+  sudo fwupdmgr update
 }
 
 export EDITOR="nvim -e"

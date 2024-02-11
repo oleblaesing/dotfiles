@@ -11,6 +11,7 @@ archinstall
 Install packages:
 
 - [ ] `electrum`
+- [ ] `fwupd`
 - [ ] `git`
 - [ ] `go`
 - [ ] `keepassxc`
