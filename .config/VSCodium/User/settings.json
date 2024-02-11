@@ -27,7 +27,7 @@
   "vim.useCtrlKeys": false,
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 3,
-  "workbench.editor.showTabs": "none",
+  "workbench.editor.showTabs": "single",
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "[go]": {
