@@ -46,6 +46,7 @@ cd yay-bin
 makepkg -si
 
 yay -S librewolf-bin
+yay -S mullvad-vpn-bin
 yay -S qflipper-bin
 yay -S shadow-tech
 yay -S volta-bin
