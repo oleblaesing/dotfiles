@@ -17,6 +17,7 @@ Install packages:
 - [ ] `go`
 - [ ] `keepassxc`
 - [ ] `less`
+- [ ] `libreoffice-still`
 - [ ] `neovim`
 - [ ] `obsidian`
 - [ ] `rustup`
