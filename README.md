@@ -11,6 +11,7 @@ archinstall
 Install packages:
 
 - [ ] `electrum`
+- [ ] `firefox`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `go`
