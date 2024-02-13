@@ -25,6 +25,7 @@ Install packages:
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
+- [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
 - [ ] `zip`
