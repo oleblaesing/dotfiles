@@ -10,11 +10,13 @@ archinstall
 
 Install packages:
 
+- [ ] `cups`
 - [ ] `electrum`
 - [ ] `firefox`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `go`
+- [ ] `hplip`
 - [ ] `keepassxc`
 - [ ] `less`
 - [ ] `libreoffice-still`
