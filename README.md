@@ -30,7 +30,6 @@ Install packages:
 - [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
-- [ ] `yay`
 - [ ] `zip`
 - [ ] `zsh`
 - [ ] `zsh-completions`
@@ -40,6 +39,13 @@ In post-install land:
 ```sh
 cd /home/USER
 su USER
+
+mkdir Repositories
+cd Repositories
+
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
 
 yay -S google-chrome
 yay -S librewolf-bin
@@ -115,7 +121,6 @@ ssh-keygen -t ed25519
 
 # Provide key to GitHub/GitLab
 
-mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 ```
 
