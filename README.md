@@ -121,6 +121,7 @@ ssh-keygen -t ed25519
 
 # Provide key to GitHub/GitLab
 
+mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 ```
 
