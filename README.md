@@ -12,6 +12,7 @@ Install packages:
 
 - [ ] `cups`
 - [ ] `electrum`
+- [ ] `exfat-utils`
 - [ ] `firefox`
 - [ ] `fwupd`
 - [ ] `git`
