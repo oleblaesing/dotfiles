@@ -24,6 +24,7 @@ Install packages:
 - [ ] `man-db`
 - [ ] `neovim`
 - [ ] `obsidian`
+- [ ] `otf-comicshanns-nerd`
 - [ ] `rustup`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
