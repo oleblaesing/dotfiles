@@ -21,6 +21,7 @@ Install packages:
 - [ ] `keepassxc`
 - [ ] `less`
 - [ ] `libreoffice-still`
+- [ ] `man-db`
 - [ ] `neovim`
 - [ ] `obsidian`
 - [ ] `rustup`
