@@ -87,6 +87,14 @@ LC_PAPER=de_DE.UTF-8
 LC_MEASUREMENT=de_DE.UTF-8
 ```
 
+```conf
+# /etc/pacman.conf
+Color
+ILoveCandy
+VerbosePkgLists
+ParallelDownloads = 5
+```
+
 ```sh
 systemctl enable systemd-resolved
 systemctl enable ufw
