@@ -108,6 +108,8 @@ In desktop land:
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
+sudo hp-setup -i
+
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
