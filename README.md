@@ -37,33 +37,6 @@ Install packages:
 - [ ] `zsh`
 - [ ] `zsh-completions`
 
-In post-install land:
-
-```sh
-cd /home/USER
-su USER
-
-mkdir Repositories
-cd Repositories
-
-git clone https://aur.archlinux.org/yay-bin.git
-cd yay-bin
-makepkg -si
-
-yay -S google-chrome
-yay -S librewolf-bin
-yay -S mullvad-vpn-bin
-yay -S qflipper-bin
-yay -S shadow-tech
-yay -S volta-bin
-yay -S vscodium-bin
-
-volta install node@20
-rustup default stable
-
-exit
-```
-
 ```sh
 sed -i 's/#de_DE\.UTF-8/de_DE\.UTF-8/' /etc/locale.gen
 locale-gen
@@ -95,18 +68,39 @@ VerbosePkgLists
 ParallelDownloads = 5
 ```
 
+In post-install land:
+
 ```sh
 systemctl enable systemd-resolved
 systemctl enable ufw
+
+cd /home/USER
+su USER
+
+mkdir Repositories
+cd Repositories
+
+git clone https://aur.archlinux.org/yay-bin.git
+cd yay-bin
+makepkg -si
+
+yay -S google-chrome
+yay -S librewolf-bin
+yay -S mullvad-vpn-bin
+yay -S qflipper-bin
+yay -S shadow-tech
+yay -S volta-bin
+yay -S vscodium-bin
+
+volta install node@20
+rustup default stable
+
+systemctl --user enable syncthing.service
+
+ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
 ```
 
 In desktop land:
-
-```sh
-ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
-sudo systemctl restart systemd-resolved
-sudo systemctl restart NetworkManager
-```
 
 1. Go through system settings
 2. Go through LibreWolf settings
@@ -114,9 +108,6 @@ sudo systemctl restart NetworkManager
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
-mkdir -p ~/.config/nvim
-mkdir -p ~/.config/VSCodium/User
-
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
@@ -125,6 +116,11 @@ rm backup.zip
 mv backup/Documents/* Documents/
 mv backup/Keys ./
 mv backup/Sync ./
+
+rm -rf ~/.gnupg
+ln -sf ~/Keys/.gnupg ~/.gnupg
+ln -s ~/Sync/Obsidian\ Vault ~/Documents/Obsidian\ Vault
+ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
 ```
 
 ```sh
@@ -134,32 +130,21 @@ ssh-keygen -t ed25519
 
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
-```
 
-```sh
-rm -rf ~/.gnupg
-ln -sf ~/Keys/.gnupg ~/.gnupg
+mkdir -p ~/.config/nvim
+mkdir -p ~/.config/VSCodium/User
 ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Sync/Obsidian\ Vault ~/Documents/Obsidian\ Vault
-ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
-```
 
-```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 ```
 
-```sh
-systemctl --user enable syncthing.service
-systemctl --user start syncthing.service
-```
-
-Open localhost:8384 and configure
+Open localhost:8384 and configure Syncthing
 
 ---
 
