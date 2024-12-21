@@ -25,7 +25,6 @@ Install packages:
 - [ ] `neovim`
 - [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `rustup`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`
@@ -93,7 +92,6 @@ yay -S volta-bin
 yay -S vscodium-bin
 
 volta install node@20
-rustup default stable
 
 systemctl --user enable syncthing.service
 
@@ -160,7 +158,5 @@ codium --install-extension esbenp.prettier-vscode
 codium --install-extension Downloads/firefox-devtools.vscode-firefox-debug-VERSION.vsix
 codium --install-extension golang.go
 codium --install-extension naumovs.color-highlight
-codium --install-extension rust-lang.rust-analyzer
-codium --install-extension vadimcn.vscode-lldb
 codium --install-extension vscodevim.vim
 ```

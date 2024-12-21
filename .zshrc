@@ -59,5 +59,5 @@ function u() {
 
 export EDITOR="nvim -e"
 export VOLTA_HOME="$HOME/.volta"
-export PATH="$HOME/.cargo/bin:$(go env GOBIN):$(go env GOPATH)/bin:$VOLTA_HOME/bin:$PATH"
+export PATH="$(go env GOBIN):$(go env GOPATH)/bin:$VOLTA_HOME/bin:$PATH"
 export VISUAL="code --wait"
