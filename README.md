@@ -25,7 +25,6 @@ Install packages:
 - [ ] `neovim`
 - [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
