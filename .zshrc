@@ -52,8 +52,7 @@ function l() {
 }
 
 function u() {
-  sudo pacman -Syu
-  yay -Syu
+  yay
   omz update
   sudo fwupdmgr update
 }
