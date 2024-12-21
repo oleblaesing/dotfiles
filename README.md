@@ -85,7 +85,6 @@ makepkg -si
 yay -S google-chrome
 yay -S librewolf-bin
 yay -S mullvad-vpn-bin
-yay -S qflipper-bin
 yay -S shadow-tech
 yay -S volta-bin
 yay -S vscodium-bin
