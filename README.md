@@ -10,6 +10,7 @@ archinstall
 
 Install packages:
 
+- [ ] `chromium`
 - [ ] `cups`
 - [ ] `electrum`
 - [ ] `exfat-utils`
@@ -82,7 +83,6 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
-yay -S google-chrome
 yay -S librewolf-bin
 yay -S mullvad-vpn-bin
 yay -S shadow-tech
