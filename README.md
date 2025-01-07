@@ -12,7 +12,6 @@ Install packages:
 
 - [ ] `chromium`
 - [ ] `cups`
-- [ ] `electrum`
 - [ ] `exfat-utils`
 - [ ] `firefox`
 - [ ] `fwupd`
@@ -83,6 +82,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+yay -S cake-wallet-bin
 yay -S librewolf-bin
 yay -S mullvad-vpn-bin
 yay -S shadow-tech
