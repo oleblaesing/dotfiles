@@ -25,7 +25,6 @@
   "terminal.integrated.showExitAlert": false,
   "update.showReleaseNotes": false,
   "vim.useSystemClipboard": true,
-  "vim.smartRelativeLine": true,
   "vim.useCtrlKeys": false,
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 3,
