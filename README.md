@@ -18,6 +18,7 @@ Install packages:
 - [ ] `git`
 - [ ] `go`
 - [ ] `hplip`
+- [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `less`
 - [ ] `libreoffice-still`
