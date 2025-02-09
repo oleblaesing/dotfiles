@@ -87,9 +87,10 @@ makepkg -si
 yay -S cake-wallet-bin
 yay -S librewolf-bin
 yay -S mullvad-vpn-bin
-yay -S shadow-tech
 yay -S volta-bin
 yay -S vscodium-bin
+
+wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 
 volta install node@20
 
@@ -140,6 +141,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
+
+ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 ```
 
 Open localhost:8384 and configure Syncthing
