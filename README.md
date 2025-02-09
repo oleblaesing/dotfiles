@@ -72,6 +72,8 @@ In post-install land:
 systemctl enable systemd-resolved
 systemctl enable ufw
 
+ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
+
 cd /home/USER
 su USER
 
@@ -92,8 +94,6 @@ yay -S vscodium-bin
 volta install node@20
 
 systemctl --user enable syncthing.service
-
-ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
 ```
 
 In desktop land:
