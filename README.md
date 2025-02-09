@@ -93,9 +93,9 @@ yay -S vscodium-bin
 
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 
-volta install node@20
-
 systemctl --user enable syncthing.service
+
+volta install node@20
 ```
 
 In desktop land:
