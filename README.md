@@ -89,6 +89,7 @@ makepkg -si
 yay -S cake-wallet-bin
 yay -S librewolf-bin
 yay -S mullvad-vpn-bin
+yay -S qflipper-bin
 yay -S volta-bin
 yay -S vscodium-bin
 
