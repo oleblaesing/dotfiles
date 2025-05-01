@@ -27,6 +27,7 @@
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
   "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "native",
   "window.zoomLevel": 3,
   "workbench.editor.showTabs": "single",
   "workbench.startupEditor": "none",
