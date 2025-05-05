@@ -22,12 +22,12 @@ alias gm="git merge"
 alias gr="git rebase"
 alias gs="git status --short --branch"
 
-alias n="npm"
-alias ni="npm i"
-alias nb="npm run build"
-alias nl="npm run lint"
-alias nt="npm run test"
-alias nw="npm run dev"
+alias n="pnpm"
+alias ni="pnpm i"
+alias nb="pnpm run build"
+alias nl="pnpm run lint"
+alias nt="pnpm run test"
+alias nw="pnpm --filter"
 
 function b() {
   zip -r backup.zip ~/Documents ~/Keys ~/Sync
