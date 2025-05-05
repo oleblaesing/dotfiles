@@ -79,6 +79,8 @@ ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
 cd /home/USER
 su USER
 
+systemctl --user enable gcr-ssh-agent.socket
+
 mkdir Repositories
 cd Repositories
 
