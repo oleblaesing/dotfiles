@@ -98,8 +98,6 @@ yay -S vscodium-bin
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 
 systemctl --user enable syncthing.service
-
-volta install node@20
 ```
 
 In desktop land:
@@ -148,6 +146,8 @@ ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 
 ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
+
+volta install node@20
 ```
 
 Open localhost:8384 and configure Syncthing
