@@ -26,10 +26,12 @@
   "update.showReleaseNotes": false,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": false,
+  "window.commandCenter": false,
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "native",
   "window.zoomLevel": 3,
   "workbench.editor.showTabs": "single",
+  "workbench.layoutControl.enabled": false,
   "workbench.startupEditor": "none",
   "workbench.tips.enabled": false,
   "[go]": {

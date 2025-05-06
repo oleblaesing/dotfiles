@@ -37,6 +37,8 @@ Install packages:
 - [ ] `zsh`
 - [ ] `zsh-completions`
 
+## In chroot land:
+
 ```sh
 sed -i 's/#de_DE\.UTF-8/de_DE\.UTF-8/' /etc/locale.gen
 locale-gen
@@ -68,8 +70,6 @@ VerbosePkgLists
 ParallelDownloads = 5
 ```
 
-In post-install land:
-
 ```sh
 systemctl enable systemd-resolved
 systemctl enable ufw
@@ -100,7 +100,7 @@ wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppIm
 systemctl --user enable syncthing.service
 ```
 
-In desktop land:
+## In desktop land:
 
 1. Go through system settings
 2. Go through LibreWolf settings
