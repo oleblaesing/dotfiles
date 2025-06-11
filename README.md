@@ -76,6 +76,9 @@ systemctl enable ufw
 
 ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
 
+ufw default deny
+ufw enable
+
 cd /home/USER
 su USER
 
