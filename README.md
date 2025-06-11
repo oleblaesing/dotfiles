@@ -11,13 +11,11 @@ archinstall
 Install packages:
 
 - [ ] `chromium`
-- [ ] `cups`
 - [ ] `exfat-utils`
 - [ ] `firefox`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `go`
-- [ ] `hplip`
 - [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `less`
@@ -111,8 +109,6 @@ systemctl --user enable syncthing.service
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
-sudo hp-setup -i
-
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
