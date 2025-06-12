@@ -3,7 +3,7 @@
   email = oleblaesing@users.noreply.github.com
   signingkey = C12BB5156C5CD833
 [core]
-  editor = nvim
+  editor = vim
 [interactive]
   singleKey = true
 [commit]
