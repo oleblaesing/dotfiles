@@ -84,10 +84,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
-yay -S cake-wallet-bin
 yay -S librewolf-bin
-yay -S mullvad-vpn-bin
-yay -S qflipper-bin
 yay -S volta-bin
 yay -S vscodium-bin
 ```
@@ -142,8 +139,6 @@ volta install node@20
 Download vsix: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
 
 ```sh
-codium --install-extension bradlc.vscode-tailwindcss
-codium --install-extension csstools.postcss
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension naumovs.color-highlight
