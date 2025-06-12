@@ -137,8 +137,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
 source ~/.zshrc
 
-ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
-
 volta install node@20
 ```
 
