@@ -104,7 +104,7 @@ systemctl --user enable syncthing.service
 
 1. Go through system settings
 2. Go through LibreWolf settings
-   - Install LibreWolf extensions: Dark Reader, Multi-Container, Snowflake
+   - Install LibreWolf extensions: Dark Reader, Multi-Container
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
