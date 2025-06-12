@@ -13,6 +13,7 @@ Install packages:
 - [ ] `chromium`
 - [ ] `exfat-utils`
 - [ ] `firefox`
+- [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `intel-ucode`
@@ -21,7 +22,6 @@ Install packages:
 - [ ] `libreoffice-still`
 - [ ] `man-db`
 - [ ] `newsflash`
-- [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `syncthing`
 - [ ] `ufw`
@@ -118,7 +118,6 @@ mv backup/Sync ./
 
 rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
-ln -s ~/Sync/Obsidian\ Vault ~/Documents/Obsidian\ Vault
 ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
 ```
 
