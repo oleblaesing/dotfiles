@@ -25,7 +25,6 @@ Install packages:
 - [ ] `newsflash`
 - [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `vlc`
@@ -111,7 +110,6 @@ rm backup.zip
 
 mv backup/Documents/* Documents/
 mv backup/Keys ./
-mv backup/Sync ./
 
 rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
@@ -143,10 +141,6 @@ ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/app
 
 volta install node@20
 ```
-
-Open localhost:8384 and configure Syncthing
-
----
 
 Download vsix: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
 

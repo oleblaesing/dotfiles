@@ -30,7 +30,7 @@ alias nt="pnpm run test"
 alias nw="pnpm --filter"
 
 function b() {
-  zip -r backup.zip ~/Documents ~/Keys ~/Sync
+  zip -r backup.zip ~/Documents ~/Keys
   gpg -c backup.zip
   rm backup.zip
   mv backup.zip.gpg /run/media/$USER/Backup/
