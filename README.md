@@ -15,7 +15,6 @@ Install packages:
 - [ ] `firefox`
 - [ ] `fwupd`
 - [ ] `git`
-- [ ] `go`
 - [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `less`
@@ -161,7 +160,6 @@ codium --install-extension csstools.postcss
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
 codium --install-extension Downloads/firefox-devtools.vscode-firefox-debug-VERSION.vsix
-codium --install-extension golang.go
 codium --install-extension naumovs.color-highlight
 codium --install-extension vscodevim.vim
 ```
