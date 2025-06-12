@@ -21,7 +21,6 @@ Install packages:
 - [ ] `libreoffice-still`
 - [ ] `man-db`
 - [ ] `neovim`
-- [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ufw`
 - [ ] `unzip`
