@@ -11,7 +11,6 @@ archinstall
 Install packages:
 
 - [ ] `chromium`
-- [ ] `cups`
 - [ ] `exfat-utils`
 - [ ] `firefox`
 - [ ] `fwupd`
@@ -72,6 +71,9 @@ systemctl enable ufw
 
 ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
 
+ufw default deny
+ufw enable
+
 cd /home/USER
 su USER
 
@@ -93,12 +95,10 @@ yay -S vscodium-bin
 
 1. Go through system settings
 2. Go through LibreWolf settings
-   - Install LibreWolf extensions: Dark Reader, Multi-Container, Snowflake
+   - Install LibreWolf extensions: Dark Reader, Multi-Container
    - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
-sudo hp-setup -i
-
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
