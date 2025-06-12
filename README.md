@@ -22,7 +22,6 @@ Install packages:
 - [ ] `libreoffice-still`
 - [ ] `man-db`
 - [ ] `neovim`
-- [ ] `newsflash`
 - [ ] `obsidian`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ufw`
@@ -150,5 +149,3 @@ codium --install-extension esbenp.prettier-vscode
 codium --install-extension naumovs.color-highlight
 codium --install-extension vscodevim.vim
 ```
-
-Apply Newsflash backup from backup
