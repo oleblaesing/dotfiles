@@ -109,8 +109,6 @@ mv backup/Keys ./
 
 rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
-ln -s ~/Sync/Obsidian\ Vault ~/Documents/Obsidian\ Vault
-ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
 ```
 
 ```sh
