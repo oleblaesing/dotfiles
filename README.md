@@ -92,10 +92,6 @@ yay -S mullvad-vpn-bin
 yay -S qflipper-bin
 yay -S volta-bin
 yay -S vscodium-bin
-
-wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
-
-systemctl --user enable syncthing.service
 ```
 
 ## In desktop land:
