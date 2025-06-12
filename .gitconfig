@@ -1,6 +1,6 @@
 [user]
   name = Ole Bläsing
-  email = oleblaesing@users.noreply.github.com
+  email = ole.blaesing@heyflow.com
   signingkey = 027E0CD3DBC3617D
 [core]
   editor = nvim
