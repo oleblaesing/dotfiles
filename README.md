@@ -10,6 +10,7 @@ archinstall
 
 Install packages:
 
+- [ ] `archlinux-wallpaper`
 - [ ] `exfat-utils`
 - [ ] `fuse2`
 - [ ] `fwupd`
