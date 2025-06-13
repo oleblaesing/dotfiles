@@ -10,9 +10,7 @@ archinstall
 
 Install packages:
 
-- [ ] `chromium`
 - [ ] `exfat-utils`
-- [ ] `firefox`
 - [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
