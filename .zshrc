@@ -8,7 +8,7 @@ plugins=(zsh-syntax-highlighting git npm)
 source $ZSH/oh-my-zsh.sh
 
 alias s="sudo"
-alias v="nvim"
+alias v="vim"
 
 alias g="git"
 alias ga="git add"
@@ -57,7 +57,7 @@ function u() {
   sudo fwupdmgr update
 }
 
-export EDITOR="nvim -e"
+export EDITOR="vim -e"
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 export VISUAL="code --wait"

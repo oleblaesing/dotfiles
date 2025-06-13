@@ -13,6 +13,7 @@ Install packages:
 - [ ] `chromium`
 - [ ] `exfat-utils`
 - [ ] `firefox`
+- [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `intel-ucode`
@@ -20,7 +21,6 @@ Install packages:
 - [ ] `less`
 - [ ] `libreoffice-still`
 - [ ] `man-db`
-- [ ] `neovim`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ufw`
 - [ ] `unzip`
@@ -118,9 +118,8 @@ ssh-keygen -t ed25519
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
-mkdir -p ~/.config/nvim
 mkdir -p ~/.config/VSCodium/User
-ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
+ln -s ~/Repositories/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
