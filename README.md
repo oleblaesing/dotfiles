@@ -11,6 +11,7 @@ archinstall
 Install packages:
 
 - [ ] `archlinux-wallpaper`
+- [ ] `curl`
 - [ ] `exfat-utils`
 - [ ] `fuse2`
 - [ ] `fwupd`
