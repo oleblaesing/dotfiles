@@ -137,7 +137,7 @@ ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCo
 
 ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
-volta install node@20
+volta install node
 ```
 
 Open localhost:8384 and configure Syncthing
