@@ -18,6 +18,7 @@
   "go.formatTool": "gofmt",
   "js/ts.implicitProjectConfig.strictNullChecks": true,
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultProfile.linux": "fish",
   "terminal.integrated.drawBoldTextInBrightColors": false,
   "terminal.integrated.fontFamily": "'ComicShannsMono Nerd Font Mono'",
   "terminal.integrated.fontSize": 16,
