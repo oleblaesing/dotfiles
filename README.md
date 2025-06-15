@@ -85,9 +85,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
-yay -S cake-wallet-bin
 yay -S librewolf-bin
-yay -S mullvad-vpn-bin
 yay -S qflipper-bin
 yay -S volta-bin
 yay -S vscodium-bin
@@ -102,7 +100,6 @@ systemctl --user enable syncthing.service
 1. Go through system settings
 2. Go through LibreWolf settings
    - Install LibreWolf extensions: Dark Reader, Multi-Container
-   - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
