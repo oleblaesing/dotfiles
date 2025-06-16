@@ -48,5 +48,7 @@ function fish_prompt
     set return_code "$red$return_code"
   end
 
-  echo -n -s $cwd $repo_info $return_code $normal ' 🐧 '
+  set -l emoji (random choice 🐧 🪩 🔪 🍕 🎺 🍹 🦩)
+
+  echo -n -s $cwd $repo_info $return_code $normal ' ' $emoji ' '
 end
