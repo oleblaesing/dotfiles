@@ -19,3 +19,5 @@ set smartindent
 set softtabstop=2
 
 syntax on
+
+highlight Normal guibg=NONE guifg=NONE ctermbg=NONE ctermfg=NONE

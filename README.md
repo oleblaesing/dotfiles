@@ -10,17 +10,20 @@ archinstall
 
 Install packages:
 
-- [ ] `chromium`
+- [ ] `archlinux-wallpaper`
+- [ ] `curl`
 - [ ] `exfat-utils`
-- [ ] `firefox`
+- [ ] `fish`
 - [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `intel-ucode`
 - [ ] `keepassxc`
+- [ ] `kitty`
 - [ ] `less`
 - [ ] `libreoffice-still`
 - [ ] `man-db`
+- [ ] `neovim`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ufw`
 - [ ] `unzip`
@@ -28,8 +31,6 @@ Install packages:
 - [ ] `wget`
 - [ ] `xclip`
 - [ ] `zip`
-- [ ] `zsh`
-- [ ] `zsh-completions`
 
 ## In chroot land:
 
@@ -95,7 +96,6 @@ yay -S vscodium-bin
 1. Go through system settings
 2. Go through LibreWolf settings
    - Install LibreWolf extensions: Dark Reader, Multi-Container
-   - DNS over HTTPS: https://base.dns.mullvad.net/dns-query
 
 ```sh
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
@@ -118,18 +118,17 @@ ssh-keygen -t ed25519
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
-mkdir -p ~/.config/VSCodium/User
+mkdir -p ~/.config/{fish,kitty,nvim,VSCodium/User}
+ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
+ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
+ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Repositories/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
+ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
 ln -s ~/Repositories/dotfiles/.vimrc ~/.vimrc
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
-ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-ln -sf ~/Repositories/dotfiles/.zshrc ~/.zshrc
-source ~/.zshrc
-
-volta install node@20
+volta install node@22
 ```
 
 Download vsix: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug

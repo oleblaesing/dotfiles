@@ -3,7 +3,7 @@
   email = ole.blaesing@heyflow.com
   signingkey = 027E0CD3DBC3617D
 [core]
-  editor = vim
+  editor = nvim
 [interactive]
   singleKey = true
 [commit]
