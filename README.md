@@ -14,7 +14,6 @@ Install packages:
 - [ ] `curl`
 - [ ] `exfat-utils`
 - [ ] `fish`
-- [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
 - [ ] `intel-ucode`
