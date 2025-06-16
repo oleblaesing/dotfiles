@@ -48,5 +48,5 @@ function fish_prompt
     set return_code "$red$return_code"
   end
 
-  echo -n -s $cwd $repo_info $return_code $normal ' $$$ '
+  echo -n -s $cwd $repo_info $return_code $normal ' 🐧 '
 end
