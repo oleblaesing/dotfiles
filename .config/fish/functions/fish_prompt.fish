@@ -30,10 +30,14 @@ function fish_prompt
 
   set -l repo_info "[$(_git_branch_name)]"
 
-  if _is_git_dirty
-    set repo_info "$red$repo_info$yellow!"
+  if test $repo_info = "[]"
+    set repo_info ""
   else
-    set repo_info "$green$repo_info"
+    if _is_git_dirty
+      set repo_info "$red$repo_info$yellow!"
+    else
+      set repo_info "$green$repo_info"
+    end
   end
 
   set -l return_code "[$__last_command_exit_status]"
@@ -44,5 +48,5 @@ function fish_prompt
     set return_code "$red$return_code"
   end
 
-  echo -n -s $cwd $repo_info $return_code $normal ' $$$ '
+  echo -n -s $cwd $repo_info $return_code $normal ' 🐧 '
 end
