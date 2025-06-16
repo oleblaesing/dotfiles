@@ -13,9 +13,8 @@ function fish_prompt
       end
     end
 
-    function _is_git_dirty
-      not command git diff-index --cached --quiet HEAD -- &>/dev/null
-      or not command git diff --no-ext-diff --quiet --exit-code &>/dev/null
+    function _get_number_of_changes
+      echo (git status --short | wc -l)
     end
   end
 
@@ -28,15 +27,15 @@ function fish_prompt
   set -l cwd "[$(prompt_pwd | path basename)]"
   set cwd "$cyan$cwd"
 
-  set -l repo_info "[$(_git_branch_name)]"
+  set -l repo_info "$(_git_branch_name)"
 
-  if test $repo_info = "[]"
-    set repo_info ""
-  else
-    if _is_git_dirty
-      set repo_info "$red$repo_info$yellow!"
+  if test $repo_info != ""
+    set -l number_of_changes (git status --short | wc -l)
+
+    if test $number_of_changes -gt 0
+      set repo_info "[$repo_info:$red$number_of_changes$cyan]"
     else
-      set repo_info "$green$repo_info"
+      set repo_info "[$repo_info]"
     end
   end
 
