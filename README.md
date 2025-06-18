@@ -13,6 +13,9 @@ Install packages:
 - [ ] `archlinux-wallpaper`
 - [ ] `chromium`
 - [ ] `curl`
+- [ ] `docker`
+- [ ] `docker-buildx`
+- [ ] `docker-compose`
 - [ ] `exfat-utils`
 - [ ] `firefox`
 - [ ] `fish`
