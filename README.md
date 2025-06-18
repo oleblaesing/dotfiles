@@ -11,8 +11,10 @@ archinstall
 Install packages:
 
 - [ ] `archlinux-wallpaper`
+- [ ] `chromium`
 - [ ] `curl`
 - [ ] `exfat-utils`
+- [ ] `firefox`
 - [ ] `fish`
 - [ ] `fwupd`
 - [ ] `git`
