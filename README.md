@@ -26,6 +26,7 @@ Install packages:
 - [ ] `neovim`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
