@@ -10,7 +10,6 @@ archinstall
 
 Install packages:
 
-- [ ] `archlinux-wallpaper`
 - [ ] `chromium`
 - [ ] `curl`
 - [ ] `docker`
