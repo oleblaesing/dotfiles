@@ -145,15 +145,10 @@ Open localhost:8384 and configure Syncthing
 
 ---
 
-Download vsix: https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug
-
 ```sh
 codium --install-extension bradlc.vscode-tailwindcss
-codium --install-extension csstools.postcss
 codium --install-extension dbaeumer.vscode-eslint
 codium --install-extension esbenp.prettier-vscode
-codium --install-extension Downloads/firefox-devtools.vscode-firefox-debug-VERSION.vsix
-codium --install-extension naumovs.color-highlight
 codium --install-extension vscodevim.vim
 ```
 
