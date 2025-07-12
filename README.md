@@ -127,13 +127,12 @@ ssh-keygen -t ed25519
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
-mkdir -p ~/.config/{fish,kitty,nvim,VSCodium/User}
+mkdir -p ~/.config/{fish,kitty,VSCodium/User}
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-ln -s ~/Repositories/dotfiles/.config/nvim/init.vim ~/.config/nvim/init.vim
-ln -s ~/Repositories/dotfiles/.vimrc ~/.vimrc
+ln -s ~/Repositories/dotfiles/.config/nvim ~/.config/nvim
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 
