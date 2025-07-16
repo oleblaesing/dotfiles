@@ -25,6 +25,7 @@ Install packages:
 - [ ] `neovim`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `serpl`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`
@@ -88,6 +89,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S qflipper-bin
 yay -S volta-bin
@@ -131,6 +133,7 @@ mkdir -p ~/.config/{fish,kitty,VSCodium/User}
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
+ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 ln -s ~/Repositories/dotfiles/.config/nvim ~/.config/nvim
 ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
@@ -139,6 +142,8 @@ ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCo
 ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
 volta install node
+
+npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
 ```
 
 Open localhost:8384 and configure Syncthing
