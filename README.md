@@ -22,7 +22,6 @@ Install packages:
 - [ ] `less`
 - [ ] `libreoffice-still`
 - [ ] `man-db`
-- [ ] `neovim`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `serpl`
@@ -93,7 +92,6 @@ yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S qflipper-bin
 yay -S volta-bin
-yay -S vscodium-bin
 
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 
@@ -129,15 +127,12 @@ ssh-keygen -t ed25519
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
-mkdir -p ~/.config/{fish,kitty,VSCodium/User}
+mkdir -p ~/.config/{fish,kitty}
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-ln -s ~/Repositories/dotfiles/.config/nvim ~/.config/nvim
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
 
 ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
@@ -147,14 +142,5 @@ npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
 ```
 
 Open localhost:8384 and configure Syncthing
-
----
-
-```sh
-codium --install-extension bradlc.vscode-tailwindcss
-codium --install-extension dbaeumer.vscode-eslint
-codium --install-extension esbenp.prettier-vscode
-codium --install-extension vscodevim.vim
-```
 
 Apply Newsflash backup from backup

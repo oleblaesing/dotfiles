@@ -1,12 +1,11 @@
-set -Ux EDITOR nvim
-set -Ux VISUAL nvim
+set -Ux EDITOR hx
+set -Ux VISUAL hx
 set -Ux VOLTA_HOME "$HOME/.volta"
 fish_add_path "$VOLTA_HOME/bin"
 
 bind up up-line-or-beginning-search
 
 alias s="sudo"
-alias v="nvim"
 
 alias g="git"
 alias ga="git add"
