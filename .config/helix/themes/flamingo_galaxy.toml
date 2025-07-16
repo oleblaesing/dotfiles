@@ -1,0 +1,9 @@
+inherits = "dracula_at_night"
+
+"ui.background" = { fg = "foreground" }
+"ui.help" = { fg = "foreground" }
+"ui.menu" = { fg = "foreground" }
+"ui.menu.selected" = { fg = "cyan" }
+"ui.popup" = { fg = "foreground" }
+"ui.statusline" = { fg = "foreground" }
+"ui.statusline.inactive" = { fg = "foreground" }

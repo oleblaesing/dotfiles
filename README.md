@@ -26,8 +26,8 @@ Install packages:
 - [ ] `less`
 - [ ] `libreoffice-still`
 - [ ] `man-db`
-- [ ] `neovim`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `serpl`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `vlc`
@@ -89,9 +89,9 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S volta-bin
-yay -S vscodium-bin
 ```
 
 ## In desktop land:
@@ -121,20 +121,13 @@ ssh-keygen -t ed25519
 mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
-mkdir -p ~/.config/{fish,kitty,VSCodium/User}
+mkdir -p ~/.config/fish
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/Repositories/dotfiles/.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-ln -s ~/Repositories/dotfiles/.config/nvim ~/.config/nvim
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/keybindings.json ~/.config/VSCodium/User/keybindings.json
-ln -s ~/Repositories/dotfiles/.config/VSCodium/User/settings.json ~/.config/VSCodium/User/settings.json
+ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
+ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
 volta install node@22
-```
 
-```sh
-codium --install-extension dbaeumer.vscode-eslint
-codium --install-extension esbenp.prettier-vscode
-codium --install-extension vscodevim.vim
-```
+npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
