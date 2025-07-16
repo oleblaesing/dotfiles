@@ -1,12 +1,12 @@
 title notes
-launch hx ~/Sync/notes.md
+launch hx ~/Documents/notes.txt
 
 new_tab shell
 launch fish
 
 new_tab code
 layout tall
-cd ~/Repositories/dotfiles
+cd ~/Repositories/heyflow/heyflow
 launch serpl
 launch hx
 resize_window wider 35

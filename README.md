@@ -130,4 +130,4 @@ ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
 volta install node@22
 
-npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
+npm -g i typescript-language-server vscode-langservers-extracted@4.8.0
