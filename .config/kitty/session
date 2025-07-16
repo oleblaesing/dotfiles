@@ -1,0 +1,15 @@
+title notes
+launch hx ~/Sync/notes.md
+
+new_tab shell
+launch fish
+
+new_tab code
+layout tall
+cd ~/Repositories/dotfiles
+launch serpl
+launch hx
+resize_window wider 35
+focus
+launch fish
+resize_window shorter 15
