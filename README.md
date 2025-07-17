@@ -24,8 +24,7 @@ Install packages:
 - [ ] `man-db`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `ripgrep`
-- [ ] `serpl`
+- [ ] `scooter`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`

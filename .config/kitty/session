@@ -7,7 +7,7 @@ launch fish
 new_tab code
 layout tall
 cd ~/Repositories/dotfiles
-launch serpl
+launch scooter
 launch hx
 resize_window wider 35
 focus
