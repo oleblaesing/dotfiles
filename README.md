@@ -32,6 +32,7 @@ Install packages:
 - [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
+- [ ] `yazi`
 - [ ] `zip`
 
 ## In chroot land:
@@ -133,6 +134,7 @@ ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
+ln -s ~/Repositories/dotfiles/.config/yazi ~/.config/yazi
 
 ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
