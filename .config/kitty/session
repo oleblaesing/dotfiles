@@ -7,17 +7,12 @@ launch fish
 new_tab code
 layout tall
 cd ~/Repositories/heyflow/heyflow
-launch serpl
-launch hx
-resize_window wider 35
+launch fish -c hx
 focus
-launch fish
-resize_window shorter 15
 
 new_tab services
 layout tall
 cd ~/Repositories/heyflow/heyflow
 launch fish
-focus
 launch fish
 launch fish

@@ -16,6 +16,7 @@ Install packages:
 - [ ] `docker-buildx`
 - [ ] `docker-compose`
 - [ ] `exfat-utils`
+- [ ] `fd`
 - [ ] `firefox`
 - [ ] `fish`
 - [ ] `fwupd`
@@ -27,12 +28,14 @@ Install packages:
 - [ ] `libreoffice-still`
 - [ ] `man-db`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `serpl`
+- [ ] `ripgrep`
+- [ ] `scooter`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
+- [ ] `yazi`
 - [ ] `zip`
 
 ## In chroot land:
@@ -127,6 +130,7 @@ ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
+ln -s ~/Repositories/dotfiles/.config/yazi ~/.config/yazi
 
 volta install node@22
 
