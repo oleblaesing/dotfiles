@@ -4,6 +4,7 @@ set -Ux VOLTA_HOME "$HOME/.volta"
 fish_add_path "$VOLTA_HOME/bin"
 
 bind up up-line-or-beginning-search
+bind \cz 'fg 2>/dev/null; commandline -f repaint'
 
 alias s="sudo"
 
