@@ -12,6 +12,7 @@ Install packages:
 
 - [ ] `curl`
 - [ ] `exfat-utils`
+- [ ] `fd`
 - [ ] `fish`
 - [ ] `fuse2`
 - [ ] `fwupd`
@@ -24,6 +25,7 @@ Install packages:
 - [ ] `man-db`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `ripgrep`
 - [ ] `scooter`
 - [ ] `signal-desktop`
 - [ ] `syncthing`
