@@ -7,9 +7,4 @@ launch fish
 new_tab code
 layout tall
 cd ~/Repositories/dotfiles
-launch scooter
-launch hx
-resize_window wider 35
-focus
-launch fish
-resize_window shorter 15
+launch fish -c hx

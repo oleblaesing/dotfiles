@@ -9,3 +9,11 @@ hidden = false
 [editor.inline-diagnostics]
 cursor-line = "warning"
 other-lines = "warning"
+
+[keys.normal.space]
+x = [
+  ":write-all",
+  ":insert-output scooter --hidden >/dev/tty",
+  ":redraw",
+  ":reload-all"
+]
