@@ -1,4 +1,4 @@
-theme = "flamingo_galaxy"
+theme = "base16_default"
 
 [editor.cursor-shape]
 insert = "bar"
