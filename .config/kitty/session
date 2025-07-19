@@ -7,4 +7,4 @@ launch fish
 new_tab code
 layout tall
 cd ~/Repositories/dotfiles
-launch fish -c hx
+launch fish
