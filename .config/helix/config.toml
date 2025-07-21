@@ -1,5 +1,10 @@
 theme = "base16_transparent"
 
+[editor]
+shell = ["fish", "-c"]
+line-number = "relative"
+popup-border = "all"
+
 [editor.cursor-shape]
 insert = "bar"
 
