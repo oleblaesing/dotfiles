@@ -7,7 +7,7 @@ launch fish
 new_tab code
 layout tall
 cd ~/Repositories/heyflow/heyflow
-launch fish -c hx
+launch fish
 focus
 
 new_tab services

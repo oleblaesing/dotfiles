@@ -29,7 +29,6 @@ Install packages:
 - [ ] `man-db`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
-- [ ] `scooter`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `vlc`
@@ -94,6 +93,7 @@ makepkg -si
 
 yay -S evil-helix-bin
 yay -S librewolf-bin
+yay -S scooter-bin
 yay -S volta-bin
 ```
 
