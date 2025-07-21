@@ -135,3 +135,4 @@ ln -s ~/Repositories/dotfiles/.config/yazi ~/.config/yazi
 volta install node@22
 
 npm -g i typescript-language-server vscode-langservers-extracted@4.8.0
+```
