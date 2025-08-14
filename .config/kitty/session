@@ -8,3 +8,6 @@ new_tab code
 layout tall
 cd ~/Repositories/dotfiles
 launch fish
+launch fish
+resize_window wider 15
+focus
