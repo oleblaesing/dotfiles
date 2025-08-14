@@ -16,3 +16,6 @@ cd ~/Repositories/heyflow/heyflow
 launch fish
 launch fish
 launch fish
+launch fish
+resize_window wider 15
+focus
