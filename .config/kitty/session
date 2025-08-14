@@ -9,5 +9,5 @@ layout tall
 cd ~/Repositories/dotfiles
 launch fish
 launch fish
-resize_window wider 15
+resize_window wider 25
 focus
