@@ -8,6 +8,8 @@ new_tab code
 layout tall
 cd ~/Repositories/heyflow/heyflow
 launch fish
+launch fish
+resize_window wider 25
 focus
 
 new_tab services
@@ -16,6 +18,3 @@ cd ~/Repositories/heyflow/heyflow
 launch fish
 launch fish
 launch fish
-launch fish
-resize_window wider 25
-focus
