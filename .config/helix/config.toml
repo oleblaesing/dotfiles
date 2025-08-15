@@ -22,15 +22,3 @@ x = [
   ":redraw",
   ":reload-all"
 ]
-e = [
-  ":sh rm -f /tmp/unique-file-h21a434",
-  ":set mouse false",
-  ":insert-output yazi '%{buffer_name}' --chooser-file=/tmp/unique-file-h21a434",
-  ":redraw",
-  ":set mouse true",
-  ":open /tmp/unique-file-h21a434",
-  "select_all",
-  "split_selection_on_newline",
-  "goto_file",
-  ":buffer-close! /tmp/files2open"
-]

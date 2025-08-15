@@ -9,7 +9,7 @@ layout tall
 cd ~/Repositories/heyflow/heyflow
 launch fish
 launch fish
-resize_window wider 25
+resize_window wider 20
 focus
 
 new_tab services
