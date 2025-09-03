@@ -7,7 +7,7 @@ launch fish
 new_tab code
 layout splits
 cd ~/Repositories/heyflow/heyflow
-launch --var window=first opencode
+launch --var window=first fish
 launch --location=vsplit --bias=62 fish
 focus
 focus_matching_window var:window=first
