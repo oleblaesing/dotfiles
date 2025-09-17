@@ -10,6 +10,7 @@ archinstall
 
 Install packages:
 
+- [ ] `cups`
 - [ ] `curl`
 - [ ] `exfat-utils`
 - [ ] `fd`
@@ -17,6 +18,7 @@ Install packages:
 - [ ] `fuse2`
 - [ ] `fwupd`
 - [ ] `git`
+- [ ] `hplip`
 - [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `kitty`
@@ -107,6 +109,8 @@ systemctl --user enable syncthing.service
    - Install LibreWolf extensions: Dark Reader, Multi-Container
 
 ```sh
+sudo hp-setup -i
+
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
 gpg -d ~/backup.zip.gpg
 unzip backup.zip
