@@ -32,7 +32,6 @@ Install packages:
 - [ ] `tailscale`
 - [ ] `ufw`
 - [ ] `unzip`
-- [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
 - [ ] `zip`
@@ -86,8 +85,6 @@ ufw enable
 cd /home/USER
 su USER
 
-systemctl --user enable gcr-ssh-agent.socket
-
 mkdir Repositories
 cd Repositories
 
@@ -105,7 +102,8 @@ yay -S volta-bin
 
 1. Go through system settings
 2. Go through LibreWolf settings
-   - Install LibreWolf extensions: Dark Reader, Multi-Container
+   - Install LibreWolf extensions: Dark Reader
+   - DNSOverHTTPS: `https://base.dns.mullvad.net/dns-query`
 
 ```sh
 cp /run/media/$USER/Backup/backup.zip.gpg ~/
@@ -113,19 +111,15 @@ gpg -d ~/backup.zip.gpg
 unzip backup.zip
 rm backup.zip
 
-mv backup/Documents/* Documents/
 mv backup/Keys ./
 
 rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
-```
 
-```sh
 ssh-keygen -t ed25519
 
 # Provide key to GitHub/GitLab
 
-mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
 mkdir -p ~/.config/fish
