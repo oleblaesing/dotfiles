@@ -92,8 +92,10 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 makepkg -si
 
+yay -S google-cloud-cli
 yay -S evil-helix-bin
 yay -S librewolf-bin
+yay -S opencode-bin
 yay -S scooter-bin
 yay -S volta-bin
 ```
@@ -130,6 +132,10 @@ ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
 volta install node@22
+volta install pnpm@10
 
 npm -g i typescript-language-server vscode-langservers-extracted@4.8.0
+
+gcloud auth login
+opencode auth login
 ```
