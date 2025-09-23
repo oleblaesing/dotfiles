@@ -29,6 +29,7 @@ Install packages:
 - [ ] `man-db`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
+- [ ] `tailscale`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `vlc`
@@ -70,10 +71,14 @@ ParallelDownloads = 5
 ```
 
 ```sh
-systemctl enable systemd-resolved
-systemctl enable ufw
+systemctl enable --now systemd-resolved
+systemctl enable docker.socket
+systemctl enable --now tailscaled
+systemctl enable --now ufw
 
-ln -sf /run/systemd/resolve/stub-resolve.conf /etc/resolv.conf
+usermod -aG docker USER
+
+tailscale set operator=USER
 
 ufw default deny
 ufw enable
