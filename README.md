@@ -32,7 +32,6 @@ Install packages:
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
-- [ ] `vlc`
 - [ ] `wget`
 - [ ] `xclip`
 - [ ] `zip`
@@ -82,8 +81,6 @@ ufw enable
 cd /home/USER
 su USER
 
-systemctl --user enable gcr-ssh-agent.socket
-
 mkdir Repositories
 cd Repositories
 
@@ -106,7 +103,8 @@ systemctl --user enable syncthing.service
 
 1. Go through system settings
 2. Go through LibreWolf settings
-   - Install LibreWolf extensions: Dark Reader, Multi-Container
+  - Install LibreWolf extensions: Dark Reader
+  - DNSOverHTTPS: `https://base.dns.mullvad.net/dns-query`
 
 ```sh
 sudo hp-setup -i
@@ -123,14 +121,11 @@ mv backup/Sync ./
 rm -rf ~/.gnupg
 ln -sf ~/Keys/.gnupg ~/.gnupg
 ln -s ~/Sync/passwords.kdbx ~/Keys/passwords.kdbx
-```
 
-```sh
 ssh-keygen -t ed25519
 
 # Provide key to GitHub/GitLab
 
-mkdir Repositories
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 
 mkdir -p ~/.config/fish
