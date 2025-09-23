@@ -10,6 +10,7 @@ archinstall
 
 Install packages:
 
+- [ ] `amd-ucode`
 - [ ] `chromium`
 - [ ] `curl`
 - [ ] `docker`
@@ -21,11 +22,10 @@ Install packages:
 - [ ] `fish`
 - [ ] `fwupd`
 - [ ] `git`
-- [ ] `intel-ucode`
 - [ ] `keepassxc`
 - [ ] `kitty`
 - [ ] `less`
-- [ ] `libreoffice-still`
+- [ ] `linux-firmware`
 - [ ] `man-db`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
