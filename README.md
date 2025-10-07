@@ -28,7 +28,6 @@ Install packages:
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
-- [ ] `signal-desktop`
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
