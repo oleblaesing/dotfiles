@@ -5,9 +5,10 @@ new_tab shell
 launch fish
 
 new_tab code
-layout tall
+layout splits
 cd ~/Repositories/dotfiles
-launch fish
-launch fish
-resize_window wider 20
+launch --var window=first fish
+launch --location=vsplit --bias=62 fish
 focus
+focus_matching_window var:window=first
+launch --location=hsplit --bias=40 fish
