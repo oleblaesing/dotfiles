@@ -96,7 +96,6 @@ yay -S google-cloud-cli
 yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S opencode-bin
-yay -S scooter-bin
 yay -S volta-bin
 ```
 
