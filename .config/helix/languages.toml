@@ -26,3 +26,7 @@ auto-format = true
 name = "json"
 formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "json"] }
 auto-format = true
+
+[[language]]
+name = "prisma"
+language-servers = [ "prisma-language-server" ]
