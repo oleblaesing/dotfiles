@@ -1,5 +1,5 @@
 title notes
-launch hx ~/Documents/notes.txt
+launch fish
 
 new_tab shell
 launch fish
@@ -16,6 +16,7 @@ launch --location=hsplit --bias=40 fish
 new_tab services
 layout tall
 cd ~/Repositories/heyflow/heyflow
+launch fish
 launch fish
 launch fish
 launch fish
