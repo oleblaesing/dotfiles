@@ -130,6 +130,7 @@ ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
+ln -s ~/Repositories/dotfiles/.config/opencode ~/.config/opencode
 
 volta install node@22
 volta install pnpm@10
