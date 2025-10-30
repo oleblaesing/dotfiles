@@ -22,6 +22,7 @@ Install packages:
 - [ ] `fish`
 - [ ] `fwupd`
 - [ ] `git`
+- [ ] `github-cli`
 - [ ] `keepassxc`
 - [ ] `kitty`
 - [ ] `less`
@@ -136,5 +137,6 @@ volta install pnpm@10
 npm -g i typescript-language-server vscode-langservers-extracted@4.8.0
 
 gcloud auth login
+gh auth login
 opencode auth login
 ```
