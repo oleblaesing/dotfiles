@@ -70,12 +70,6 @@ VerbosePkgLists
 ParallelDownloads = 5
 ```
 
-```conf
-# /etc/hosts
-
-# music.ob.codes
-```
-
 ```sh
 systemctl enable --now systemd-resolved
 systemctl enable docker.socket
