@@ -135,7 +135,7 @@ ln -s ~/Repositories/dotfiles/.config/opencode ~/.config/opencode
 volta install node@22
 volta install pnpm@10
 
-npm -g i typescript-language-server vscode-langservers-extracted@4.8.0
+npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 @prisma/language-server
 
 gcloud auth login
 gh auth login
