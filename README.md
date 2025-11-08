@@ -99,6 +99,8 @@ yay -S qflipper-bin
 yay -S volta-bin
 
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
+chmod +x ShadowPC.AppImage
+mv ShadowPC.AppImage ~/Downloads/
 
 systemctl --user enable syncthing.service
 ```
@@ -139,7 +141,8 @@ ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
-ln -s ~/Repositories/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
+mkdir -p ~/.local/share/applications
+ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
 volta install node
 
