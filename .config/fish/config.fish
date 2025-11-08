@@ -8,6 +8,7 @@ bind \cz 'fg 2>/dev/null; commandline -f repaint'
 
 alias s="sudo"
 alias ssh="kitten ssh"
+alias um="upload-music"
 
 alias g="git"
 alias ga="git add"

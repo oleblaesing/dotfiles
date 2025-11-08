@@ -28,6 +28,7 @@ Install packages:
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
+- [ ] `rsync`
 - [ ] `syncthing`
 - [ ] `ufw`
 - [ ] `unzip`
@@ -133,6 +134,7 @@ ssh-keygen -t ed25519
 # Provide key to GitHub/GitLab
 
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
+git clone git@github.com:oleblaesing/music.git Repositories/music
 
 mkdir -p ~/.config/fish
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
@@ -140,6 +142,8 @@ ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
+
+sudo ln -s ~/Repositories/music/upload-music.sh /usr/local/bin/upload-music
 
 mkdir -p ~/.local/share/applications
 ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
