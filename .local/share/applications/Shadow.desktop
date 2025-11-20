@@ -8,4 +8,4 @@ Categories=Game;
 Keywords=gaming;cloud;pc;stream;
 Terminal=false
 StartupNotify=true
-StartupWMClass=Shadow PC
+StartupWMClass=Shadow PC - Display
