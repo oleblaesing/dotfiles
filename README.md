@@ -126,6 +126,7 @@ ssh-keygen -t ed25519
 # Provide key to GitHub/GitLab
 
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
+git clone git@github.com:oleblaesing/music.git Repositories/music
 
 mkdir -p ~/.config/fish
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
