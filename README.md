@@ -12,6 +12,7 @@ Install packages:
 
 - [ ] `amd-ucode`
 - [ ] `chromium`
+- [ ] `clamav`
 - [ ] `curl`
 - [ ] `docker`
 - [ ] `docker-buildx`
@@ -82,6 +83,8 @@ tailscale set operator=USER
 
 ufw default deny
 ufw enable
+
+# Follow steps here: https://wiki.archlinux.org/title/ClamAV
 
 cd /home/USER
 su USER
