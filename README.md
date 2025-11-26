@@ -71,6 +71,12 @@ VerbosePkgLists
 ParallelDownloads = 5
 ```
 
+```conf
+{
+  "dns": ["1.1.1.1", "1.0.0.1"]
+}
+```
+
 ```sh
 systemctl enable --now systemd-resolved
 systemctl enable docker.socket
