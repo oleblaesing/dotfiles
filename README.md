@@ -23,8 +23,11 @@ Install packages:
 - [ ] `keepassxc`
 - [ ] `kitty`
 - [ ] `less`
+- [ ] `lib32-mesa`
 - [ ] `libreoffice-still`
+- [ ] `lutris`
 - [ ] `man-db`
+- [ ] `mesa`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
@@ -67,6 +70,9 @@ Color
 ILoveCandy
 VerbosePkgLists
 ParallelDownloads = 5
+
+[multilib]
+Include = /etc/pacman.d/mirrorlist
 ```
 
 ```conf
