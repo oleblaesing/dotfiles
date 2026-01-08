@@ -25,6 +25,7 @@ Install packages:
 - [ ] `less`
 - [ ] `libreoffice-still`
 - [ ] `man-db`
+- [ ] `mise`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
@@ -97,7 +98,6 @@ makepkg -si
 yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S qflipper-bin
-yay -S volta-bin
 
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 chmod +x ShadowPC.AppImage
@@ -148,7 +148,7 @@ sudo ln -s ~/Repositories/music/upload-music.sh /usr/local/bin/upload-music
 mkdir -p ~/.local/share/applications
 ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
-volta install node
+mise use --global node
 
 npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
 ```
