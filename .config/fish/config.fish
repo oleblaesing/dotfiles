@@ -1,7 +1,5 @@
 set -Ux EDITOR hx
 set -Ux VISUAL hx
-set -Ux VOLTA_HOME "$HOME/.volta"
-fish_add_path "$VOLTA_HOME/bin"
 
 bind up up-line-or-beginning-search
 bind \cz 'fg 2>/dev/null; commandline -f repaint'
@@ -30,3 +28,5 @@ alias nbs="NODE_ENV=development pnpm --filter @heyflow/interfaces run build && N
 alias nl="pnpm run lint"
 alias nt="pnpm run test"
 alias nw="pnpm --filter"
+
+mise activate fish | source

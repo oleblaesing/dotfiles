@@ -29,6 +29,7 @@ Install packages:
 - [ ] `less`
 - [ ] `linux-firmware`
 - [ ] `man-db`
+- [ ] `mise`
 - [ ] `otf-comicshanns-nerd`
 - [ ] `ripgrep`
 - [ ] `tailscale`
@@ -106,7 +107,6 @@ yay -S google-cloud-cli
 yay -S evil-helix-bin
 yay -S librewolf-bin
 yay -S opencode-bin
-yay -S volta-bin
 ```
 
 ## In desktop land:
@@ -141,9 +141,6 @@ ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 ln -s ~/Repositories/dotfiles/.config/opencode ~/.config/opencode
-
-volta install node@22
-volta install pnpm@10
 
 npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 @prisma/language-server
 
