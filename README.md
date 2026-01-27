@@ -12,6 +12,7 @@ Install packages:
 
 - [ ] `cups`
 - [ ] `curl`
+- [ ] `eslint_d`
 - [ ] `exfat-utils`
 - [ ] `fd`
 - [ ] `fish`
@@ -150,7 +151,7 @@ ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/
 
 mise use --global node
 
-npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 prettier
+npm -g i typescript-language-server prettier
 ```
 
 Open localhost:8384 and configure Syncthing

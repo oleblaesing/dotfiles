@@ -1,6 +1,8 @@
 set -Ux EDITOR hx
 set -Ux VISUAL hx
 
+fish_add_path "$HOME/.local/bin"
+
 bind up up-line-or-beginning-search
 bind \cz 'fg 2>/dev/null; commandline -f repaint'
 
