@@ -17,6 +17,7 @@ Install packages:
 - [ ] `docker`
 - [ ] `docker-buildx`
 - [ ] `docker-compose`
+- [ ] `eslint_d`
 - [ ] `exfat-utils`
 - [ ] `fd`
 - [ ] `firefox`
@@ -142,7 +143,7 @@ ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 ln -s ~/Repositories/dotfiles/.config/opencode ~/.config/opencode
 
-npm -g i typescript-language-server vscode-langservers-extracted@4.8.0 @prisma/language-server
+npm -g i typescript-language-server @prisma/language-server
 
 gcloud auth login
 gh auth login

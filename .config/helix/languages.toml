@@ -1,24 +1,24 @@
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
+language-servers = [ "typescript-language-server", "eslint-lang-server" ]
 formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "tsx"
-language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
+language-servers = [ "typescript-language-server", "eslint-lang-server" ]
 formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "javascript"
-language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
+language-servers = [ "typescript-language-server", "eslint-lang-server" ]
 formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
 auto-format = true
 
 [[language]]
 name = "jsx"
-language-servers = [ "typescript-language-server", "vscode-eslint-language-server" ]
+language-servers = [ "typescript-language-server", "eslint-lang-server" ]
 formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
 auto-format = true
 
@@ -30,3 +30,6 @@ auto-format = true
 [[language]]
 name = "prisma"
 language-servers = [ "prisma-language-server" ]
+
+[language-server.eslint-lang-server]
+command = "eslint-lang-server"
