@@ -18,9 +18,11 @@ Install packages:
 - [ ] `fish`
 - [ ] `fuse2`
 - [ ] `fwupd`
+- [ ] `gcc`
 - [ ] `git`
 - [ ] `hplip`
 - [ ] `intel-ucode`
+- [ ] `json-c`
 - [ ] `keepassxc`
 - [ ] `kitty`
 - [ ] `less`
@@ -135,6 +137,7 @@ ssh-keygen -t ed25519
 # Provide key to GitHub/GitLab
 
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
+git clone git@github.com:oleblaesing/eslint-lang-server.git Repositories/eslint-lang-server
 git clone git@github.com:oleblaesing/music.git Repositories/music
 
 mkdir -p ~/.config/fish
@@ -144,12 +147,19 @@ ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
-sudo ln -s ~/Repositories/music/upload-music.sh /usr/local/bin/upload-music
+cd ~/Repositories/eslint-lang-server
+make
+cd -
+
+mkdir -p ~/.local/bin
+ln -s ~/Repositories/eslint-lang-server/bin/eslint-lang-server ~/.local/bin/eslint-lang-server
+ln -s ~/Repositories/music/upload-music.sh ~/.local/bin/upload-music
 
 mkdir -p ~/.local/share/applications
 ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 
 mise use --global node
+mise use --global npm
 
 npm -g i typescript-language-server prettier
 ```
