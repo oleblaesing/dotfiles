@@ -31,9 +31,11 @@ Install packages:
 - [ ] `mise`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `prettier`
 - [ ] `ripgrep`
 - [ ] `rsync`
 - [ ] `syncthing`
+- [ ] `typescript-language-server`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `wget`
@@ -157,11 +159,6 @@ ln -s ~/Repositories/music/upload-music.sh ~/.local/bin/upload-music
 
 mkdir -p ~/.local/share/applications
 ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
-
-mise use --global node
-mise use --global npm
-
-npm -g i typescript-language-server prettier
 ```
 
 Open localhost:8384 and configure Syncthing
