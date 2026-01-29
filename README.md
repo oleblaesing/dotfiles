@@ -142,22 +142,21 @@ git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
 git clone git@github.com:oleblaesing/eslint-lang-server.git Repositories/eslint-lang-server
 git clone git@github.com:oleblaesing/music.git Repositories/music
 
+make -C ~/Repositories/eslint-lang-server
+
 mkdir -p ~/.config/fish
+mkdir -p ~/.local/bin
+mkdir -p ~/.local/share/applications
+
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 
-cd ~/Repositories/eslint-lang-server
-make
-cd -
-
-mkdir -p ~/.local/bin
 ln -s ~/Repositories/eslint-lang-server/bin/eslint-lang-server ~/.local/bin/eslint-lang-server
 ln -s ~/Repositories/music/upload-music.sh ~/.local/bin/upload-music
 
-mkdir -p ~/.local/share/applications
 ln -s ~/Repositories/dotfiles/.local/share/applications/Shadow.desktop ~/.local/share/applications/Shadow.desktop
 ```
 
