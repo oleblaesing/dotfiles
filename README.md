@@ -13,6 +13,7 @@ Install packages:
 - [ ] `amd-ucode`
 - [ ] `chromium`
 - [ ] `clamav`
+- [ ] `clang`
 - [ ] `curl`
 - [ ] `docker`
 - [ ] `docker-buildx`
@@ -23,8 +24,10 @@ Install packages:
 - [ ] `firefox`
 - [ ] `fish`
 - [ ] `fwupd`
+- [ ] `gcc`
 - [ ] `git`
 - [ ] `github-cli`
+- [ ] `json-c`
 - [ ] `keepassxc`
 - [ ] `kitty`
 - [ ] `less`
@@ -32,8 +35,10 @@ Install packages:
 - [ ] `man-db`
 - [ ] `mise`
 - [ ] `otf-comicshanns-nerd`
+- [ ] `prettier`
 - [ ] `ripgrep`
 - [ ] `tailscale`
+- [ ] `typescript-language-server`
 - [ ] `ufw`
 - [ ] `unzip`
 - [ ] `wget`
@@ -133,9 +138,15 @@ ssh-keygen -t ed25519
 # Provide key to GitHub/GitLab
 
 git clone git@github.com:oleblaesing/dotfiles.git Repositories/dotfiles
+git clone git@github.com:oleblaesing/eslint-lang-server.git Repositories/eslint-lang-server
 git clone git@github.com:oleblaesing/music.git Repositories/music
 
+make -C ~/Repositories/eslint-lang-server
+
 mkdir -p ~/.config/fish
+mkdir -p ~/.local/bin
+mkdir -p ~/.local/share/applications
+
 ln -s ~/Repositories/dotfiles/.config/fish/config.fish ~/.config/fish/config.fish
 ln -s ~/Repositories/dotfiles/.config/fish/functions ~/.config/fish/functions
 ln -s ~/Repositories/dotfiles/.gitconfig ~/.gitconfig
@@ -143,7 +154,7 @@ ln -s ~/Repositories/dotfiles/.config/helix ~/.config/helix
 ln -s ~/Repositories/dotfiles/.config/kitty ~/.config/kitty
 ln -s ~/Repositories/dotfiles/.config/opencode ~/.config/opencode
 
-npm -g i typescript-language-server @prisma/language-server
+ln -s ~/Repositories/eslint-lang-server/bin/eslint-lang-server ~/.local/bin/eslint-lang-server
 
 gcloud auth login
 gh auth login

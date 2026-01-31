@@ -1,30 +1,30 @@
 [[language]]
 name = "typescript"
 language-servers = [ "typescript-language-server", "eslint-lang-server" ]
-formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = "prettier" }
 auto-format = true
 
 [[language]]
 name = "tsx"
 language-servers = [ "typescript-language-server", "eslint-lang-server" ]
-formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = "prettier" }
 auto-format = true
 
 [[language]]
 name = "javascript"
 language-servers = [ "typescript-language-server", "eslint-lang-server" ]
-formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = "prettier" }
 auto-format = true
 
 [[language]]
 name = "jsx"
 language-servers = [ "typescript-language-server", "eslint-lang-server" ]
-formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "typescript"] }
+formatter = { command = "prettier" }
 auto-format = true
 
 [[language]]
 name = "json"
-formatter = { command = "pnpm", args = ["exec", "prettier", "--parser", "json"] }
+formatter = { command = "prettier" }
 auto-format = true
 
 [[language]]
