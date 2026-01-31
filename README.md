@@ -10,6 +10,7 @@ archinstall
 
 Install packages:
 
+- [ ] `clang`
 - [ ] `cups`
 - [ ] `curl`
 - [ ] `eslint_d`
