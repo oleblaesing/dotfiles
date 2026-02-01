@@ -32,7 +32,6 @@ Install packages:
 - [ ] `mise`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `prettier`
 - [ ] `ripgrep`
 - [ ] `rsync`
 - [ ] `syncthing`
