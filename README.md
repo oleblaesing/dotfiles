@@ -15,7 +15,6 @@ Install packages:
 - [ ] `curl`
 - [ ] `eslint_d`
 - [ ] `exfat-utils`
-- [ ] `fd`
 - [ ] `fish`
 - [ ] `fuse2`
 - [ ] `fwupd`
@@ -32,7 +31,6 @@ Install packages:
 - [ ] `mise`
 - [ ] `newsflash`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `ripgrep`
 - [ ] `rsync`
 - [ ] `syncthing`
 - [ ] `typescript-language-server`
