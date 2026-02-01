@@ -2,7 +2,7 @@
 Type=Application
 Name=Shadow
 Comment=Cloud Gaming PC
-Exec=env -u WAYLAND_DISPLAY /home/ob/Downloads/ShadowPC.AppImage
+Exec=/home/ob/Downloads/ShadowPC.AppImage
 Icon=/home/ob/Repositories/dotfiles/.local/share/applications/shadow.png
 Categories=Game;
 Keywords=gaming;cloud;pc;stream;
