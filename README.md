@@ -102,7 +102,6 @@ makepkg -si
 
 yay -S evil-helix-bin
 yay -S librewolf-bin
-yay -S qflipper-bin
 
 wget "https://update.shadow.tech/launcher/prod/linux/ubuntu_18.04/ShadowPC.AppImage"
 chmod +x ShadowPC.AppImage
