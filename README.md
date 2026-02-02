@@ -20,7 +20,6 @@ Install packages:
 - [ ] `docker-compose`
 - [ ] `eslint_d`
 - [ ] `exfat-utils`
-- [ ] `fd`
 - [ ] `firefox`
 - [ ] `fish`
 - [ ] `fwupd`
@@ -35,8 +34,6 @@ Install packages:
 - [ ] `man-db`
 - [ ] `mise`
 - [ ] `otf-comicshanns-nerd`
-- [ ] `prettier`
-- [ ] `ripgrep`
 - [ ] `tailscale`
 - [ ] `typescript-language-server`
 - [ ] `ufw`
